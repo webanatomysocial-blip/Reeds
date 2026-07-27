@@ -1,0 +1,61 @@
+.pill-btn-custom {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: var(--font-secondary)
+"Inter", sans-serif;
+    z-index: 1;
+    border-radius: 50px;
+    align-items: center;
+    width: fit-content;
+    padding: 12px 52px 12px 24px;
+    transition: color .1s, border-color .5s, background-color .5s;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.pill-btn-text {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.pill-btn-custom:hover .pill-btn-text {
+  color: var(--hover-color) !important;
+}
+
+/* Arrow Wrapper */
+.pill-btn-arrow-wrapper {
+  position: absolute;
+  right: 6px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px; /* Initial width */
+  height: calc(100% - 12px); /* Exact height for 6px top/bottom padding */
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-end; /* Keep arrow on the right */
+  align-items: center;
+  background-color: var(--arrow-bg);
+  color: var(--arrow-color);
+  transition: width 0.4s ease, background-color 0.3s ease, color 0.3s ease;
+  z-index: 1; /* Below text */
+}
+
+/* On hover, arrow wrapper expands leftwards */
+.pill-btn-custom:hover .pill-btn-arrow-wrapper {
+  width: calc(100% - 12px); /* leaves a 6px gap on the left, exactly matching top/bottom/right */
+  background-color: var(--hover-fill);
+}
+
+/* Ensure SVG stays centered when small, and right-aligned when expanded */
+.pill-btn-arrow-wrapper svg {
+  margin-right: 10px; /* centers the 16px icon in the 36px wrapper */
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.pill-btn-custom:hover .pill-btn-arrow-wrapper svg {
+  transform: translateX(4px);
+  color: var(--hover-color);
+}

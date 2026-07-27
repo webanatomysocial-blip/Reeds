@@ -1,0 +1,38 @@
+.ticker-section {
+    background-color:  #0b5e3f;
+    padding: 16px 0;
+    width: 100%;
+    overflow: hidden;
+    cursor: default;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider if needed */
+}
+
+.ticker-track {
+    display: flex;
+    width: max-content;
+}
+
+.ticker-group {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 24px; /* Space between repeated elements */
+}
+
+.ticker-text {
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.ticker-icon {
+    color: var(--Yellow-color, #f4a522);
+    font-size: 24px;
+}

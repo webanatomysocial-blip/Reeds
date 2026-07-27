@@ -137,107 +137,25 @@ h6 {
 /* fonts End  */
 
 /* buttons start  */
-
-.black-bg-btn {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 14px 20px;
-  text-decoration: none;
-  border: 1px solid var(--primary-color);
-  cursor: pointer;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease-in-out;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-family: var(--font-secondary);
-  width: fit-content;
-  /* Remove or animate in later */
-  z-index: 10;
-}
-.arrow-icon {
-  transition: all 0.3s ease-in-out;
-}
-.black-bg-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.black-bg-btn:hover .arrow-icon {
-  transform: translateX(6px);
-}
-
-.white-bg-btn {
-  background-color: var(--primary-color);
-  /* usually white or light */
-  color: var(--secondary-color);
-  /* usually black or dark */
-  padding: 14px 20px;
-  text-decoration: none;
-  border: 1px solid var(--secondary-color);
-  cursor: pointer;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  margin: 20px 0;
-  font-size: 16px;
-  font-family: var(--font-secondary);
-  width: fit-content;
-
-  /* Change to 1 or animate in */
-  z-index: 1;
-}
-
-.white-bg-btn:hover {
-  background-color: var(--secondary-color);
-  /* dark on hover */
-  color: var(--primary-color);
-  /* white text */
-  border-color: var(--secondary-color);
-}
-
-.white-bg-btn:hover .arrow-icon {
-  transform: translateX(6px);
-}
-
-.transparent-bg-btn {
-  background-color: transparent;
-  /* usually white or light */
-  color: var(--blue);
-  /* usually black or dark */
-  padding: 0px;
-  text-decoration: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  margin: 20px 0;
-  font-size: 16px;
-  font-family: var(--font-secondary);
-  width: fit-content;
-  border: none;
-
-  /* Change to 1 or animate in */
-  z-index: 1;
-}
-
-.transparent-bg-btn:hover .arrow-icon {
-  transform: translateX(6px);
-}
-
 /* buttons End */
+
+.eyebrow-text-white {
+  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 
 body {
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+
   background-color: var(--primary-color) !important;
 }
 
