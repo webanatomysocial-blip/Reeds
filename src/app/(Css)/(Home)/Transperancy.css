@@ -1,0 +1,165 @@
+.transparency-section {
+  width: 100%;
+  position: relative;
+  background-image: url('/assets/Home_Assets/HomeBannner.avif'); /* Uses HomeBanner as background as requested implicitly */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.transparency-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Dark gradient to ensure text readability on the left */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
+}
+
+.transparency-container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.transparency-header {
+  max-width: 600px;
+  color: white;
+}
+
+.transparency-eyebrow {
+  margin-bottom: 16px;
+  /* Ensure global eyebrow styling is applied correctly */
+}
+
+
+.transparency-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0;
+  font-weight: 300;
+}
+
+.transparency-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.transparency-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+
+.transparency-card-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.transparency-divider {
+  border: none;
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 0 0 16px 0;
+  width: 100%;
+}
+
+.transparency-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-col.align-right {
+  align-items: flex-end;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.meta-value {
+  font-size: 1rem;
+  color: #12633a; /* Dark green text for values */
+  font-weight: 500;
+}
+
+.transparency-download-btn {
+  background-color: #12633a; /* Dark green matching Donate button */
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+transition: all ease .3s;
+  width: 100%;
+}
+
+.transparency-download-btn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border:1px solid black;
+}
+
+.download-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .transparency-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .transparency-heading {
+    font-size: 2.4rem;
+  }
+  .transparency-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .transparency-cards {
+    grid-template-columns: 1fr;
+  }
+  .transparency-section {
+    padding: 60px 20px;
+  }
+}

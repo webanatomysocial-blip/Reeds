@@ -1,0 +1,243 @@
+.donate-section {
+  width: 100%;
+  background-color: #12633a; /* Dark green background */
+  padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.donate-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.donate-left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.donate-eyebrow {
+  margin-bottom: 24px;
+}
+
+
+.donate-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0 0 40px 0;
+  max-width: 95%;
+  font-weight: 300;
+}
+
+.donate-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.donate-bullet {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.bullet-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #f7a000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.bullet-icon svg {
+  width: 12px;
+  height: 12px;
+  color: #000;
+  margin-left: 2px;
+}
+
+.donate-bullet p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Right side - Form */
+.donate-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.donate-form-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 30px 0;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  color: #333;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0a0a0;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #12633a;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(18, 99, 58, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Custom select arrow */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  cursor: pointer;
+  color: #555;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 8px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.donate-submit-btn {
+  background-color: #12633a;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.donate-submit-btn:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #12633a;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .donate-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .donate-left {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .donate-right {
+    justify-content: center;
+  }
+  
+  .donate-form-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .donate-section {
+    padding: 60px 20px;
+  }
+  
+
+  .donate-form{
+    gap: 14px;
+  }
+  .donate-form-card {
+    padding: 24px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+.founders-section{
+    padding: 0px 50px 0px 50px;
+    background-color: white;
+}
+.founders-container{
+    background: url(/assets/Home_Assets/HomeBannner.avif) no-repeat center center;
+    height: 90vh;   
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 100px 50px 100px;
+ justify-content: center;
+    gap: 15px;
+}
+.vis-mis{
+    padding: 30px 20px 20px 20px ;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    border-radius: 15px;
+    width: 40%;
+}
+
+@media (max-width: 992px) {
+    .founders-container {
+        padding: 0px 40px 40px 40px;
+        height: auto;
+        min-height: 60vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .vis-mis {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .founders-section {
+        padding: 0px 20px 0px 20px;
+    }
+    .founders-container {
+        padding: 40px 20px;
+        border-radius: 12px;
+        gap: 30px;
+    }
+    .vis-mis {
+        padding: 20px;
+        gap: 16px;
+    }
+}

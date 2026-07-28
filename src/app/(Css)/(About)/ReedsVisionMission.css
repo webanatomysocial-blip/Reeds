@@ -1,0 +1,194 @@
+/* ReedsVisionMission.css */
+.reeds-vm-section {
+  background-color: #f7f8fa;
+  padding: 50px 50px 100px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.reeds-vm-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.reeds-vm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.reeds-vm-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Base Card Styles */
+.reeds-vm-card {
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+
+/* Image Placeholder Card (Left Column) */
+.reeds-vm-image-card {
+  height: 100%;
+  flex: 1;
+  min-height: 480px;
+ 
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+
+/* Text-heavy Vision/Mission Cards */
+.reeds-vm-text-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vision-card {
+  flex: 1;
+}
+
+.mission-card {
+  flex: 1;
+}
+
+/* Icon / Logo Circle Placeholders */
+.reeds-vm-icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.vision-circle {
+  background-color: rgba(46, 117, 89, 0.08);
+}
+
+.mission-circle {
+  background-color: rgba(224, 86, 36, 0.08);
+}
+
+/* Card Typography */
+.reeds-vm-card-title {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #111111;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.reeds-vm-card-desc {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a4d54;
+  font-weight: 400;
+}
+
+/* Stats Cards (Lives Impacted & Volunteers) */
+.reeds-vm-stat-card {
+  padding: 24px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 88px;
+}
+
+.reeds-vm-stat-number {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #111111;
+  letter-spacing: -0.02em;
+}
+
+.reeds-vm-stat-label {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #72767d;
+  text-align: right;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .reeds-vm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-col {
+    grid-column: span 2;
+  }
+
+  .reeds-vm-image-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reeds-vm-section {
+    padding: 60px 20px;
+  }
+
+  .reeds-vm-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .reeds-vm-col {
+    display: contents;
+  }
+
+  .reeds-vm-stat-card {
+    display: none !important;
+  }
+
+  .vision-card {
+    order: 1;
+  }
+
+  .reeds-vm-image-card {
+    order: 2;
+    min-height: 250px;
+    padding: 30px;
+  }
+
+  .mission-card {
+    order: 3;
+  }
+
+  .reeds-vm-text-card {
+    padding: 30px;
+  }
+
+  .reeds-vm-card-title {
+    font-size: 24px;
+  }
+
+  .reeds-vm-card-desc {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,240 @@
+/* ReedsImpact.css */
+.reeds-impact-section {
+  background-color: #ffffff;
+  padding: 100px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.reeds-impact-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+}
+
+/* Left Content Styles */
+.reeds-impact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reeds-impact-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #111111;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.reeds-impact-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5f6368;
+  margin-bottom: 40px;
+}
+
+/* Stats List */
+.reeds-impact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.reeds-impact-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.reeds-impact-item:first-child {
+  border-top: 1px solid #eaeaea;
+}
+
+.reeds-impact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #2e7d32;
+}
+
+.reeds-impact-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555860;
+  letter-spacing: -0.01em;
+}
+
+/* Right Visual Styles */
+.reeds-impact-visual {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reeds-impact-visual-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Position Wrappers (Decoupling Layout Translation from GSAP Rotation) */
+.reeds-impact-card-wrapper {
+  position: absolute;
+}
+
+.card-back-wrap {
+  transform: translateX(-170px) translateY(0px);
+  z-index: 1;
+}
+
+.card-front-wrap {
+  transform: translateX(80px) translateY(100px);
+  z-index: 2;
+}
+
+.reeds-impact-heart-wrap {
+  position: absolute;
+  transform: translateY(-10px) translateX(-10px);
+  z-index: 3;
+}
+
+/* Landscape Cards */
+.reeds-impact-card {
+  width: 240px;
+  height: 155px;
+  border-radius: 24px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transform-origin: center center;
+}
+
+.reeds-impact-card.card-back {
+  transform: rotate(-10deg);
+  height: 40vh;
+}
+
+.reeds-impact-card.card-front {
+  transform: rotate(8deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* Heart Overlay */
+.reeds-impact-heart {
+  width: 200px;
+  height: 200px;
+  transform: rotate(0deg);
+  filter: drop-shadow(0 10px 20px rgba(46, 117, 89, 0.10));
+}
+
+.reeds-impact-heart-path {
+  fill: #a5d6a7;
+  fill-opacity: 0.80;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .reeds-impact-container {
+    gap: 40px;
+  }
+
+  .reeds-impact-card {
+    width: 200px;
+    height: 130px;
+  }
+
+  .card-back-wrap {
+    transform: translateX(-85px) translateY(35px);
+  }
+
+  .card-front-wrap {
+    transform: translateX(70px) translateY(-35px);
+  }
+
+  .reeds-impact-heart-wrap {
+    transform: translateY(-10px) translateX(-10px);
+  }
+
+  .reeds-impact-heart {
+    width: 165px;
+    height: 165px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reeds-impact-section {
+    padding: 60px 20px;
+  }
+
+  .reeds-impact-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Move visual above the text content */
+  .reeds-impact-visual {
+    display: flex;
+    order: -1;
+    height: 180px;
+  }
+
+  /* Override any desktop card-back height (e.g. 40vh) */
+  .reeds-impact-card,
+  .reeds-impact-card.card-back,
+  .reeds-impact-card.card-front {
+    width: 165px !important;
+    height: 105px !important;
+    border-radius: 18px;
+  }
+
+  .reeds-impact-card.card-back {
+    transform: rotate(-10deg) !important;
+  }
+
+  .reeds-impact-card.card-front {
+    transform: rotate(8deg) !important;
+  }
+
+  .card-back-wrap {
+    transform: translateX(-82px) translateY(16px) !important;
+  }
+
+  .card-front-wrap {
+    transform: translateX(68px) translateY(-16px) !important;
+  }
+
+  .reeds-impact-heart-wrap {
+    transform: translateY(-16px) translateX(-10px) !important;
+  }
+
+  .reeds-impact-heart {
+    width: 95px;
+    height: 95px;
+  }
+
+  .reeds-impact-title {
+    font-size: 32px;
+  }
+
+  .reeds-impact-desc {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .reeds-impact-item-text {
+    font-size: 16px;
+  }
+}

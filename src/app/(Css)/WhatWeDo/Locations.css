@@ -1,0 +1,94 @@
+/* Locations.css */
+.reeds-locations-section {
+    background-color: #0f623e;
+    padding: 100px 50px;
+    width: 100%;
+}
+
+.reeds-locations-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.reeds-locations-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.reeds-locations-tag {
+    display: block;
+    font-size: 14px;
+    font-weight: 500; 
+    color: #f59e0b;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    margin-bottom: 16px;
+}
+
+.reeds-locations-title {
+    font-size: 44px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+}
+
+.reeds-locations-desc {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    width: 90%;
+}
+
+/* Right Column: White Card container for the Map / Image */
+.reeds-locations-image-wrapper {
+   
+    border-radius: 25px;
+    width: 100%;
+}
+
+.reeds-locations-image-placeholder {
+    width: 100%;
+    height: 440px;
+    border-radius: 25px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* ── Tablet & Mobile Responsiveness ── */
+@media (max-width: 1024px) {
+    .reeds-locations-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reeds-locations-section {
+        padding: 60px 20px;
+    }
+
+    .reeds-locations-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .reeds-locations-desc {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .reeds-locations-image-wrapper {
+        padding: 16px;
+        border-radius: 22px;
+    }
+
+    .reeds-locations-image-placeholder {
+        height: 320px;
+    }
+}

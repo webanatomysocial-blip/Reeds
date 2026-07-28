@@ -1,0 +1,227 @@
+.header-section {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  padding: 0 20px;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  pointer-events: none; /* Let clicks pass through the container... */
+}
+
+.header-pill {
+  pointer-events: auto;
+  background-color: #ffffff;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px 8px 30px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.header-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.header-section.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+  font-family: inherit;
+}
+
+.nav-item:hover {
+  color: #12633a; /* Dark green hover */
+}
+
+.nav-item svg {
+  margin-top: 2px;
+  color: #666;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  min-width: 200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  transition: background-color 0.2s ease;
+  font-family: inherit;
+}
+
+.dropdown-link:hover {
+  background-color: #e8e8e8;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+  }
+  .header-logo img {
+  height: 40px;
+  width: auto;
+}
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 12px;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+  
+  .header-nav.mobile-open {
+    display: block;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .nav-item-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 10px 0 0 16px;
+    display: none; /* Hidden by default on mobile */
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 0;
+  }
+
+  /* Show only when active */
+  .nav-item-dropdown.mobile-dropdown-active .dropdown-menu {
+    display: flex;
+  }
+
+  .nav-item-dropdown:hover .dropdown-menu,
+  .nav-item-dropdown:active .dropdown-menu,
+  .nav-item-dropdown:focus .dropdown-menu {
+    /* Prevent hover showing on mobile */
+    display: none;
+  }
+  
+  .nav-item-dropdown.mobile-dropdown-active:hover .dropdown-menu,
+  .nav-item-dropdown.mobile-dropdown-active:active .dropdown-menu,
+  .nav-item-dropdown.mobile-dropdown-active:focus .dropdown-menu {
+    display: flex;
+  }
+
+  .header-pill {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-pill {
+    padding: 8px 12px 8px 20px;
+    width: 95%;
+  }
+  .header-cta {
+    display: none;
+  }
+  .hamburger-btn {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,174 @@
+.loop-section {
+  width: 100%;
+  background-color: #1a2a22; /* Dark green background */
+  padding: 100px 0; /* No horizontal padding so marquee touches edges */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inherit;
+  overflow: hidden;
+}
+
+.loop-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.loop-eyebrow {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+
+
+.loop-subtitle {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  margin: 0 0 30px 0;
+  font-weight: 300;
+}
+
+.loop-subscribe-form {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  padding: 4px 4px 4px 16px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.loop-subscribe-form input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+}
+
+.loop-subscribe-form input::placeholder {
+  color: #999;
+}
+
+.loop-subscribe-form button {
+  background-color: #f7a000;
+  color: #000;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+/* Marquee Carousel */
+.loop-marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+/* Optional: Gradient fade on edges for smooth entry/exit */
+.loop-marquee-container::before,
+.loop-marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.loop-marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, #1a2a22, transparent);
+}
+.loop-marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, #1a2a22, transparent);
+}
+
+.loop-marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  /* The animation shifts the track left by 50% (one exact set of images) */
+  animation: scroll-left 40s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.loop-image-card {
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.loop-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.loop-footer {
+  text-align: center;
+  color: white;
+}
+
+.loop-footer-label {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.loop-footer-count {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .loop-image-card {
+    width: 200px;
+    height: 200px;
+  }
+  .loop-footer-count {
+    font-size: 2.5rem;
+  }
+  .loop-subscribe-form {
+    max-width: 100%;
+  }
+  .loop-section{
+    padding: 60px 20px 40px 20px;
+  }
+  .loop-marquee-container{
+    margin-bottom:45px;
+  }
+}

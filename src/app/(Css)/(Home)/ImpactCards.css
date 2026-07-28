@@ -1,0 +1,93 @@
+.impact-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    padding:  0px 50px 100px 50px;
+    background-color: white;
+}
+
+.impact-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 420px;
+    background: url(/assets/Home_Assets/HomeBannner.avif) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+}
+
+.impact-card.span-2 {
+    grid-column: span 2;
+}
+
+.impact-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.impact-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.impact-number {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.impact-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    font-family: var(--font-primary);
+}
+
+.impact-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .impact-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .impact-card.span-2 {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .impact-cards-container {
+        gap: 15px;
+        grid-template-columns: 1fr;
+        padding: 0px 20px 60px 20px;
+    }
+    
+    .impact-card {
+        height: 250px;
+    }
+}

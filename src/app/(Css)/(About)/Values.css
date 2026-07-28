@@ -1,0 +1,231 @@
+/* ReedsValues.css */
+.reeds-values-section {
+  background-color: #f7f8fa;
+  padding: 100px 50px;
+  width: 100%;
+}
+
+.reeds-values-container {
+  display: flex;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 0px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+/* ── Left Column ── */
+.reeds-values-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+
+
+.reeds-values-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #111111;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.reeds-values-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5f6368;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* Donor row */
+.reeds-values-donors {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.reeds-values-avatars {
+  display: flex;
+}
+
+.reeds-values-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2.5px solid #ffffff;
+  margin-left: -12px;
+  flex-shrink: 0;
+  /* Placeholder pattern — replace background with real image */
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255,255,255,0.15) 0px,
+    rgba(255,255,255,0.15) 3px,
+    transparent 3px,
+    transparent 8px
+  );
+}
+
+.reeds-values-avatar:first-child {
+  margin-left: 0;
+}
+
+.reeds-values-donor-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Hidden on mobile — shown only on desktop (inside the donor row) */
+.reeds-values-donor-text--mobile {
+  display: none;
+}
+
+.reeds-values-donor-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.3;
+}
+
+.reeds-values-donor-sub {
+  font-size: 12px;
+  color: #888888;
+}
+
+/* CTA Button */
+.reeds-values-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f0a500;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.reeds-values-btn:active {
+  transform: translateY(0);
+}
+
+/* ── Right Column — Value Cards ── */
+.reeds-values-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 16px;
+}
+
+.reeds-values-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.reeds-values-card-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+}
+
+.reeds-values-card-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.reeds-values-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reeds-values-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111111;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.reeds-values-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5f6368;
+  margin: 0;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .reeds-values-section {
+    padding: 60px 20px;
+  }
+
+  .reeds-values-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  
+
+  .reeds-values-title {
+    font-size: 28px;
+  }
+
+  .reeds-values-desc {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  /* Hide desktop donor text (inside donor row), show mobile clone */
+  .reeds-values-donor-text--desktop {
+    display: none;
+  }
+
+  .reeds-values-donor-text--mobile {
+    display: flex;
+  }
+
+  /* 2-column card grid on mobile */
+  .reeds-values-right {
+    gap: 12px;
+  }
+
+  .reeds-values-card {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .reeds-values-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reeds-values-card-title {
+    font-size: 15px;
+  }
+
+  .reeds-values-card-desc {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .reeds-values-btn {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+}

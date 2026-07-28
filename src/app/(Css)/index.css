@@ -69,18 +69,19 @@ h6 {
 .head-text {
   font-size: 46px !important;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--secondary-color);
   line-height: 1.2;
 }
-
 .head-text-white {
   font-size: 46px !important;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--primary-color);
   line-height: 1.2;
 }
+
+
 
 /* Sub-headings */
 .sub-head-text {
@@ -151,6 +152,18 @@ h6 {
   gap: 8px;
 }
 
+.eyebrow-text {
+  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: #4caf50;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 
 body {
   margin: 0;
@@ -164,10 +177,7 @@ body {
     display: none !important;
   }
 
-  body {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+ 
 
   /* Mobile Typography Overrides */
   .big-text-head,
