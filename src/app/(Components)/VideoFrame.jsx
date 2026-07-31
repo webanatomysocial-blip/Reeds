@@ -46,16 +46,30 @@ const VideoModal = ({ isOpen, onClose, iframe }) => {
   );
 };
 
+const getYoutubeThumbnail = (htmlStr) => {
+  if (!htmlStr) return null;
+  const match = htmlStr.match(/youtube\.com\/embed\/([^"?]+)/);
+  if (match && match[1]) {
+    return `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg`;
+  }
+  return null;
+};
+
 const VideoItem = ({ iframe, vidtitle, viddesc }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const thumbnailUrl = getYoutubeThumbnail(iframe);
 
   return (
     <div className="videoframe-item">
       <div className="videoframe-container">
-        <div 
-          className="videoframe-iframe-preview"
-          dangerouslySetInnerHTML={{ __html: iframe }} 
-        />
+        {thumbnailUrl ? (
+          <img src={thumbnailUrl} alt={vidtitle || "Video thumbnail"} className="videoframe-thumbnail-preview" />
+        ) : (
+          <div 
+            className="videoframe-iframe-preview"
+            dangerouslySetInnerHTML={{ __html: iframe }} 
+          />
+        )}
         <div className="videoframe-overlay" onClick={() => setIsModalOpen(true)}>
           <div className="glass-play-button">
             <svg viewBox="0 0 24 24" fill="currentColor" className="play-icon">

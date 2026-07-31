@@ -25,13 +25,7 @@
   height: 240px;
   border-radius: 24px;
   overflow: hidden;
-  background: repeating-linear-gradient(
-    -45deg,
-    #ebebeb,
-    #ebebeb 8px,
-    #f5f5f5 8px,
-    #f5f5f5 16px
-  );
+
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: block;
   margin-bottom: 24px;
@@ -109,7 +103,7 @@
   background: #ffffff;
   border-radius: 28px;
   padding: 40px;
-  border: 4px solid #dfdfdf;
+  border: 2px solid #dfdfdf;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
 }
 
@@ -194,8 +188,9 @@
 }
 
 .reeds-contact-submit-btn:hover {
-  background-color: #095931;
-  transform: translateY(-1px);
+  background-color: #ffffff;
+  border: 1px solid black;
+  color:  black;
 }
 
 .reeds-contact-submit-btn:active {

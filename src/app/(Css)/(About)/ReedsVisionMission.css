@@ -1,7 +1,7 @@
 /* ReedsVisionMission.css */
 .reeds-vm-section {
   background-color: #f7f8fa;
-  padding: 50px 50px 100px 50px;
+  padding: 100px 50px 100px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,9 +9,7 @@
 }
 
 .reeds-vm-container {
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .reeds-vm-grid {
@@ -150,7 +148,7 @@
 
 @media (max-width: 768px) {
   .reeds-vm-section {
-    padding: 60px 20px;
+    padding: 60px 20px 60px 20px;
   }
 
   .reeds-vm-grid {

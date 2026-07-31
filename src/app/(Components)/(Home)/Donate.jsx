@@ -1,11 +1,50 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Donate.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Donate = () => {
+    const sectionRef = useRef(null);
+    const bgRef = useRef(null);
+
+    useEffect(() => {
+        gsap.fromTo(bgRef.current, 
+            { scale: 1 }, 
+            { 
+                scale: 1.2, 
+                ease: "none",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            }
+        );
+    }, []);
+
     return (
-        <section className="donate-section">
-            <div className="donate-container">
+       
+        <section className="donate-section" ref={sectionRef}>
+            <div className="donate-bg" ref={bgRef}></div>
+            <div className="donate-overlay"></div>
+            <AnimatedContent
+              className="donate-container"
+              distance={50}
+              direction="vertical"
+              reverse={false}
+              duration={1.5}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0}
+            >
                 <div className="donate-left">
                     <span className="donate-eyebrow eyebrow-text-white" style={{color: '#f7a000'}}>DONATE TODAY</span>
                     <h2 className="head-text-white">Your gift becomes a village's turning point.</h2>
@@ -79,7 +118,7 @@ const Donate = () => {
                         </form>
                     </div>
                 </div>
-            </div>
+            </AnimatedContent>
         </section>
     );
 }

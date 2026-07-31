@@ -1,0 +1,120 @@
+.project-banner-section {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 50px 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.project-banner-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  /* Match the linear gradient from InnerBanner */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 1;
+}
+
+.project-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-banner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  width: fit-content;
+  backdrop-filter: blur(4px);
+}
+
+.project-banner-pill svg {
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.project-banner-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Also ensure head-text is white if used in this banner */
+.project-banner-section .head-text {
+  color: #ffffff;
+}
+
+.project-banner-description {
+  font-size: 16px;
+  color: #d0d0d0;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.project-banner-stats {
+  display: flex;
+  gap: 80px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.project-banner-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-banner-stat-value {
+  font-size: 42px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.project-banner-stat-label {
+  font-size: 14px;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .project-banner-section {
+    padding: 120px 20px 60px 20px;
+  }
+  
+  .project-banner-title {
+    font-size: 36px;
+  }
+  
+  .project-banner-stats {
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .project-banner-stat-value {
+    font-size: 25px;
+  }
+}

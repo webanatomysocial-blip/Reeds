@@ -1,9 +1,11 @@
 import React from 'react'
+import Link from 'next/link'
 import '@/app/(Css)/Projects/ProjectList.css';
 import PillButton from '../PillButton';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 
-export default function ReedsProjects() {
+export default function ReedsProjects({ desktopPadding, mobilePadding }) {
     const projectsList = [
         {
             id: 1,
@@ -44,14 +46,32 @@ export default function ReedsProjects() {
     ]
 
     return (
-        <div className='reeds-projects-section'>
+        <AnimatedContent
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={1.5}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0}
+        >
+        <div 
+            className='reeds-projects-section'
+            style={{
+                '--d-pad': desktopPadding,
+                '--m-pad': mobilePadding
+            }}
+        >
 
 
 
             <div className="reeds-projects-bottom-section">
                 {
                     projectsList.map((project) => (
-                        <div className="reeds-project-card" key={project.id}>
+                        <Link href={`/projects/${project.location}`} className="reeds-project-card" key={project.id} style={{ textDecoration: 'none' }}>
                             {/* Top Tags */}
                             <div className="reeds-project-card-tags">
                                 <span className="reeds-project-card-tag">
@@ -101,23 +121,26 @@ export default function ReedsProjects() {
                                     />
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))
                 }
             </div>
 
             {/* Centered View All Button */}
             <div className="reeds-projects-view-all-wrapper">
-                <PillButton 
-                    text="View All"
-                    bg="#0b6b3b"
-                    color="#ffffff"
-                    arrowBg="#ffffff"
-                    arrowColor="#0b6b3b"
-                    hoverFillColor="#ffffffff"
-                    hoverTextColor="#000000ff"
-                />
+                <Link href="/projects" style={{ textDecoration: 'none' }}>
+                    <PillButton 
+                        text="View All"
+                        bg="#0b6b3b"
+                        color="#ffffff"
+                        arrowBg="#ffffff"
+                        arrowColor="#0b6b3b"
+                        hoverFillColor="#ffffffff"
+                        hoverTextColor="#000000ff"
+                    />
+                </Link>
             </div>
         </div>
+        </AnimatedContent>
     )
 }

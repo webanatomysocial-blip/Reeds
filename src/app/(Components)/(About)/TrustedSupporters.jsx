@@ -6,6 +6,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { GrPrevious, GrNext } from 'react-icons/gr';
 import 'swiper/css';
 import '@/app/(Css)/(About)/TrustedSupporters.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 
 const DEFAULT_MEMBERS = [
@@ -62,7 +63,19 @@ export default function TrustedSupporters({
         '--m-pad': mobilePadding
       }}
     >
-      <div className="trusted-supporters-container">
+      <AnimatedContent
+        className="trusted-supporters-container"
+        distance={50}
+        direction="vertical"
+        reverse={false}
+        duration={1.5}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0}
+      >
 
         {/* Header: title on left, arrows on right (desktop only) */}
         <div className="trusted-supporters-header">
@@ -123,7 +136,7 @@ export default function TrustedSupporters({
           </button>
         </div>
 
-      </div>
+      </AnimatedContent>
     </section>
   );
 }

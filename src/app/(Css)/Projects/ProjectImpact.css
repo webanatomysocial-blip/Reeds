@@ -1,0 +1,121 @@
+.project-impact-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.project-impact-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  /* Dark linear gradient to match InnerBanner */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 1;
+}
+
+.project-impact-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.project-impact-card-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Use drop-shadow to outline the combined shape */
+  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.1));
+}
+
+.project-impact-card-tab {
+  width: 65%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 24px 0 0 0;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+  margin-bottom: -1px; /* Overlap to prevent seam */
+  position: relative;
+  z-index: 2;
+}
+
+.project-impact-card-main {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0 24px 24px 24px;
+  padding: 30px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.project-impact-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.project-impact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-impact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-impact-icon {
+  color: #0b6b3b;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.project-impact-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .project-impact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-impact-section {
+    padding: 60px 20px;
+  }
+  
+  .project-impact-card-main {
+    padding: 20px 20px 30px 20px;
+  }
+  
+  .project-impact-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}

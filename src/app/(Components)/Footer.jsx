@@ -12,17 +12,17 @@ const Footer = () => {
           <h4 className="footer-heading">Navigation</h4>
           <ul className="footer-links">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="#">About</Link></li>
-            <li><Link href="#">Gallery</Link></li>
-            <li><Link href="#">Programs</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/gallery">Gallery</Link></li>
+            <li><Link href="/what-we-do">Programs</Link></li>
           </ul>
         </div>
         
         <div className="footer-col">
           <h4 className="footer-heading">Other Links</h4>
           <ul className="footer-links">
-            <li><Link href="#">Blogs</Link></li>
-            <li><Link href="#">Contact Us</Link></li>
+            <li><Link href="/blogs">Blogs</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
             <li><Link href="#">Error 404</Link></li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <Link href="#" style={{textDecoration: 'none'}}>
+          <Link href="/contact" style={{textDecoration: 'none'}}>
             <PillButton 
               text="Contact us"
               bg="#fca311"

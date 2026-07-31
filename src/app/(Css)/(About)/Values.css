@@ -174,11 +174,17 @@
   }
 
   .reeds-values-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 36px;
   }
 
-  
+  .reeds-values-left{
+    width: 100%;
+  }
+
+  .reeds-values-right{
+    width: 100%;
+  }
 
   .reeds-values-title {
     font-size: 28px;

@@ -6,6 +6,9 @@ import LogoCarousel from "../(Components)/LogoCarousel";
 import Headings from "../(Components)/Headings";
 import VIDEOFRAME from "../(Components)/VideoFrame";
 import Transperancy from "../(Components)/(Home)/Transperancy";
+import OurJourney from "../(Components)/Gallery/DoubleCarousel";
+import Loop from "../(Components)/(Home)/Loop";
+
 const Gallery= () => {   
   return (
     <>
@@ -18,6 +21,13 @@ const Gallery= () => {
       <LogoCarousel
       title={"Our Trusted Partners"}
       />
+       <Headings
+        eyebrowText="New Gallery"
+        eyebrowColor={"#095e3fff"}
+        headingText="Our Journey"
+        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+      />
+      <OurJourney/>
         <Headings
         eyebrowText="Electronic Media Presence"
         eyebrowColor={"#095e3fff"}
@@ -60,13 +70,14 @@ const Gallery= () => {
         ]}
         columns={3}
         desktopPadding="0px 50px 100px 50px"
-        mobilePadding="60px 20px"
+        mobilePadding="0px 20px 60px 20px"
       />
 
       <Transperancy/>
 
       <TickerTape />
       <CTA />
+      <Loop />
 
     </>
     

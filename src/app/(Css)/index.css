@@ -169,7 +169,7 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: var(--primary-color) !important;
+  /* background-color: var(--primary-color) !important; */
 }
 
 @media (max-width: 768px) {

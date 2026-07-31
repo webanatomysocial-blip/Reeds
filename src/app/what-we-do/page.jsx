@@ -7,6 +7,8 @@ import Headings from "../(Components)/Headings";
 import ActionProgram from "../(Components)/(Home)/ActionProgram";
 import Awards from "../(Components)/(Home)/Awards";
 import Locations from "../(Components)/WhatWeDo/Locations";
+import Loop from "../(Components)/(Home)/Loop";
+
 const WhatWeDo = () => {   
   return (
     <>
@@ -35,6 +37,7 @@ Makes Difference"
       <Awards />
       <TickerTape />
       <CTA />
+      <Loop />
 
     </>
     

@@ -17,6 +17,12 @@
     align-items: flex-start;
 }
 
+.about-reeds-desc {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
 .about-cert {
     display: flex;
     align-items: center;
@@ -101,6 +107,10 @@
 @media (max-width: 768px) {
     .about-reeds-section {
         padding: 20px 20px 20px 20px;
+    }
+
+    .about-reeds-desc {
+        margin-bottom: 10px;
     }
 
     .about-right {

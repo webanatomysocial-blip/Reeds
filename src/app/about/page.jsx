@@ -7,7 +7,7 @@ import ReedsValues from "../(Components)/(About)/Values"
 import TrustedSupporters from "../(Components)/(About)/TrustedSupporters";
 import TickerTape from "../(Components)/(Home)/TickerTape";
 import CTA from "../(Components)/CTA";
-
+import Loop from "../(Components)/(Home)/Loop";
 const About = () => {   
   return (
     <>
@@ -41,6 +41,7 @@ const About = () => {
       />
       <TickerTape />
       <CTA />
+      <Loop />
 
     </>
     

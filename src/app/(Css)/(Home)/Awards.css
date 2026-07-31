@@ -28,11 +28,11 @@
 }
 
 .award-image-container {
-  width: 100%;
+  width: 70%;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
   overflow: hidden; /* Ensures scaling image stays within borders */
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto; /* Centers the image and preserves bottom margin */
 }
 
 .award-image {
@@ -43,10 +43,7 @@
   transition: transform 0.5s ease; /* Smooth slow transition for image */
 }
 
-/* On card hover, scale the inner image */
-.award-card:hover .award-image {
-  transform: scale(1.08); 
-}
+
 
 .award-content {
   padding-top: 20px;

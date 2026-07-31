@@ -1,9 +1,22 @@
 import React from 'react'
 import '@/app/(Css)/WhatWeDo/Locations.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 
 export default function Locations() {
     return (
+        <AnimatedContent
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={1.5}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0}
+        >
         <section className="reeds-locations-section">
             <div className="reeds-locations-container">
                 {/* Left Column: Text Content */}
@@ -25,5 +38,6 @@ export default function Locations() {
                 </div>
             </div>
         </section>
+        </AnimatedContent>
     )
 }

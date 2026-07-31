@@ -1,0 +1,124 @@
+/* OurJourney.css */
+.reeds-journey-section {
+    background-color: #ffffff;
+    padding: 0px 50px 0px 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.reeds-journey-header {
+    margin-bottom: 40px;
+}
+
+.reeds-journey-tag {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b6b3b;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.reeds-journey-title {
+    font-size: 44px;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.reeds-journey-carousels {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Gradient fade overlays on left and right sides of the carousel */
+.reeds-journey-carousels::before,
+.reeds-journey-carousels::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 140px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.reeds-journey-carousels::before {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.reeds-journey-carousels::after {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.reeds-journey-row {
+    width: 100%;
+}
+
+.reeds-journey-swiper {
+    width: 100%;
+    overflow: visible !important;
+}
+
+/* Linear continuous marquee movement for Swiper wrapper */
+.reeds-journey-swiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.reeds-journey-slide {
+    width: 310px !important;
+    height: 210px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #f3f4f6;
+    flex-shrink: 0;
+}
+
+.reeds-journey-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.reeds-journey-slide:hover img {
+    transform: scale(1.07);
+}
+
+/* ── Tablet & Mobile Responsiveness ── */
+@media (max-width: 768px) {
+    .reeds-journey-section {
+        padding: 0px 20px;
+    }
+
+    .reeds-journey-title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .reeds-journey-slide {
+        width: 250px !important;
+        height: 170px;
+        border-radius: 16px;
+    }
+
+    .reeds-journey-carousels {
+        gap: 16px;
+    }
+
+    .reeds-journey-carousels::before,
+    .reeds-journey-carousels::after {
+        width: 60px;
+    }
+}

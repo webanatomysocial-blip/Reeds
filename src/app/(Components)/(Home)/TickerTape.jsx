@@ -1,15 +1,22 @@
 "use client";
 import React, { useRef, useEffect, useState } from 'react';
 import { FiSun } from 'react-icons/fi';
+import Link from 'next/link';
 import "@/app/(Css)/(Home)/TickerTape.css";
 
-const TickerTape = () => {
+const defaultItems = Array.from({ length: 10 }, () => ({
+    logo: "CIRDAP-REEDS Winners Announcement",
+    icon: <FiSun className="ticker-icon" />,
+    link: ""
+}));
+
+const TickerTape = ({ items = defaultItems }) => {
     const trackRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
     
     // Normal speed and slowed down speed (pixels per frame)
-    const normalSpeed = 1;
-    const hoverSpeed = 0.3;
+    const normalSpeed = .5;
+    const hoverSpeed = 0.1;
     
     // Use refs for animation state to prevent re-renders
     const posRef = useRef(0);
@@ -39,9 +46,6 @@ const TickerTape = () => {
         return () => cancelAnimationFrame(reqRef.current);
     }, [isHovered]);
 
-    // Create 10 items per group to ensure it overflows the screen width
-    const items = Array(10).fill(0);
-
     return (
         <section 
             className="ticker-section"
@@ -50,18 +54,22 @@ const TickerTape = () => {
         >
             <div className="ticker-track" ref={trackRef}>
                 <div className="ticker-group">
-                    {items.map((_, i) => (
+                    {items.map((item, i) => (
                         <div className="ticker-item" key={`a-${i}`}>
-                            <span className="ticker-text">CIRDAP-REEDS Winners Announcement</span>
-                            <FiSun className="ticker-icon" />
+                            <Link href={item.link || "#"} className="ticker-text">
+                                {item.logo}
+                            </Link>
+                            {item.icon}
                         </div>
                     ))}
                 </div>
                 <div className="ticker-group">
-                    {items.map((_, i) => (
+                    {items.map((item, i) => (
                         <div className="ticker-item" key={`b-${i}`}>
-                            <span className="ticker-text">CIRDAP-REEDS Winners Announcement</span>
-                            <FiSun className="ticker-icon" />
+                            <Link href={item.link || "#"} className="ticker-text">
+                                {item.logo}
+                            </Link>
+                            {item.icon}
                         </div>
                     ))}
                 </div>

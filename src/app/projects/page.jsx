@@ -4,6 +4,8 @@ import CTA from "../(Components)/CTA";
 import ReedsProjects from "../(Components)/(Projects)/ProjectList";
 import TickerTape from "../(Components)/(Home)/TickerTape";
 import Headings from "../(Components)/Headings";
+import Loop from "../(Components)/(Home)/Loop";
+
 const Projects = () => {   
   return (
     <>
@@ -22,6 +24,7 @@ const Projects = () => {
   <ReedsProjects/>
       <TickerTape />
       <CTA />
+      <Loop />
 
     </>
     

@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import '@/css/reedsContact/ReedsContact.css';
+import '@/app/(Css)/Contact/ContactForm.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 export default function ReedsContact() {
   const [formData, setFormData] = useState({
@@ -26,8 +27,19 @@ export default function ReedsContact() {
 
   return (
     <section className="reeds-contact-section" id="contact">
-      <div className="reeds-contact-container">
-        
+        <AnimatedContent
+          className="reeds-contact-container"
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={1.5}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0}
+        >
         {/* Left Column: Image Placeholder & Contact Details */}
         <div className="reeds-contact-left">
           
@@ -124,7 +136,7 @@ export default function ReedsContact() {
                     id="email"
                     name="email"
                     required
-                    placeholder="Careon@framer.com"
+                    placeholder="work@gmail.com"
                     value={formData.email}
                     onChange={handleChange}
                   />
@@ -162,7 +174,7 @@ export default function ReedsContact() {
           </div>
         </div>
 
-      </div>
+      </AnimatedContent>
     </section>
   );
 }

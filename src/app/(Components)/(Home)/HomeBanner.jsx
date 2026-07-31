@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import "@/app/(Css)/(Home)/HomeBanner.css";
 import PillButton from '@/app/(Components)/PillButton';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const slides = [
   {
@@ -34,6 +35,18 @@ const HomeBanner = () => {
     const activeSlide = slides[currentSlide];
 
     return (
+        <AnimatedContent
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={1.5}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0}
+        >
         <div className="home-banner">
             <div className="banner-overlay"></div>
             
@@ -85,8 +98,8 @@ const HomeBanner = () => {
                                     ))}
                                 </div>
                                 <div className="slide-text-wrapper">
-                                    <h3>{activeSlide.title}</h3>
-                                    <p>{activeSlide.subtitle}</p>
+                                    <h3 className='sub-head-text-white' style={{fontWeight:"lighter"}}>{activeSlide.title}</h3>
+                                    <p className='para-text-white'>{activeSlide.subtitle}</p>
                                 </div>
                             </div>
                             <div className="slide-image-right">
@@ -98,6 +111,7 @@ const HomeBanner = () => {
                 </div>
             </div>
         </div>
+        </AnimatedContent>
     )
 }
 

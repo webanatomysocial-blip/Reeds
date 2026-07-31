@@ -88,7 +88,7 @@ const Header = () => {
               <Link href="/projects" className="nav-item">Projects</Link>
             </li>
             <li className={`nav-item-dropdown ${activeDropdown === 'whatwedo' ? 'mobile-dropdown-active' : ''}`}>
-              <Link href="/what-we-do" className="nav-item" onClick={(e) => handleDropdownClick(e, 'whatwedo')}>
+              <Link href="/what-we-do" className="nav-item" onClick={(e) => handleDropdownClick(e, 'whatwedo', '/what-we-do')}>
                 What We Do
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </Link>
@@ -98,7 +98,7 @@ const Header = () => {
               </div>
             </li>
             <li className={`nav-item-dropdown ${activeDropdown === 'gallery' ? 'mobile-dropdown-active' : ''}`}>
-              <Link href="/gallery" className="nav-item" onClick={(e) => handleDropdownClick(e, 'gallery')}>
+              <Link href="/gallery" className="nav-item" onClick={(e) => handleDropdownClick(e, 'gallery', '/gallery')}>
                 Gallery
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </Link>
@@ -108,7 +108,7 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <Link href="/contact" className="nav-item">Contact</Link>
+              <Link href="/contact" className="nav-item-2">Contact</Link>
             </li>
           </ul>
         </nav>

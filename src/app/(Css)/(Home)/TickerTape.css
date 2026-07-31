@@ -32,6 +32,16 @@
     letter-spacing: 0.5px;
 }
 
+a.ticker-text {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a.ticker-text:hover {
+    color: var(--Yellow-color, #f4a522);
+}
+
 .ticker-icon {
     color: var(--Yellow-color, #f4a522);
     font-size: 24px;

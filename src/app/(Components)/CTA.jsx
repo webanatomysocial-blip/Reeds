@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import '@/app/(Css)/CTA.css';
 import PillButton from './PillButton';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const CTA = ({
   backImg = '/assets/Home_Assets/HomeBannner.avif', // Assuming HomeBanner is used if no image passed
@@ -28,6 +29,18 @@ const CTA = ({
   }, []);
 
   return (
+    <AnimatedContent
+      distance={50}
+      direction="vertical"
+      reverse={false}
+      duration={1.5}
+      ease="power3.out"
+      initialOpacity={0}
+      animateOpacity
+      scale={1}
+      threshold={0.1}
+      delay={0}
+    >
     <section className="cta-section">
       <div 
         className="cta-background" 
@@ -57,6 +70,7 @@ const CTA = ({
         </div>
       </div>
     </section>
+    </AnimatedContent>
   );
 };
 

@@ -2,11 +2,24 @@
 
 import React from 'react';
 import '@/app/(Css)/(About)/ReedsVisionMission.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 export default function ReedsVisionMission() {
   return (
-    <section className="reeds-vm-section">
-      <div className="reeds-vm-container">
+    <section className="reeds-vm-section" id='vismissection'>
+      <AnimatedContent
+        className="reeds-vm-container"
+        distance={50}
+        direction="vertical"
+        reverse={false}
+        duration={1.5}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0}
+      >
         <div className="reeds-vm-grid">
           
           {/* Column 1: Image Placeholder */}
@@ -73,7 +86,7 @@ export default function ReedsVisionMission() {
           </div>
 
         </div>
-      </div>
+      </AnimatedContent>
     </section>
   );
 }

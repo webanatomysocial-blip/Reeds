@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import '@/app/(Css)/(Home)/DummyBlog.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const blogData = [
   {
@@ -22,6 +23,18 @@ const blogData = [
 
 const DummyBlog = () => {
   return (
+    <AnimatedContent
+      distance={50}
+      direction="vertical"
+      reverse={false}
+      duration={1.5}
+      ease="power3.out"
+      initialOpacity={0}
+      animateOpacity
+      scale={1}
+      threshold={0.1}
+      delay={0}
+    >
     <section className="dummy-blog-section">
       <div className="dummy-blog-grid">
         {blogData.map((blog, index) => (
@@ -40,6 +53,7 @@ const DummyBlog = () => {
         ))}
       </div>
     </section>
+    </AnimatedContent>
   );
 };
 

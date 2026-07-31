@@ -2,7 +2,11 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
- output: "export",
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     // Prevent Turbopack from splitting global CSS (e.g. index.css) into
     // partial per-route chunks — with the default `true`, some global

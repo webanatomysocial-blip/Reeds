@@ -171,4 +171,11 @@
   .loop-marquee-container{
     margin-bottom:45px;
   }
+
+.loop-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  padding: 0 0px;
+}
 }

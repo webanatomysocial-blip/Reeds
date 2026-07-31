@@ -1,8 +1,8 @@
 "use client";
-import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import '@/app/(Css)/(Home)/ImpactCards.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const impactData = [
   {
@@ -78,11 +78,24 @@ const ImpactCard = ({ data }) => {
 
 const ImpactCards = () => {
   return (
+    <AnimatedContent
+      distance={50}
+      direction="vertical"
+      reverse={false}
+      duration={1.5}
+      ease="power3.out"
+      initialOpacity={0}
+      animateOpacity
+      scale={1}
+      threshold={0.1}
+      delay={0}
+    >
     <section className="impact-cards-container">
       {impactData.map((data) => (
         <ImpactCard key={data.id} data={data} />
       ))}
     </section>
+    </AnimatedContent>
   );
 };
 

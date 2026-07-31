@@ -1,7 +1,12 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Transperancy.css';
 import Link from 'next/link';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Array for transparency documents
 const transparencyData = [
@@ -27,11 +32,43 @@ const transparencyData = [
 ];
 
 const Transperancy = () => {
+  const sectionRef = useRef(null);
+  const bgRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(bgRef.current, 
+      { scale: 1 }, 
+      { 
+        scale: 1.2, 
+        ease: "none",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true
+        }
+      }
+    );
+  }, []);
+
   return (
-    <section className="transparency-section">
+   
+    <section className="transparency-section" ref={sectionRef}>
+      <div className="transparency-bg" ref={bgRef}></div>
       <div className="transparency-overlay"></div>
-      <div className="transparency-container">
-        
+      <AnimatedContent
+        className="transparency-container"
+        distance={50}
+        direction="vertical"
+        reverse={false}
+        duration={1.5}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0}
+      >
         <div className="transparency-header">
           <span className="eyebrow-text-white transparency-eyebrow">TRANSPARENCY CENTER</span>
           <h2 className="head-text-white" style={{paddingBottom:"20px"}}>Everything, on the record.</h2>
@@ -70,8 +107,7 @@ const Transperancy = () => {
             </div>
           ))}
         </div>
-
-      </div>
+      </AnimatedContent>
     </section>
   );
 };

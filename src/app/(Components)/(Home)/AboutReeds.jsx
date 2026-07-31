@@ -3,9 +3,22 @@ import React from 'react';
 import { FiDownload } from 'react-icons/fi';
 import PillButton from '../PillButton';
 import '@/app/(Css)/(Home)/AboutReeds.css';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const AboutReeds = () => {
     return (
+        <AnimatedContent
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={1.5}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0}
+        >
         <section className="about-reeds-section">
             <div className="about-reeds-container">
                 <div className="about-left">
@@ -24,7 +37,7 @@ const AboutReeds = () => {
                     <h2 className="head-text" style={{marginTop: '24px'}}>
                         Building sustainable rural communities village by village.
                     </h2>
-                    <p className="sub-para-text" style={{marginTop: '24px', marginBottom: '40px', maxWidth: '500px'}}>
+                    <p className="sub-para-text about-reeds-desc">
                         We partner with panchayats, government departments, corporates and foundations to deliver programs that last generations, not news cycles.
                     </p>
                     <PillButton 
@@ -53,6 +66,7 @@ const AboutReeds = () => {
                 </div>
             </div>
         </section>
+        </AnimatedContent>
     );
 };
 

@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(About)/ReedsImpact.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -69,7 +70,19 @@ export default function ReedsImpact() {
 
   return (
     <section className="reeds-impact-section" ref={sectionRef}>
-      <div className="reeds-impact-container">
+      <AnimatedContent
+        className="reeds-impact-container"
+        distance={50}
+        direction="vertical"
+        reverse={false}
+        duration={1.5}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0}
+      >
         
         {/* Left Column: Impact Content & Statistics */}
         <div className="reeds-impact-content">
@@ -149,7 +162,7 @@ export default function ReedsImpact() {
           </div>
         </div>
 
-      </div>
+      </AnimatedContent>
     </section>
   );
 }

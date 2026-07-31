@@ -3,6 +3,7 @@
 import React from 'react';
 import '@/app/(Css)/(About)/Values.css';
 import PillButton from '../PillButton';
+import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 
 const VALUES = [
@@ -73,7 +74,19 @@ const AVATARS = [
 export default function ReedsValues() {
   return (
     <section className="reeds-values-section">
-      <div className="reeds-values-container">
+      <AnimatedContent
+        className="reeds-values-container"
+        distance={50}
+        direction="vertical"
+        reverse={false}
+        duration={1.5}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0}
+      >
 
         {/* Left Column */}
         <div className="reeds-values-left">
@@ -132,7 +145,7 @@ export default function ReedsValues() {
           ))}
         </div>
 
-      </div>
+      </AnimatedContent>
     </section>
   );
 }
