@@ -53,10 +53,10 @@ const AboutReeds = () => {
                 
                 <div className="about-right">
                     <div className="about-image-card">
-                        <div className="image-bg" style={{backgroundImage: "url('/assets/Home_Assets/HomeBannner.avif')"}}></div>
+                        <div className="image-bg" style={{backgroundImage: "url('/assets/About_Assets/about3.png')"}}></div>
                     </div>
                     <div className="about-image-card img-wid">
-                        <div className="image-bg " style={{backgroundImage: "url('/assets/Home_Assets/HomeBannner.avif')"}}></div>
+                        <div className="image-bg " style={{backgroundImage: "url('/assets/About_Assets/about2.png')"}}></div>
                         <div className="about-image-overlay">
                             <p className="quote-text">
                                 "They didn't just help me, they gave me my life back."

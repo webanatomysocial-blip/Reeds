@@ -11,7 +11,8 @@ const impactData = [
     suffix: "+",
     title: "Lives Improved",
     desc: "Empowering rural families through education, healthcare, livelihoods, water, and sustainable development initiatives.",
-    span: 1
+    span: 1,
+    image: "/assets/Home_Assets/card1.png"
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const impactData = [
     suffix: "+",
     title: "Villages Reached",
     desc: "Creating self-reliant communities through integrated rural development programs.",
-    span: 1
+    span: 1,
+    image: "/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.jpeg"
   },
   {
     id: 3,
@@ -27,7 +29,9 @@ const impactData = [
     suffix: "+",
     title: "Children Educated",
     desc: "Providing quality education, learning opportunities, and brighter futures for children communities.",
-    span: 1
+    span: 1,
+    image: "/assets/Gallery_Assets/8a519ff4-1299-4562-ae2b-b4b3e25960c2-scaled.jpg.jpeg"
+    
   },
   {
     id: 4,
@@ -35,7 +39,8 @@ const impactData = [
     suffix: "+",
     title: "Water Projects",
     desc: "Delivering safe drinking water, sanitation facilities, and healthier living conditions for rural households.",
-    span: 1
+    span: 1,
+    image: "/assets/Home_Assets/card4.png"
   },
   {
     id: 5,
@@ -43,7 +48,8 @@ const impactData = [
     suffix: "+",
     title: "Schools Supported",
     desc: "Strengthening schools with better infrastructure, learning resources, sanitation, and programs.",
-    span: 2
+    span: 2,
+    image: "/assets/Home_Assets/card5.png"
   }
 ];
 
@@ -54,7 +60,11 @@ const ImpactCard = ({ data }) => {
   });
 
   return (
-    <div className={`impact-card ${data.span === 2 ? 'span-2' : ''}`} ref={ref}>
+    <div
+      className={`impact-card ${data.span === 2 ? 'span-2' : ''}`}
+      style={{ backgroundImage: `url(${data.image})` }}
+      ref={ref}
+    >
       <div className="impact-card-overlay"></div>
       <div className="impact-card-content">
         <div className="impact-number">

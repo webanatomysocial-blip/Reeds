@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { IoCheckmark } from 'react-icons/io5';
 import '@/app/(Css)/Projects/ProjectImpact.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
@@ -14,7 +15,8 @@ const ProjectImpact = ({
   impactText = "Improved access to clean water and better hygiene practices among 37 students and 3 faculty members."
 }) => {
   return (
-    <section className="project-impact-section" style={{ backgroundImage: 'url(/assets/Home_Assets/HomeBannner.avif)' }}>
+    <section className="project-impact-section" style={{ position: 'relative' }}>
+      <Image src="/assets/Gallery_Assets/DSC_6345-3.jpg.jpeg" alt="Project Impact Background" fill style={{ objectFit: 'cover', zIndex: -1 }} priority />
       {/* Light overlay to match the bright striped background in the design */}
       <div className="project-impact-overlay"></div>
       

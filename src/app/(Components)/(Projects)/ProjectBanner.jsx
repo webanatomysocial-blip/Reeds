@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import CountUp from 'react-countup';
+import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { IoLocationOutline } from 'react-icons/io5';
 import '@/app/(Css)/Projects/ProjectBanner.css';
@@ -10,7 +11,8 @@ const ProjectBanner = ({ title, description, visits = 3, students = 37, faculty 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section className="project-banner-section" style={{ backgroundImage: 'url(/assets/Home_Assets/HomeBannner.avif)' }}>
+    <section className="project-banner-section" style={{ position: 'relative' }}>
+      <Image src="/assets/Gallery_Assets/Site-visits.jpg.jpeg" alt="Project Banner Background" fill style={{ objectFit: 'cover', zIndex: -1 }} priority />
       <div className="project-banner-overlay"></div>
       
       <AnimatedContent
@@ -59,7 +61,7 @@ const ProjectBanner = ({ title, description, visits = 3, students = 37, faculty 
           
           <div className="project-banner-stat">
             <h2 className="project-banner-stat-value">
-              {inView ? <CountUp end={completed} duration={2.5} separator="," /> : '0'}+
+              {inView ? <CountUp end={completed} duration={2.5} separator="," /> : '0'}%
             </h2>
             <span className="project-banner-stat-label">Projects Completed</span>
           </div>

@@ -16,7 +16,7 @@ export default function BlogsPage() {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/banner.avif"
+        bgImage="/assets/Gallery_Assets/REEDS-Secretary-meeting-with-Shri-Pranab-Kumar-Mukherjee-.jpeg"
         eyebrowText="News & Blog"
         title="Stories from the Field"
         desc="Updates, reflections, and impact stories from the REEDS community."

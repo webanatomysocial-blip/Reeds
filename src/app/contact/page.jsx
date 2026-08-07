@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <InnerBanner 
-        bgImage="/assets/banner.avif"
+        bgImage="/assets/Gallery_Assets/Team-interaction-with-Villagers.jpg.jpeg"
         eyebrowText="Contact"
         title="Reach Out. 
 We’re Here Always"

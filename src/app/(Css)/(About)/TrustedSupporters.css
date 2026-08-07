@@ -113,6 +113,10 @@
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.04);
+  background-color: #e0e0e0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
 }

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Transperancy.css';
+import Image from 'next/image';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -13,22 +14,16 @@ const transparencyData = [
   {
     title: "Capability Statement",
     date: "2025-2026",
-    size: "4.2MB",
+    size: "691KB",
     // Existing google pdf link or placeholder
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" 
+    link: "https://reeds.webanatomytech.com/Reports/REEDS-Capability-Statement.pdf" 
   },
   {
     title: "Innovation Challenge 2026",
     date: "Feb-2026",
-    size: "4.2MB",
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    size: "5MB",
+    link: "https://reeds.webanatomytech.com/Reports/CIRDAP-International-Rural-Development-Innovation-Challenge-2026.pdf"
   },
-  {
-    title: "Innovation Challenge 2026",
-    date: "Feb-2026",
-    size: "4.2MB",
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-  }
 ];
 
 const Transperancy = () => {
@@ -54,7 +49,9 @@ const Transperancy = () => {
   return (
    
     <section className="transparency-section" ref={sectionRef}>
-      <div className="transparency-bg" ref={bgRef}></div>
+      <div className="transparency-bg" ref={bgRef}>
+        <Image src="/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg" alt="Transparency Background" fill style={{ objectFit: 'cover' }} priority />
+      </div>
       <div className="transparency-overlay"></div>
       <AnimatedContent
         className="transparency-container"

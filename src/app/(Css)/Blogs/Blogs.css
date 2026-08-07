@@ -1,6 +1,6 @@
 .blogs-list-section {
   width: 100%;
-  padding: 60px 50px 100px 50px;
+  padding: var(--d-pad, 60px 50px 100px 50px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -52,6 +52,7 @@
   flex-direction: column;
   gap: 12px;
   flex-grow: 1;
+  justify-content: space-between;
 }
 
 .blog-title {
@@ -69,19 +70,71 @@
   margin: 0;
   font-weight: 300;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .blog-post-section {
   width: 100%;
-  padding: 60px 50px 100px 50px;
+  padding: 100px 50px 100px 50px;
   display: flex;
   justify-content: center;
   background-color: white;
 }
 
+.blog-post-layout {
+  display: flex;
+  gap: 90px;
+  width: 100%;
+  max-width: 1100px;
+  align-items: flex-start;
+}
+
+.blog-post-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: #f7f6f3;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.blog-post-sidebar h3 {
+  font-size: 1.1rem;
+  margin: 0 0 16px 0;
+  color: #1a1a1a;
+}
+
+.blog-post-sidebar a {
+  display: block;
+  font-size: 0.95rem;
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.4;
+}
+
+.blog-post-sidebar a:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.blog-post-sidebar a:hover {
+  color: #000;
+}
+
+.blog-post-main {
+  flex: 1;
+  min-width: 0;
+}
+
 .blog-post-content {
   width: 100%;
-  max-width: 800px;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #333;
@@ -91,6 +144,28 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4 {
+  margin: 0px 0px 15px 0px;
+  line-height: 1.3;
+}
+
+.blog-post-content p {
+  margin: 0 0 1em 0;
+}
+
+@media (max-width: 800px) {
+  .blog-post-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog-post-sidebar {
+    width: 100%;
+  }
 }
 
 /* Responsive */
@@ -106,7 +181,7 @@
   }
   .blogs-list-section,
   .blog-post-section {
-    padding: 40px 20px 60px 20px;
+    padding: var(--m-pad, 60px 20px 60px 20px);
   }
   .blog-image-container {
     aspect-ratio: 6 / 3;

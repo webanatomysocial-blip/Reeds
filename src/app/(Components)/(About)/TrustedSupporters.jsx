@@ -99,7 +99,7 @@ export default function TrustedSupporters({
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={{ prevEl: prevSel, nextEl: nextSel }}
-          autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
           slidesPerView={4}
           spaceBetween={24}
           loop={true}
@@ -113,11 +113,14 @@ export default function TrustedSupporters({
         >
           {members.map((member) => (
             <SwiperSlide key={member.name}>
-              <div className="member-card">
+              <div
+                className="member-card"
+                style={member.image ? { backgroundImage: `url(${member.image})` } : undefined}
+              >
                 <div className="member-info-box">
                   <div className="member-info-default">
                     <h3 className="member-name">{member.name}</h3>
-                    <p className="member-role">{member.role}</p>
+                    {member.role && <p className="member-role">{member.role}</p>}
                   </div>
                   <p className="member-hover-desc">{member.hoverText}</p>
                 </div>

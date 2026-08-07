@@ -1,16 +1,16 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import '@/app/(Css)/InnerBanner.css';
 import FadeContent from '@/app/(Components)/FadeContent';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
-const InnerBanner = ({ bgImage = "/assets/Home_Assets/HomeBannner.avif", eyebrowText, title, desc }) => {
+const InnerBanner = ({ bgImage = "/assets/About_Assets/aboutBanner.png", eyebrowText, title, meta, desc, children }) => {
     return (
         <section className="inner-banner">
-            <div 
-                className="inner-banner-bg" 
-                style={{ backgroundImage: `url(${bgImage})` }}
-            ></div>
+            <div className="inner-banner-bg" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>
+                <Image src={bgImage} alt="Banner Background" fill style={{ objectFit: 'cover' }} priority />
+            </div>
             <div className="inner-banner-overlay"></div>
             
             <div className="inner-banner-content">
@@ -26,6 +26,11 @@ const InnerBanner = ({ bgImage = "/assets/Home_Assets/HomeBannner.avif", eyebrow
                                 {title}
                             </h1>
                         </FadeContent>
+                    )}
+                    {meta && (
+                        <div className="inner-banner-meta">
+                            {meta}
+                        </div>
                     )}
                     {desc && (
                         <AnimatedContent
@@ -44,6 +49,11 @@ const InnerBanner = ({ bgImage = "/assets/Home_Assets/HomeBannner.avif", eyebrow
                                 {desc}
                             </p>
                         </AnimatedContent>
+                    )}
+                    {children && (
+                        <div className="inner-banner-actions">
+                            {children}
+                        </div>
                     )}
                 </div>
                 

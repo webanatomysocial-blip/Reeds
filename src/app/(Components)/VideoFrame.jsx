@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import '../(Css)/VideoFrame.css';
 
@@ -63,7 +64,7 @@ const VideoItem = ({ iframe, vidtitle, viddesc }) => {
     <div className="videoframe-item">
       <div className="videoframe-container">
         {thumbnailUrl ? (
-          <img src={thumbnailUrl} alt={vidtitle || "Video thumbnail"} className="videoframe-thumbnail-preview" />
+          <Image src={thumbnailUrl} alt={vidtitle || "Video thumbnail"} className="videoframe-thumbnail-preview" fill sizes="(max-width: 768px) 100vw, 33vw" />
         ) : (
           <div 
             className="videoframe-iframe-preview"

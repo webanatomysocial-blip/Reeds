@@ -40,7 +40,9 @@
   height: 100%;
   flex: 1;
   min-height: 480px;
- 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 28px;
   display: flex;
   flex-direction: column;

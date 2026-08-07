@@ -3,14 +3,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Loop.css';
 
 const loopImages = [
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif",
-  "/assets/Home_Assets/HomeBannner.avif"
+  "/assets/Gallery_Assets/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.jpeg",
+  "/assets/Gallery_Assets/Felicitation-program-scaled.jpg.jpeg",
+  "/assets/Gallery_Assets/Creating-Awareness.jpg.jpeg",
+  "/assets/Gallery_Assets/Self-Help-Group.jpg.jpeg",
+  "/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg",
+  "/assets/Gallery_Assets/DSC_6345-3.jpg.jpeg",
+  "/assets/Gallery_Assets/DSC_6354.jpg.jpeg",
+  "/assets/Gallery_Assets/DSC_6492.jpg.jpeg",
+  "/assets/Gallery_Assets/REEDS-Secretary-meeting-with-Shri-Pranab-Kumar-Mukherjee-.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-10.32.11-PM.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.09-PM.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.13-PM.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.14-PM.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.15-PM.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.16-PM.jpeg",
+  "/assets/Gallery_Assets/Site-visits-1.jpg.jpeg",
+  "/assets/Gallery_Assets/capital-information.jpg.jpeg",
+  "/assets/Gallery_Assets/Team-interaction-with-Villagers.jpg.jpeg",
+  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-9.47.08-PM.jpeg",
+  "/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.jpeg"
 ];
 
 const duplicatedImages = [...loopImages, ...loopImages];

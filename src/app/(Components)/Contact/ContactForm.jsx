@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import '@/app/(Css)/Contact/ContactForm.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
@@ -45,7 +46,13 @@ export default function ReedsContact() {
           
           {/* Image Placeholder */}
           <div className="reeds-contact-image-placeholder" role="img" aria-label="REEDS Office Placeholder">
-            {/* Replace this div or background-image with your real <img> tag */}
+            <Image 
+              src="/assets/Contact_Assets/contactimg.png" 
+              alt="REEDS Contact Office" 
+              width={800} 
+              height={600} 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            />
           </div>
 
           {/* Contact Details Cards */}

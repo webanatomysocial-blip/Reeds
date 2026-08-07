@@ -141,12 +141,20 @@ export default function ReedsImpact() {
             
             {/* Back Card Wrapper */}
             <div className="reeds-impact-card-wrapper card-back-wrap">
-              <div className="reeds-impact-card card-back" ref={cardBackRef}></div>
+              <div
+                className="reeds-impact-card card-back"
+                ref={cardBackRef}
+                style={{ backgroundImage: "url(/assets/About_Assets/whoweare.jpg)" }}
+              ></div>
             </div>
 
             {/* Front Card Wrapper */}
             <div className="reeds-impact-card-wrapper card-front-wrap">
-              <div className="reeds-impact-card card-front" ref={cardFrontRef}></div>
+              <div
+                className="reeds-impact-card card-front"
+                ref={cardFrontRef}
+                style={{ backgroundImage: "url(/assets/About_Assets/whoweare2.jpg)" }}
+              ></div>
             </div>
 
             {/* Translucent Green Heart Overlay Wrapper */}

@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -8,25 +9,43 @@ import '@/app/(Css)/Gallery/DoubleCarousel.css'
 
 export default function OurJourney() {
   const topRowImages = [
-    "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=format&fit=crop&q=80"
+    "/assets/Gallery_Assets/8a519ff4-1299-4562-ae2b-b4b3e25960c2-scaled.jpg.jpeg",
+    "/assets/Gallery_Assets/AGM-1-Sep-2025-e1760336457774.jpg.jpeg",
+    "/assets/Gallery_Assets/AGM-2-Sep-2025.jpg.jpeg",
+    "/assets/Gallery_Assets/Assesments-scaled.jpg.jpeg",
+    "/assets/Gallery_Assets/Creating-Awareness.jpg.jpeg",
+    "/assets/Gallery_Assets/Creating-WASH-awareness-among-school-children-1.jpg.jpeg",
+    "/assets/Gallery_Assets/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.jpeg",
+    "/assets/Gallery_Assets/DSC_6345-3.jpg.jpeg",
+    "/assets/Gallery_Assets/DSC_6354.jpg.jpeg",
+    "/assets/Gallery_Assets/DSC_6492.jpg.jpeg",
+    "/assets/Gallery_Assets/Felicitation-program-scaled.jpg.jpeg",
+    "/assets/Gallery_Assets/Focused-Group-Discussions.jpeg",
+    "/assets/Gallery_Assets/Hand-Wash-Awareness.jpg.jpeg",
+    "/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.jpeg",
+    "/assets/Gallery_Assets/REEDS-Secretary-meeting-with-Shri-Pranab-Kumar-Mukherjee-.jpeg",
+    "/assets/Gallery_Assets/School-Student-Participated-in-Painting-Competition-1.jpg.jpeg",
+    "/assets/Gallery_Assets/Self-Help-Group.jpg.jpeg"
   ];
 
   const bottomRowImages = [
-    "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&auto=format&fit=crop&q=80"
+    "/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg",
+    "/assets/Gallery_Assets/Site-visits-1.jpg.jpeg",
+    "/assets/Gallery_Assets/Studies-Andhra-Pradesh.jpeg",
+    "/assets/Gallery_Assets/Sun-News.jpg.jpeg",
+    "/assets/Gallery_Assets/Team-interaction-with-Villagers.jpg.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-10.32.09-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-10.32.11-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-10.32.19-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-9.47.08-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.09-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.13-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.14-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.15-PM.jpeg",
+    "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.16-PM.jpeg",
+    "/assets/Gallery_Assets/capital-information.jpg.jpeg",
+    "/assets/Gallery_Assets/news.jpg.jpeg",
+    "/assets/Gallery_Assets/press-media.jpg.jpeg"
   ];
 
   return (
@@ -50,8 +69,8 @@ export default function OurJourney() {
             className="reeds-journey-swiper"
           >
             {topRowImages.map((src, idx) => (
-              <SwiperSlide key={`top-${idx}`} className="reeds-journey-slide">
-                <img src={src} alt={`Our Journey Gallery Top ${idx + 1}`} loading="lazy" />
+              <SwiperSlide key={`top-${idx}`} className="reeds-journey-slide" style={{ position: 'relative' }}>
+                <Image src={src} alt={`Our Journey Gallery Top ${idx + 1}`} fill sizes="310px" />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -73,8 +92,8 @@ export default function OurJourney() {
             className="reeds-journey-swiper"
           >
             {bottomRowImages.map((src, idx) => (
-              <SwiperSlide key={`bottom-${idx}`} className="reeds-journey-slide">
-                <img src={src} alt={`Our Journey Gallery Bottom ${idx + 1}`} loading="lazy" />
+              <SwiperSlide key={`bottom-${idx}`} className="reeds-journey-slide" style={{ position: 'relative' }}>
+                <Image src={src} alt={`Our Journey Gallery Bottom ${idx + 1}`} fill sizes="310px" />
               </SwiperSlide>
             ))}
           </Swiper>

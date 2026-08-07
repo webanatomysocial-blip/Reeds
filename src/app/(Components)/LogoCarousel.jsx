@@ -1,24 +1,31 @@
 import React from "react";
+import Image from "next/image";
 import "@/app/(Css)/LogoCarousel.css";
 
 // Images
-const img1 = "/assets/About_Assets/1.avif";
-const img2 = "/assets/About_Assets/1.avif";
-const img3 = "/assets/About_Assets/1.avif";
-const img4 = "/assets/About_Assets/1.avif";
-const img6 = "/assets/About_Assets/1.avif";
-const img9 = "/assets/About_Assets/1.avif";
+const defaultImages = [
+  "/assets/LogoCarousel/CIRDPA-150x150.png",
+  "/assets/LogoCarousel/Z_Logo-3-e1663336214242-768x524.png",
+  "/assets/LogoCarousel/amrita-vishwa-1.png",
+  "/assets/LogoCarousel/anurag-1-150x150.png",
+  "/assets/LogoCarousel/good-gov-150x150.png",
+  "/assets/LogoCarousel/life-skills.png",
+  "/assets/LogoCarousel/manage-300x196.jpg.jpeg",
+  "/assets/LogoCarousel/shobhit-150x150.png",
+  "/assets/LogoCarousel/social-brirds-150x150.png"
+];
 
 export default function LogoCarousel({
   title = "Co-Innovative Partnerships",
-  partnersImages = []
+  partnersImages = [],
+  Dpadding = "100px 50px 0",
+  Mpadding = "60px 20px "
 }) {
 
-  const defaultImages = [img1, img2, img3, img4, img6, img9];
   const imagesToRender = partnersImages.length ? partnersImages : defaultImages;
 
   return (
-    <section className="recognitions-section partners-section">
+    <section className="recognitions-section partners-section" style={{ "--d-padding": Dpadding, "--m-padding": Mpadding }}>
           <h2 className="eyebrow-text">{title}</h2>
 
       <div className="recognitions-container">
@@ -31,20 +38,24 @@ export default function LogoCarousel({
 
             {imagesToRender.map((img, index) => (
               <div key={`param-${index}`} className="recognition-item">
-                <img
+                <Image
                   src={img}
                   alt={`Partner ${index + 1}`}
                   className="recognition-img"
+                  fill
+                  sizes="180px"
                 />
               </div>
             ))}
 
             {imagesToRender.map((img, index) => (
               <div key={`dup-${index}`} className="recognition-item">
-                <img
+                <Image
                   src={img}
                   alt={`Partner Duplicate ${index + 1}`}
                   className="recognition-img"
+                  fill
+                  sizes="180px"
                 />
               </div>
             ))}

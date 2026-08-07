@@ -5,7 +5,7 @@ import PillButton from './PillButton';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const CTA = ({
-  backImg = '/assets/Home_Assets/HomeBannner.avif', // Assuming HomeBanner is used if no image passed
+  backImg = '/assets/Home_Assets/wash.png', // Assuming HomeBanner is used if no image passed
   eyebrow = 'DONATE TODAY',
   title = 'WASH for Change',
   description = 'Join us in building healthier schools and brighter futures.',

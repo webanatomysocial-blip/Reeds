@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import Headings from '../Headings';
 import '@/app/(Css)/Projects/ProjectGallery.css';
@@ -7,16 +8,18 @@ import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const ProjectGallery = () => {
   // Using HomeBanner.avif for all images for now as requested
-  const images = Array(6).fill('/assets/Home_Assets/HomeBannner.avif');
+  const images = [
+    '/assets/Gallery_Assets/AGM-1-Sep-2025-e1760336457774.jpg.jpeg',
+    '/assets/Gallery_Assets/DSC_6354.jpg.jpeg',
+    '/assets/Gallery_Assets/Site-visits-1.jpg.jpeg',
+    '/assets/Gallery_Assets/AGM-2-Sep-2025.jpg.jpeg',
+    '/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg',
+    '/assets/Gallery_Assets/Site-visits.jpg.jpeg'
+  ];
 
   return (
     <>
-    <Headings
-        eyebrowText="LOREM IPSUM"
-        eyebrowColor="#0b6b3b"
-        headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
-      />
+   
     <section className="project-gallery-section">
       
       
@@ -35,8 +38,8 @@ const ProjectGallery = () => {
         <div className="project-gallery-carousel">
           <Marquee speed={40} gradient={false} direction="left">
             {images.map((img, index) => (
-              <div key={index} className="project-gallery-item">
-                <img src={img} alt={`Gallery Image ${index + 1}`} />
+              <div key={index} className="project-gallery-item" style={{ position: 'relative' }}>
+                <Image src={img} alt={`Gallery Image ${index + 1}`} fill sizes="420px" />
               </div>
             ))}
           </Marquee>

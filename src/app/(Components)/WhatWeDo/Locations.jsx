@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import '@/app/(Css)/WhatWeDo/Locations.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
@@ -30,10 +31,12 @@ export default function Locations() {
 
                 {/* Right Column: Map Image */}
                 <div className="reeds-locations-image-wrapper">
-                    <img
+                    <Image
                         src="/assets/WhatWeDo_Assets/IndiaMap.webp"
                         alt="Geographical Coverage Map"
                         className="reeds-locations-image-placeholder"
+                        width={939}
+                        height={1024}
                     />
                 </div>
             </div>

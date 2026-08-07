@@ -17,7 +17,7 @@
 
 .headings-left .big-text-head {
   margin: 0; /* Ensure no default margin messes up alignment */
-  line-height: 1.2;
+  line-height: 0.5;
 }
 
 .headings-right {

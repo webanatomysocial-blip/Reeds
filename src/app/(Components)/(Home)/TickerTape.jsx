@@ -7,7 +7,7 @@ import "@/app/(Css)/(Home)/TickerTape.css";
 const defaultItems = Array.from({ length: 10 }, () => ({
     logo: "CIRDAP-REEDS Winners Announcement",
     icon: <FiSun className="ticker-icon" />,
-    link: ""
+    link: "https://reeds.webanatomytech.com/Reports/Announcement_of_the_Result.pdf"
 }));
 
 const TickerTape = ({ items = defaultItems }) => {
@@ -56,7 +56,7 @@ const TickerTape = ({ items = defaultItems }) => {
                 <div className="ticker-group">
                     {items.map((item, i) => (
                         <div className="ticker-item" key={`a-${i}`}>
-                            <Link href={item.link || "#"} className="ticker-text">
+                            <Link href={item.link || "#"} target="_blank" rel="noopener noreferrer" className="ticker-text">
                                 {item.logo}
                             </Link>
                             {item.icon}

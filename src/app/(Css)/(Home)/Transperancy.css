@@ -14,7 +14,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/Home_Assets/HomeBannner.avif');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -61,7 +60,7 @@
 
 .transparency-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   width: 100%;
 }
@@ -132,6 +131,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+   border:1px solid rgb(255, 255, 255);
   font-weight: 500;
   font-size: 1rem;
 transition: all ease .3s;

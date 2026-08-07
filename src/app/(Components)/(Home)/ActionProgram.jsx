@@ -1,33 +1,62 @@
-import React from 'react';
-import Link from 'next/link';
-import '../../(Css)/(Home)/ActionProgram.css';
-import PillButton from '../PillButton';
-import AnimatedContent from '@/app/(Components)/AnimatedContent';
+import React from "react";
+import Link from "next/link";
+import "../../(Css)/(Home)/ActionProgram.css";
+import PillButton from "../PillButton";
+import AnimatedContent from "@/app/(Components)/AnimatedContent";
 
-// This array acts as your "folder" of files. 
-// You can add new objects here with an image path, category, heading, and the link to the file.
-const actionProgramsData = [
+// This array acts as your "folder" of files.
+// You can add new objects here with an image path, category, heading, slug and the link to the file.
+export const actionProgramsData = [
   {
-    image: '/assets/Home_Assets/HomeBannner.avif',
-    category: 'Healthcare',
-    heading: 'Community Awareness',
-    link: '/projects'
+    slug: "community-awareness-education",
+    image: "/assets/Action_Programs/Community Awareness & Education.png",
+    category: "",
+    heading: "Community Awareness & Education",
+    link: "/community-awareness-education",
   },
   {
-    image: '/assets/Home_Assets/HomeBannner.avif',
-    category: 'Education',
-    heading: 'Monitoring & Evaluation',
-    link: '/projects'
+    slug: "monitoring-evaluation",
+    image: "/assets/Action_Programs/Monitoring & Evaluation.png",
+    category: "",
+    heading: "Monitoring & Evaluation",
+    link: "/monitoring-evaluation",
   },
   {
-    image: '/assets/Home_Assets/HomeBannner.avif',
-    category: 'Emergency Relief',
-    heading: 'WASH Projects',
-    link: '/projects'
-  }
+    slug: "wash-projects",
+    image: "/assets/Action_Programs/wash.png",
+    category: "",
+    heading: "WASH Projects",
+    link: "/projects/wash-projects",
+  },
+  {
+    slug: "entrepreneurship-development",
+    image: "/assets/Action_Programs/Entrepreneurship-Development.png",
+    category: "",
+    heading: "Entrepreneurship Development",
+    link: "/entrepreneurship-development",
+  },
+  {
+    slug: "skills-development",
+    image: "/assets/Action_Programs/Skills-Development.png",
+    category: "",
+    heading: "Skills Development",
+    link: "/skills-development",
+  },
+  {
+    slug: "rural-entrepreneurship-livelihood",
+    image: "/assets/Action_Programs/rural-entrepreneurship.png",
+    category: "",
+    heading: "Rural Entrepreneurship & Livelihood Promotion",
+    link: "/rural-entrepreneurship-livelihood",
+  },
 ];
 
-const ActionProgram = () => {
+const ActionProgram = ({ showButton = true, currentSlug, showAll = false }) => {
+  const filtered = actionProgramsData.filter(
+    (program) => program.slug !== currentSlug,
+  );
+  const programs = showAll ? filtered : filtered.slice(0, 3);
+
   return (
     <AnimatedContent
       distance={50}
@@ -41,39 +70,53 @@ const ActionProgram = () => {
       threshold={0.1}
       delay={0}
     >
-    <section className="action-program-section">
-      <div className="action-program-grid">
-        {actionProgramsData.map((program, index) => (
-          <Link href={program.link} key={index} className="action-card-link" style={{ textDecoration: 'none' }}>
-            <div className="action-card">
-              {program.image ? (
-                <div 
-                  className="action-card-image" 
-                  style={{ backgroundImage: `url(${program.image})` }}
-                ></div>
-              ) : (
-                <div className="action-card-image-placeholder"></div>
-              )}
-              <div className="action-card-content">
-                <span className="action-card-category">{program.category}</span>
-                <h3 className="action-card-heading">{program.heading}</h3>
+      <section className="action-program-section">
+        <div className="action-program-grid">
+          {programs.map((program) => (
+            <Link
+              href={program.link}
+              key={program.slug}
+              className="action-card-link"
+              style={{ textDecoration: "none" }}
+            >
+              <div className="action-card">
+                {program.image ? (
+                  <div
+                    className="action-card-image"
+                    style={{ backgroundImage: `url("${program.image}")` }}
+                  ></div>
+                ) : (
+                  <div className="action-card-image-placeholder"></div>
+                )}
+                <div className="action-card-content">
+                  <span className="action-card-category">
+                    {program.category}
+                  </span>
+                  <h3 className="action-card-heading">{program.heading}</h3>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
-      </div>
-      <div className="action-program-footer">
-     <PillButton 
-                        text="Explore All"
-                        bg="orange"
-                        color="white"
-                        arrowBg="white"
-                        arrowColor="black"
-                        hoverFillColor="white"
-                        hoverTextColor="black"
-                    />
-      </div>
-    </section>
+            </Link>
+          ))}
+        </div>
+        {showButton && (
+          <div className="action-program-footer">
+            <Link
+              href="/what-we-do#programs"
+              style={{ textDecoration: "none" }}
+            >
+              <PillButton
+                text="Explore All"
+                bg="#F59E0A"
+                color="black"
+                arrowBg="white"
+                arrowColor="black"
+                hoverFillColor="white"
+                hoverTextColor="black"
+              />
+            </Link>
+          </div>
+        )}
+      </section>
     </AnimatedContent>
   );
 };

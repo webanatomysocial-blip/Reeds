@@ -2,6 +2,7 @@
 import React from 'react';
 import '@/app/(Css)/Footer.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import PillButton from './PillButton';
 
 const Footer = () => {
@@ -30,11 +31,11 @@ const Footer = () => {
         <div className="footer-col">
           <h4 className="footer-heading">Connect</h4>
           <ul className="footer-links">
-            <li><a href="#" target="_blank">YouTube</a></li>
-            <li><a href="#" target="_blank">LinkedIn</a></li>
-            <li><a href="#" target="_blank">Instagram</a></li>
-            <li><a href="#" target="_blank">X/Twitter</a></li>
-            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCapFAQfgxNApTMMf13rwAlw" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/in/rural-economic-and-educational-development-society-reeds-005512276/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/reeds_ngo_hyderabad/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://x.com/HyderabadReeds" target="_blank" rel="noopener noreferrer">X/Twitter</a></li>
+            <li><a href="https://www.facebook.com/REEDSHyderabad" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           </ul>
         </div>
 
@@ -74,14 +75,14 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-bottom-left">
-          <img src="/assets/reeds.avif" alt="Rural Development Society" className="footer-logo" />
+          <Image src="/assets/reeds.avif" alt="Rural Development Society" className="footer-logo" width={512} height={341} />
           <p className="footer-cert">ISO Certified under 9001:2015.</p>
         </div>
 
         <div className="footer-bottom-center">
           <span className="designed-by-text">Designed by</span>
           <a href="https://webanatomy.in" target="_blank" rel="noopener noreferrer" className="wa-link">
-            <img src="/assets/WA.avif" alt="Web Anatomy" className="wa-logo" />
+            <Image src="/assets/WA.avif" alt="Web Anatomy" className="wa-logo" width={512} height={512} />
             <span className="wa-text">Web Anatomy</span>
           </a>
         </div>

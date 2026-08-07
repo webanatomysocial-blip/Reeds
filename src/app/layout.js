@@ -16,8 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Reeds",
+  title: "REEDS",
   description: "Reeds",
+  icons: {
+    icon: "/assets/favicon-reeds.png",
+  },
 };
 
 export default function RootLayout({ children }) {

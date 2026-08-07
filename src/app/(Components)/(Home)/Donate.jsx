@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Donate.css';
+import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
@@ -30,7 +31,9 @@ const Donate = () => {
     return (
        
         <section className="donate-section" ref={sectionRef}>
-            <div className="donate-bg" ref={bgRef}></div>
+            <div className="donate-bg" ref={bgRef}>
+                <Image src="/assets/Gallery_Assets/Hand-Wash-Awareness.jpg.jpeg" alt="Donate Background" fill style={{ objectFit: 'cover' }} priority />
+            </div>
             <div className="donate-overlay"></div>
             <AnimatedContent
               className="donate-container"

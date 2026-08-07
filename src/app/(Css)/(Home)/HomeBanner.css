@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
 height: 100vh;
-    background: url(/assets/Home_Assets/HomeBannner.avif) no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -73,9 +72,11 @@ height: 100vh;
 
 .carousel-slide {
     display: flex;
+    align-items: stretch;
     padding: 24px;
     gap: 24px;
     box-sizing: border-box;
+    min-height: 228px;
 }
 
 .slide-content-left {
@@ -107,15 +108,20 @@ height: 100vh;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .slide-text-wrapper h3 {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--secondary-color);
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     font-family: var(--font-primary);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .slide-text-wrapper p {

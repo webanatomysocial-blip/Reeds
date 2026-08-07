@@ -22,10 +22,13 @@ export default function ReedsVisionMission() {
       >
         <div className="reeds-vm-grid">
           
-          {/* Column 1: Image Placeholder */}
+          {/* Column 1: Image */}
           <div className="reeds-vm-col image-col">
-            <div className="reeds-vm-card reeds-vm-image-card">
-              
+            <div
+              className="reeds-vm-card reeds-vm-image-card"
+              style={{ backgroundImage: "url(/assets/About_Assets/about2.png)" }}
+            >
+
             </div>
           </div>
 
