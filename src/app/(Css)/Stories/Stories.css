@@ -1,0 +1,334 @@
+.stories-viewer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 130px 20px 100px 20px;
+  background: linear-gradient(120deg, #1c1c1c, #3a4a3a 45%, #5f7a5a 75%, #7fa073);
+}
+
+.stories-empty {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.stories-card {
+  position: relative;
+  width: 280px;
+  aspect-ratio: 9 / 15;
+  max-height: 85vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.stories-slide {
+  position: absolute;
+  inset: 0;
+  animation: stories-slide-in 0.35s ease both;
+}
+
+@keyframes stories-slide-in {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.stories-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.stories-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.55) 30%, rgba(0, 0, 0, 0) 55%);
+}
+
+.stories-progress-row {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.stories-progress-track {
+  flex: 1;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+}
+
+.stories-progress-fill {
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  animation: stories-fill linear forwards;
+}
+
+.stories-progress-fill.is-paused {
+  animation-play-state: paused;
+}
+
+@keyframes stories-fill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.stories-controls {
+  position: absolute;
+  top: 26px;
+  right: 14px;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.stories-icon-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.stories-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 24px;
+  text-align: center;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stories-title-underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #42a037;
+  margin: 8px auto 14px;
+  border-radius: 2px;
+}
+
+.stories-desc {
+  color: #f1f1f1;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-height: calc(1.6em * 3);
+  overflow: hidden;
+  scrollbar-width: none;
+  transition: max-height 0.35s ease;
+}
+
+.stories-desc::-webkit-scrollbar {
+  display: none;
+}
+
+.stories-desc.is-expanded {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.stories-desc-toggle {
+  border: none;
+  background: none;
+  color: #ffd166;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  align-self: center;
+  margin-top: 6px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.stories-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.stories-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+@media (max-width: 700px) {
+  .stories-viewer {
+    gap: 12px;
+  }
+  .stories-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.stories-tap-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.stories-tap-left {
+  left: 0;
+}
+
+.stories-tap-right {
+  right: 0;
+}
+
+@media (max-width: 700px) {
+  .stories-viewer {
+    padding: 0;
+    gap: 0;
+    background: #000;
+  }
+
+  .stories-card {
+    width: 100vw;
+    height: 100vh;
+    max-height: none;
+    aspect-ratio: unset;
+    border-radius: 0;
+  }
+
+  .stories-nav-prev,
+  .stories-nav-next {
+    display: none;
+  }
+
+  .stories-progress-row {
+    top: 90px;
+  }
+
+  .stories-controls {
+    top: 102px;
+  }
+}
+
+.stories-list-section {
+  width: 100%;
+  padding: var(--d-pad, 100px 50px 100px 50px);
+  background-color: white;
+  display: flex;
+  justify-content: start;
+}
+
+.stories-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.stories-list-card {
+  position: relative;
+  aspect-ratio: 35 / 15;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stories-list-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.stories-list-card:hover .stories-list-image {
+  transform: scale(1.05);
+}
+
+.stories-list-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.1) 55%);
+}
+
+.stories-list-title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 16px;
+}
+
+.stories-list-empty {
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  .stories-list-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stories-text{
+    padding: 24px 24px 40px 24px;
+  }
+  .stories-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stories-list-section {
+    padding: var(--m-pad, 60px 20px);
+  }
+}

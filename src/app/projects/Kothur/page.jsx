@@ -18,6 +18,7 @@ export default function KothurProject() {
         students={78}
         faculty={3}
         completed={100}
+        image="/assets/Projects_Banner_Assets/Kothur.jpg"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -25,7 +26,16 @@ export default function KothurProject() {
         headingText="Project Gallery"
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
-      <ProjectGallery />
+      <ProjectGallery images={[
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132245.jpg",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132501.jpg",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132555.jpg",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_135546.jpg",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_135604.jpg",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_140640.jpg",
+    "/assets/Project_Gallery/kothur-gallery/WhatsApp Image 2026-03-10 at 6.05.54 PM.jpeg",
+    "/assets/Project_Gallery/kothur-gallery/WhatsApp Image 2026-03-10 at 6.05.54 PM.jpg",
+  ]} />
       <ProjectImpact impactText="Improved access to clean water and better hygiene practices among 78 students and 3 faculty members." />
       <TickerTape />
 

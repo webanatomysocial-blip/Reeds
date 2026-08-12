@@ -32,7 +32,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
-    margin-bottom: 50px;
 }
 
 /* Image placeholder card container */
@@ -46,30 +45,25 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.06);
-
+    transform: translateZ(0);
+    will-change: transform;
 }
 
-/* ::before layer holds the placeholder bg so it can zoom without zooming text/tags */
-.reeds-project-card::before {
-    content: "";
+.reeds-project-card-bg {
     position: absolute;
     inset: 0;
-  
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 1;
 }
 
-.reeds-project-card:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.reeds-project-card:hover::before {
-    transform: scale(1.06);
+.reeds-project-card-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 65%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* ── Top Tags ── */
@@ -113,11 +107,6 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reeds-project-card:hover .reeds-project-card-info {
-    transform: translateY(-55px);
 }
 
 .reeds-project-card-title {
@@ -137,14 +126,8 @@
     margin: 0;
 }
 
-/* Hidden by default, reveals on card hover */
+/* Button is static and visible */
 .reeds-project-view-btn-wrapper {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.reeds-project-card:hover .reeds-project-view-btn-wrapper {
     opacity: 1;
     pointer-events: auto;
 }

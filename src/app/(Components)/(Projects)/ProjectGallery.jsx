@@ -6,17 +6,16 @@ import Headings from '../Headings';
 import '@/app/(Css)/Projects/ProjectGallery.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
-const ProjectGallery = () => {
-  // Using HomeBanner.avif for all images for now as requested
-  const images = [
-    '/assets/Gallery_Assets/AGM-1-Sep-2025-e1760336457774.jpg.jpeg',
-    '/assets/Gallery_Assets/DSC_6354.jpg.jpeg',
-    '/assets/Gallery_Assets/Site-visits-1.jpg.jpeg',
-    '/assets/Gallery_Assets/AGM-2-Sep-2025.jpg.jpeg',
-    '/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg',
-    '/assets/Gallery_Assets/Site-visits.jpg.jpeg'
-  ];
+const defaultImages = [
+  '/assets/Gallery_Assets/AGM-1-Sep-2025-e1760336457774.jpg.jpeg',
+  '/assets/Gallery_Assets/DSC_6354.jpg.jpeg',
+  '/assets/Gallery_Assets/Site-visits-1.jpg.jpeg',
+  '/assets/Gallery_Assets/AGM-2-Sep-2025.jpg.jpeg',
+  '/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg',
+  '/assets/Gallery_Assets/Site-visits.jpg.jpeg'
+];
 
+const ProjectGallery = ({ images = defaultImages }) => {
   return (
     <>
    

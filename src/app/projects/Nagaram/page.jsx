@@ -19,6 +19,7 @@ on hygiene.`}
         students={505}
         faculty={3}
         completed={100}
+        image="/assets/Projects_Banner_Assets/Nagaram.jpg"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -26,7 +27,17 @@ on hygiene.`}
         headingText="Project Gallery"
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
-      <ProjectGallery />
+      <ProjectGallery images={[
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135715.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135816.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_140700.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_140807.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_141328.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_142101.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_143121.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_152608.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_153038.jpg",
+  ]} />
        <ProjectImpact 
       activities = {[
     "Inspected and maintained toilets",

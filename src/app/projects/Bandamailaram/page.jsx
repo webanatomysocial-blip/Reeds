@@ -18,6 +18,7 @@ export default function BandamailaramProject() {
         students={75}
         faculty={3}
         completed={100}
+        image="/assets/Projects_Banner_Assets/Bandamailaram.jpg"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -25,7 +26,16 @@ export default function BandamailaramProject() {
         headingText="Project Gallery"
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
-      <ProjectGallery />
+      <ProjectGallery images={[
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG-20250630-WA0042 (1) (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG-20250630-WA0042 (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG-20250630-WA0053 (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG_20250630_133221 (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG_20250630_140531 (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG_20250630_140719 (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG_20250630_140736 (1).jpg",
+    "/assets/Project_Gallery/bandamailaram-gallery/IMG_20250630_140801 (1).jpg",
+  ]} />
        <ProjectImpact 
       activities = {[
     "Repaired borewell and ensured safe water",

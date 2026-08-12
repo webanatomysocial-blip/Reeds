@@ -24,7 +24,6 @@ const Footer = () => {
           <ul className="footer-links">
             <li><Link href="/blogs">Blogs</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
-            <li><Link href="#">Error 404</Link></li>
           </ul>
         </div>
 

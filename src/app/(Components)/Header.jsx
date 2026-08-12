@@ -142,8 +142,8 @@ const Header = () => {
         </nav>
 
         <div className="header-cta">
-          <Link href="#" style={{ textDecoration: 'none' }}>
-            <PillButton 
+          <Link href="https://pages.razorpay.com/pl_PHFMC4XHiUK8KC/view" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+            <PillButton
               text="Sponsor a School"
               bg="#fca311"
               color="black"

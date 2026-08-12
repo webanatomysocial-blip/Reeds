@@ -18,6 +18,7 @@ export default function NarsapurProject() {
         students={37}
         faculty={3}
         completed={100}
+        image="/assets/Projects_Banner_Assets/Narsapur.jpg"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -25,7 +26,16 @@ export default function NarsapurProject() {
         headingText="Project Gallery"
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
-      <ProjectGallery />
+      <ProjectGallery images={[
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_112419.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_113840.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_114015.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_120202.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121047.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121055.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121319.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121516.jpg",
+  ]} />
       <ProjectImpact 
       activities = {[
     "Repaired and maintained drinking water facility",

@@ -50,13 +50,13 @@ const About = () => {
               name: "S Sunanda",
               role: "Treasurer",
               hoverText: "S Sunanda is a graduate of Arts from Sri Venkateswara University, Tirupati. Sunanda has been passionately involved for many years with women empowerment issues especially for the less educated and poor women with a particular focus on making access to skill and knowledge in Embroidery techniques by hand thereby they are able to increase their income opportunities. Sunanda supports REEDS community participation endeavors.",
-              image: "/assets/About_Assets/sunanda.jpg.jpeg"
+              image: "/assets/About_Assets/sunanda.jpg.png"
             },
             {
               name: "G Sudhir Paul",
               role: "Member",
               hoverText: "G Sudhir Paul has been a dedicated supporter of rural development initiatives. Under his guidance, several programs targeting youth skill building, healthcare literacy, and vocational training have been successfully implemented across rural regions.",
-              image: "/assets/About_Assets/sudhir.jpg.jpeg"
+              image: "/assets/About_Assets/G-Sudhir-Paul.png"
             },
             {
               name: "Hari Prasad Reddy",

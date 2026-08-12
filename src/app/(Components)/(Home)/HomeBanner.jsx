@@ -94,9 +94,14 @@ const HomeBanner = () => {
                     {slides.map((_, idx) => (
                       <div
                         key={idx}
-                        className={`indicator ${idx === currentSlide ? "active" : ""}`}
+                        className="indicator"
                         onClick={() => setCurrentSlide(idx)}
-                      />
+                      >
+                        {idx < currentSlide && <div className="indicator-fill" style={{ width: "100%" }} />}
+                        {idx === currentSlide && (
+                          <div key={currentSlide} className="indicator-fill is-animating" />
+                        )}
+                      </div>
                     ))}
                   </div>
                   <Link
