@@ -26,7 +26,7 @@ export default function ReedsVisionMission() {
           <div className="reeds-vm-col image-col">
             <div
               className="reeds-vm-card reeds-vm-image-card"
-              style={{ backgroundImage: "url(/assets/About_Assets/about2.png)" }}
+              style={{ backgroundImage: "url(/assets/About_Assets/about2.jpg)" }}
             >
 
             </div>

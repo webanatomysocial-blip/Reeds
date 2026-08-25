@@ -10,14 +10,15 @@ const Projects = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Gallery_Assets/Creating-WASH-awareness-among-school-children-1.jpg.jpeg"
+        bgImage="/assets/Banner_Assets/projects.jpg"
+        bgPosition="top"
         eyebrowText="Projects"
         title="Our Wash Projects"
         desc="Working together for clean water, sanitation & hygiene in schools and communities."
       />
       <Headings
         eyebrowText="OUR INITIATIVES"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Recent Projects."
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />

@@ -3,26 +3,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Loop.css';
 
 const loopImages = [
-  "/assets/Gallery_Assets/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.jpeg",
-  "/assets/Gallery_Assets/Felicitation-program-scaled.jpg.jpeg",
-  "/assets/Gallery_Assets/Creating-Awareness.jpg.jpeg",
-  "/assets/Gallery_Assets/Self-Help-Group.jpg.jpeg",
-  "/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg",
-  "/assets/Gallery_Assets/DSC_6345-3.jpg.jpeg",
-  "/assets/Gallery_Assets/DSC_6354.jpg.jpeg",
-  "/assets/Gallery_Assets/DSC_6492.jpg.jpeg",
-  "/assets/Gallery_Assets/REEDS-Secretary-meeting-with-Shri-Pranab-Kumar-Mukherjee-.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-10.32.11-PM.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.09-PM.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.13-PM.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.14-PM.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.15-PM.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-23-at-1.03.16-PM.jpeg",
-  "/assets/Gallery_Assets/Site-visits-1.jpg.jpeg",
-  "/assets/Gallery_Assets/capital-information.jpg.jpeg",
-  "/assets/Gallery_Assets/Team-interaction-with-Villagers.jpg.jpeg",
-  "/assets/Gallery_Assets/WhatsApp-Image-2025-12-22-at-9.47.08-PM.jpeg",
-  "/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.jpeg"
+  "/assets/Gallery_Assets/thumbs/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/Felicitation-program-scaled.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/Creating-Awareness.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/Self-Help-Group.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/Self-Help-Groups.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/DSC_6345-3.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/DSC_6354.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/DSC_6492.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/REEDS-Secretary-meeting-with-Shri-Pranab-Kumar-Mukherjee-.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-22-at-10.32.11-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-23-at-1.03.09-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-23-at-1.03.13-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-23-at-1.03.14-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-23-at-1.03.15-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-23-at-1.03.16-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/Site-visits-1.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/capital-information.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/Team-interaction-with-Villagers.jpg.jpeg",
+  "/assets/Gallery_Assets/thumbs/WhatsApp-Image-2025-12-22-at-9.47.08-PM.jpeg",
+  "/assets/Gallery_Assets/thumbs/Monitoring-Studies-REEDS-1.jpeg"
 ];
 
 const duplicatedImages = [...loopImages, ...loopImages];
@@ -71,10 +71,14 @@ const Loop = () => {
         <h2 className="head-text-white" style={{paddingBottom:"20px"}}>One story from the field. Once a month.</h2>
         <p className="loop-subtitle">No spam. Only impact updates, campaigns and annual reports.</p>
         
+        {/*
         <form className="loop-subscribe-form" onSubmit={(e) => e.preventDefault()}>
           <input type="email" placeholder="name@email.com" required />
           <button type="submit">Subscribe</button>
         </form>
+        */}
+        <div id="wa-form-9"></div>
+        <script src="https://loooped.in/embed.js" data-form-id="9"></script>
       </div>
 
       <div className="loop-marquee-container">

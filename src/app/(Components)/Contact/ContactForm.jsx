@@ -47,7 +47,7 @@ export default function ReedsContact() {
           {/* Image Placeholder */}
           <div className="reeds-contact-image-placeholder" role="img" aria-label="REEDS Office Placeholder">
             <Image 
-              src="/assets/Contact_Assets/contactimg.png" 
+              src="/assets/Contact_Assets/contactimg.jpg" 
               alt="REEDS Contact Office" 
               width={800} 
               height={600} 
@@ -106,6 +106,7 @@ export default function ReedsContact() {
             <h3 className="reeds-contact-form-title">Contact Information</h3>
             
 
+            {/*
             <form className="reeds-contact-form" onSubmit={handleSubmit}>
               <div className="reeds-contact-form-row">
                 <div className="reeds-contact-form-group">
@@ -178,6 +179,9 @@ export default function ReedsContact() {
                 Submit
               </button>
             </form>
+            */}
+            <div id="wa-form-9"></div>
+            <script src="https://loooped.in/embed.js" data-form-id="9"></script>
           </div>
         </div>
 

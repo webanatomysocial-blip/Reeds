@@ -34,6 +34,9 @@
 .wash-table-wrapper {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.wash-table-scroll {
     overflow-x: auto;
 }
 
@@ -52,6 +55,11 @@
 
 .wash-table th:first-child,
 .wash-table td:first-child {
+    text-align: left;
+}
+
+.wash-table-schools th:not(:last-child),
+.wash-table-schools td:not(:last-child) {
     text-align: left;
 }
 

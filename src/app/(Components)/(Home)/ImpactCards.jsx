@@ -12,7 +12,7 @@ const impactData = [
     title: "Lives Improved",
     desc: "Empowering rural families through education, healthcare, livelihoods, water, and sustainable development initiatives.",
     span: 1,
-    image: "/assets/Home_Assets/card1.png"
+    image: "/assets/Home_Assets/card1.jpg"
   },
   {
     id: 2,
@@ -40,16 +40,16 @@ const impactData = [
     title: "Water Projects",
     desc: "Delivering safe drinking water, sanitation facilities, and healthier living conditions for rural households.",
     span: 1,
-    image: "/assets/Home_Assets/card4.png"
+    image: "/assets/Home_Assets/card6.jpg"
   },
   {
     id: 5,
     endValue: 1000,
     suffix: "+",
-    title: "Schools Supported",
-    desc: "Strengthening schools with better infrastructure, learning resources, sanitation, and programs.",
+    title: "Women Empowered",
+    desc: "Empowering women through education, healthcare, livelihoods, water, and sustainable development initiatives.",
     span: 2,
-    image: "/assets/Home_Assets/card5.png"
+    image: "/assets/Gallery_Assets/Creating-Awareness.jpg.jpeg"
   }
 ];
 

@@ -7,12 +7,12 @@ import PillButton from '../PillButton';
 const projectsList = [
     {
         id: 1,
-        title: "Narsapur MPPS",
-        location: "Narsapur",
+        title: "Narasapur MPPS",
+        location: "Narasapur",
         visits: "3 Visits",
         students: "37 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Narsapur.jpg",
+        image: "/assets/Projects_Banner_Assets/Narasapur.jpg",
     },
     {
         id: 2,
@@ -43,12 +43,12 @@ const projectsList = [
     },
     {
         id: 5,
-        title: "Kokhonda MPPS",
-        location: "Kokhonda",
+        title: "Kokkonda MPPS",
+        location: "Kokkonda",
         visits: "2 Visits",
         students: "104 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Kokhonda.jpg",
+        image: "/assets/Projects_Banner_Assets/Kokkonda.jpg",
     },
     {
         id: 6,
@@ -70,12 +70,12 @@ const projectsList = [
     },
     {
         id: 8,
-        title: "ZPHS Rimannaguda",
-        location: "Rimannaguda",
+        title: "ZPHS Rimmanaguda",
+        location: "Rimmanaguda",
         visits: "1 Visits",
         students: "67 Students",
         faculty: "8 Faculty",
-        image: "/assets/Projects_Banner_Assets/Rimannaguda.jpg",
+        image: "/assets/Projects_Banner_Assets/Rimmanaguda.jpg",
     },
     {
         id: 9,
@@ -85,6 +85,15 @@ const projectsList = [
         students: "99 Students",
         faculty: "9 Faculty",
         image: "/assets/Projects_Banner_Assets/Ekvaipally-ZPHS.jpg",
+    },
+    {
+        id: 10,
+        title: "MPPS Ekvaipally",
+        location: "Ekvaipally-MPPS",
+        visits: "1 Visits",
+        students: "61 Students",
+        faculty: "4 Faculty",
+        image: "/assets/Project_Gallery/ekwaipally-gallery/IMG_20260325_110038.jpg",
     }
 ];
 

@@ -12,24 +12,25 @@ const About = () => {
   return (
     <>
       <InnerBanner 
-        bgImage="/assets/About_Assets/aboutBanner.png"
+        bgImage="/assets/Banner_Assets/About.jpg"
+        bgPosition="top"
         eyebrowText="About us"
         title="Driven By Purpose And Impact"
         desc="Your support powers life-changing missions, communities and hope."
       />
-      <div id="partners" style={{ scrollMarginTop: "-100px" }}>
+      <div id="partners" className="scroll-anchor-70">
         <LogoCarousel
         title={"Our Trusted Partners"}
         Dpadding="100px 50px 80px 50px"
 
         />
       </div>
-      <div id="overview" style={{ scrollMarginTop: "-100px" }}>
+      <div id="overview" className="scroll-anchor-70">
         <ReedsVisionMission/>
       </div>
       <ReedsImpact/>
 <ReedsValues/>
-      <div id="who-we-are" style={{ scrollMarginTop: "-100px" }}>
+      <div id="who-we-are" className="scroll-anchor-70">
         <TrustedSupporters
           desktopPadding="100px 50px 0px 50px"
           mobilePadding="60px 20px 0px 20px"
@@ -50,7 +51,7 @@ const About = () => {
               name: "S Sunanda",
               role: "Treasurer",
               hoverText: "S Sunanda is a graduate of Arts from Sri Venkateswara University, Tirupati. Sunanda has been passionately involved for many years with women empowerment issues especially for the less educated and poor women with a particular focus on making access to skill and knowledge in Embroidery techniques by hand thereby they are able to increase their income opportunities. Sunanda supports REEDS community participation endeavors.",
-              image: "/assets/About_Assets/sunanda.jpg.png"
+              image: "/assets/About_Assets/sunanda.jpg.jpg"
             },
             {
               name: "G Sudhir Paul",
@@ -72,7 +73,7 @@ const About = () => {
         subHeading=""
         mainHeading="Advisory Council"
         desktopPadding="50px 50px 50px 50px"
-        mobilePadding="30px 20px 60px 20px"
+        mobilePadding="30px 20px 30px 20px"
         members={[
           {
             name: "Shailendra Kumar Hajela",
@@ -107,7 +108,7 @@ const About = () => {
             name: "Suma Niveditha Karasala",
             role: "",
             hoverText: "Ms. Suma is an accomplished professional in Social Impact Assessment, Corporate Social Responsibility, and Academics. As a co-founder and chief strategist with Anusandhan Social Consultants, she has led and contributed to various development projects aimed at creating positive change in communities. She has a master's degree in social work.",
-            image: "/assets/About_Assets/suma.jpg.jpeg"
+            image: "/assets/About_Assets/suma.png"
           },
           {
             name: "Hemnath Rao Hanumankar",
@@ -145,13 +146,13 @@ const About = () => {
         subHeading=""
         mainHeading="Executives"
         desktopPadding="0px 50px 100px 50px"
-        mobilePadding="30px 20px 0px 20px"
+        mobilePadding="30px 20px 60px 20px"
         members={[
   {
     name: "Poonam Thakur",
     role: "Vice President - Programs & Partnerships",
     hoverText: "Ms. Poonam is an agriculture consultant, blogger and content writer having experience in skill development, rural monitoring, agripreneurship development and innovation advisory. She has worked with various central government and private organizations and managed international projects like FTF ITT (USAID funded) and SKILLS – Leveraging Digital India for Rural Empowerment. She is a gold medalist in MBA (Agribusiness Management).",
-    image: "/assets/About_Assets/1-Poonam20Thakur.png"
+    image: "/assets/About_Assets/1-Poonam20Thakur.jpg"
   },
   {
     name: "Sneha Somavarapu",
@@ -163,19 +164,19 @@ const About = () => {
     name: "Lakshmi Tejaswi",
     role: "Senior Executive Administrator",
     hoverText: "Lakshmi Tejaswi serves as an Executive Administrator with strong organizational and leadership skills. Previously a Business Development Associate, she combines operational expertise with client relationship management and strategic growth. She holds a Bachelor of Technology in Electronics and Communication Engineering.",
-    image: "/assets/About_Assets/Tejaswi.jpg.jpeg"
+    image: "/assets/About_Assets/Tejaswi.png"
   },
   {
     name: "Vijay Raj P",
     role: "Asst Manager - Administration & Outsourcing",
     hoverText: "Mr. Vijay serves in the Administration and Outsourcing department. He specializes in vendor management, data analysis, field surveys, project planning, office event coordination, and executive support. He worked as Program Coordinator for MoRD Monitoring and Evaluation studies in Karnataka and Andhra Pradesh and holds a Master's degree in Arts.",
-    image: "/assets/About_Assets/3-Pottipogu20Vijay20Raj.png"
+    image: "/assets/About_Assets/3-Pottipogu20Vijay20Raj.jpg"
   },
   {
     name: "Naveen T",
     role: "Office Executive",
     hoverText: "With eight years of experience at REEDS, Naveen is skilled in multitasking, office administration, secretarial work, reception, and operational support. His experience enables him to efficiently manage office equipment and support day-to-day organizational activities.",
-    image: "/assets/About_Assets/4-Navin20-Office20Executive.png"
+    image: "/assets/About_Assets/4-Navin20-Office20Executive.jpg"
   }
 ]}
       />

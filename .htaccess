@@ -81,4 +81,5 @@ DirectoryIndex index.html
     AddType text/html .html
     AddType text/css .css
     AddType application/javascript .js
+    AddType application/pdf .pdf
 </IfModule>

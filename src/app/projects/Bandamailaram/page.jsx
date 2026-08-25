@@ -22,9 +22,9 @@ export default function BandamailaramProject() {
       />
  <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor="#0b6b3b"
+        eyebrowColor="#095e3f"
         headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Creating healthier school environments through safe water, better hygiene, and improved sanitation."
       />
       <ProjectGallery images={[
     "/assets/Project_Gallery/bandamailaram-gallery/IMG-20250630-WA0042 (1) (1).jpg",

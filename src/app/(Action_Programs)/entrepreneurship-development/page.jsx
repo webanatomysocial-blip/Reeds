@@ -13,7 +13,7 @@ const EntrepreneurshipDevelopment = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg"
+        bgImage="/assets/Banner_Assets/entrepreneurship-development.jpg"
         eyebrowText="Action Programs"
         title="Entrepreneurship Development"
         desc="Equipping aspiring entrepreneurs with the skills and support to build sustainable livelihoods."
@@ -21,28 +21,48 @@ const EntrepreneurshipDevelopment = () => {
 
       <Headings
         eyebrowText="Gallery"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Monitoring Developmental Programs"
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
-      <ProjectGallery />
-
+      <ProjectGallery
+        images={[
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240603171757 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240604183937 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240715112949 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240715122114 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240722154111 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240722161007 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240831142202 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG_20240603_180916 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG_20240831_221153 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/MKKP2214 (1).jpg",
+        ]}
+      />
+      <div className="content-div">
+        <p className="para-text">
+         <strong> Wings of Change: Empowering Women Entrepreneurs:</strong> As the implementing
+          partner of Bharat Cares’ transformative Onchee Udaan initiative, REEDS
+          successfully equipped 38 women entrepreneurs in Krishna District,
+          Andhra Pradesh—empowering low-income women with essential skills and
+          resources to build sustainable micro-enterprises. When women rise,
+          communities thrive.
+        </p>
+      </div>
       <ProgramDetailsTable
         columns={[
           "Program",
           "States",
           "Districts",
           "Villages",
-          "Schools Engaged",
-          "Young Minds Empowered",
           "Population Touched",
         ]}
-        rows={[["Onchee Udaan", "AP", "NTR", 2, 0, 0, 152]]}
+        rows={[["Onchee Udaan", "AP", "NTR", 2, 152]]}
       />
 
       <Headings
         eyebrowText=""
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Other Programs."
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
@@ -51,7 +71,7 @@ const EntrepreneurshipDevelopment = () => {
       <Locations />
       <Headings
         eyebrowText="Awards & recognition"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Recognised by the country."
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />

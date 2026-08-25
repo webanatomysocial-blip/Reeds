@@ -13,7 +13,7 @@ const MonitoringEvaluation = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.jpeg"
+        bgImage="/assets/Banner_Assets/monitoring-evaluation.jpg"
         eyebrowText="Action Programs"
         title="Monitoring & Evaluation"
         desc="Tracking impact on the ground so every program keeps delivering real, measurable outcomes."
@@ -21,12 +21,34 @@ const MonitoringEvaluation = () => {
 
       <Headings
         eyebrowText="Gallery"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Monitoring Developmental Programs"
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
-      <ProjectGallery />
-
+      <ProjectGallery
+        images={[
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20221013-WA0023.jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230127-WA0127 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230208-WA0024 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230209-WA0009 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20220901124839.jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20230123171408 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20230124124603 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220902_125721 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220903_105050 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220903_175805 (1).jpg",
+        ]}
+      />
+      <div className="content-div">
+        <p className="para-text">
+         <strong> Tracking Progress, Strengthening Impact:</strong> As National Level Monitoring
+          Agency to the Ministry of Rural Development, REEDS conducted
+          comprehensive evaluations across 60 villages in 6 districts of Tamil
+          Nadu and Andhra Pradesh during 2024-25, assessing key rural
+          development programs’ implementation and impact. Monitoring progress,
+          empowering communities.
+        </p>
+      </div>
       <ProgramDetailsTable
         columns={[
           "Program",
@@ -34,18 +56,16 @@ const MonitoringEvaluation = () => {
           "Districts",
           "Villages",
           "Schemes Covered",
-          "Young Minds Empowered",
           "Population Touched",
         ]}
         rows={[
           [
-            "NLM PI 2024-25",
-            "AP & TN",
-            "Eluru, Guntur, NTR, Tirupathuru, Kallakuruchi, Nagapatanam",
+            "NLM PI 2025-26",
+            "AP & KA",
+            "Kurnool, Nandyal, Sri Sathya Sai, YSR Kadapa, Koppal & Ballari",
             60,
             11,
-            0,
-            "12,000",
+            "11,000",
           ],
           [
             "Special Monitoring 2025-26",
@@ -53,24 +73,22 @@ const MonitoringEvaluation = () => {
             "Tiruchirappalli District",
             4,
             "MGNREGA & PMAY – G",
-            0,
             "1,050",
           ],
           [
-            "NLM PI 2025-26",
-            "AP & KA",
-            "Kurnool, Nandyal, Sri Sathya Sai, YSR Kadapa, Koppal & Ballari",
+            "NLM PI 2024-25",
+            "AP & TN",
+            "Eluru, Guntur, NTR, Tirupathuru, Kallakuruchi, Nagapatanam",
             60,
             11,
-            0,
-            "11,000",
+            "12,000",
           ],
         ]}
       />
 
       <Headings
         eyebrowText=""
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Other Programs."
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
@@ -79,7 +97,7 @@ const MonitoringEvaluation = () => {
       <Locations />
       <Headings
         eyebrowText="Awards & recognition"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Recognised by the country."
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />

@@ -32,7 +32,7 @@ const Donate = () => {
        
         <section className="donate-section" ref={sectionRef}>
             <div className="donate-bg" ref={bgRef}>
-                <Image src="/assets/Gallery_Assets/Hand-Wash-Awareness.jpg.jpeg" alt="Donate Background" fill style={{ objectFit: 'cover' }} priority />
+                <Image src="/assets/Gallery_Assets/Hand-Wash-Awareness.jpg.jpeg" alt="Donate Background" fill style={{ objectFit: 'cover' }} />
             </div>
             <div className="donate-overlay"></div>
             <AnimatedContent
@@ -73,17 +73,27 @@ const Donate = () => {
                             <p>For U.S. Donors: Donations made through our trusted channel partners–CAF America and myriad usa (registered U.S. public charities under Section 501(c)(3))–are eligible for U.S. income tax deduction to the extent permitted by by U.S. law.</p>
                         </div>
                     </div>
+
+                    <div className="donate-partner-logos">
+                        <div className="donate-partner-logo">
+                            <Image src="/assets/Home_Assets/caf-america-1024x576.png" alt="CAF America" fill style={{ objectFit: 'cover' }} />
+                        </div>
+                        <div className="donate-partner-logo">
+                            <Image src="/assets/Home_Assets/Myriad usa.jfif" alt="Myriad USA" fill style={{ objectFit: 'cover' }} />
+                        </div>
+                    </div>
                 </div>
 
                 <div className="donate-right">
                     <div className="donate-form-card">
                         <h3 className="form-title">Donation Information</h3>
+                        {/*
                         <form className="donate-form" onSubmit={(e) => e.preventDefault()}>
                             <div className="form-group">
                                 <label>First Name*</label>
                                 <input type="text" placeholder="Jane" />
                             </div>
-                            
+
                             <div className="form-row">
                                 <div className="form-group">
                                     <label>Email*</label>
@@ -119,6 +129,9 @@ const Donate = () => {
 
                             <button type="button" className="donate-submit-btn">Submit</button>
                         </form>
+                        */}
+                        <div id="wa-form-9"></div>
+                        <script src="https://loooped.in/embed.js" data-form-id="9"></script>
                     </div>
                 </div>
             </AnimatedContent>

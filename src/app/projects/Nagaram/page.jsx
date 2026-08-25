@@ -23,9 +23,9 @@ on hygiene.`}
       />
  <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor="#0b6b3b"
+        eyebrowColor="#095e3f"
         headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Promoting cleaner, healthier school environments through improved sanitation, safe water, and hygiene awareness."
       />
       <ProjectGallery images={[
     "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135715.jpg",

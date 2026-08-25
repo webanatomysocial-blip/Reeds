@@ -22,9 +22,9 @@ export default function NyamathapurProject() {
       />
       <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor="#0b6b3b"
+        eyebrowColor="#095e3f"
         headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Improving access to clean water and hygiene through better facilities, awareness, and school cleanliness."
       />
       <ProjectGallery images={[
     "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_112610.jpg",

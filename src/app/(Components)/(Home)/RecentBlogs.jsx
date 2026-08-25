@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import AnimatedContent from "@/app/(Components)/AnimatedContent";
+import PillButton from "@/app/(Components)/PillButton";
 import { getBlogPosts, getFeaturedImage, stripHtml } from "@/app/lib/wordpress";
 import "@/app/(Css)/Blogs/Blogs.css";
 
@@ -47,6 +48,19 @@ const RecentBlogs = ({ desktopPadding, mobilePadding }) => {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="blogs-view-all-wrapper">
+          <Link href="/blogs" style={{ textDecoration: "none" }}>
+            <PillButton
+              text="View All"
+              bg="#0b6b3b"
+              color="#ffffff"
+              arrowBg="#ffffff"
+              arrowColor="#0b6b3b"
+              hoverFillColor="#f5f5f5"
+              hoverTextColor="#000000"
+            />
+          </Link>
         </div>
       </section>
     </AnimatedContent>

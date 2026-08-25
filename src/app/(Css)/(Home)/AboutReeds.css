@@ -34,6 +34,10 @@
     margin-top: 12px;
     text-decoration: none;
     transition: opacity 0.2s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .about-cert:hover {
@@ -90,6 +94,54 @@
     text-align: center;
     width: 100%;
     margin: 0;
+}
+
+.about-pdf-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about-pdf-modal-content {
+    position: relative;
+    background: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+    height: 85vh;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.about-pdf-modal-close {
+    position: absolute;
+    top: 50px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.about-pdf-modal-close:hover {
+    background: #0b6b3b;
+}
+
+.about-pdf-modal-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 @media (max-width: 1024px) {

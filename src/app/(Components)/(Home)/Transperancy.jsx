@@ -9,32 +9,42 @@ import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Array for transparency documents
-const transparencyData = [
+// Default transparency documents
+const defaultDocuments = [
   {
     title: "Capability Statement",
     date: "2025-2026",
     size: "691KB",
     // Existing google pdf link or placeholder
-    link: "https://reeds.webanatomytech.com/Reports/REEDS-Capability-Statement.pdf" 
+    link: "https://reeds.in/reports/REEDS-Capability-Statement.pdf"
   },
   {
     title: "Innovation Challenge 2026",
     date: "Feb-2026",
     size: "5MB",
-    link: "https://reeds.webanatomytech.com/Reports/CIRDAP-International-Rural-Development-Innovation-Challenge-2026.pdf"
+    link: "https://reeds.in/reports/CIRDAP-International-Rural-Development-Innovation-Challenge-2026.pdf"
   },
 ];
 
-const Transperancy = () => {
+const Transperancy = ({
+  bgImage,
+  eyebrowText = "TRANSPARENCY CENTER",
+  headingText = "Everything, on the record.",
+  descText = "Governance, audited financials, statutory certifications and CSR compliance available for download, updated every year.",
+  documents = defaultDocuments,
+  desktopPadding,
+  mobilePadding,
+}) => {
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
+  const hasBg = Boolean(bgImage);
 
   useEffect(() => {
-    gsap.fromTo(bgRef.current, 
-      { scale: 1 }, 
-      { 
-        scale: 1.2, 
+    if (!hasBg) return;
+    gsap.fromTo(bgRef.current,
+      { scale: 1 },
+      {
+        scale: 1.2,
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -44,15 +54,26 @@ const Transperancy = () => {
         }
       }
     );
-  }, []);
+  }, [hasBg]);
 
   return (
-   
-    <section className="transparency-section" ref={sectionRef}>
-      <div className="transparency-bg" ref={bgRef}>
-        <Image src="/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg" alt="Transparency Background" fill style={{ objectFit: 'cover' }} priority />
-      </div>
-      <div className="transparency-overlay"></div>
+
+    <section
+      className={`transparency-section${hasBg ? "" : " is-plain"}`}
+      ref={sectionRef}
+      style={{
+        '--d-pad': desktopPadding,
+        '--m-pad': mobilePadding,
+      }}
+    >
+      {hasBg && (
+        <>
+          <div className="transparency-bg" ref={bgRef}>
+            <Image src={bgImage} alt="Transparency Background" fill style={{ objectFit: 'cover' }} />
+          </div>
+          <div className="transparency-overlay"></div>
+        </>
+      )}
       <AnimatedContent
         className="transparency-container"
         distance={50}
@@ -67,17 +88,15 @@ const Transperancy = () => {
         delay={0}
       >
         <div className="transparency-header">
-          <span className="eyebrow-text-white transparency-eyebrow">TRANSPARENCY CENTER</span>
-          <h2 className="head-text-white" style={{paddingBottom:"20px"}}>Everything, on the record.</h2>
-          <p className="para-text-white">
-            Governance, audited financials, statutory
-            certifications and CSR compliance 
-            available for download, updated every year.
+          <span className={`${hasBg ? "eyebrow-text-white" : "eyebrow-text"} transparency-eyebrow`}>{eyebrowText}</span>
+          <h2 className={hasBg ? "head-text-white" : "head-text"} style={{paddingBottom:"20px"}}>{headingText}</h2>
+          <p className={hasBg ? "para-text-white" : "para-text"}>
+            {descText}
           </p>
         </div>
 
         <div className="transparency-cards">
-          {transparencyData.map((item, index) => (
+          {documents.map((item, index) => (
             <div className="transparency-card" key={index}>
               <h3 className="transparency-card-title">{item.title}</h3>
               <hr className="transparency-divider" />

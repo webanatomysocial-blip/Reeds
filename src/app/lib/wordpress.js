@@ -93,6 +93,88 @@ export async function getStoryPostBySlug(slug) {
   return posts[0] ?? null;
 }
 
+const BYLINE_LABELS = {
+  "author": "author",
+  "working as": "workingAs",
+  "published on": "publishedOn",
+  "share your view at": "shareEmail",
+  "share your thought at": "shareEmail",
+  "share your thoughts at": "shareEmail",
+};
+
+// Splits an element's content on <br> into plain-text lines, decoding
+// entities via the DOM itself (not a regex) so things like "&#8211;" or
+// "&nbsp;" come out correctly regardless of how the editor produced them.
+function elementTextLines(doc, node) {
+  const temp = doc.createElement("div");
+  temp.innerHTML = node.innerHTML ?? "";
+  temp.querySelectorAll("br").forEach((br) => br.replaceWith("\n"));
+  return temp.textContent.split("\n").map((s) => s.trim()).filter(Boolean);
+}
+
+function matchByline(line) {
+  const m = line.match(/^([^:]+):\s*(.+)$/);
+  if (!m) return null;
+  const key = BYLINE_LABELS[m[1].trim().toLowerCase()];
+  return key ? { key, value: m[2].trim() } : null;
+}
+
+// A post can carry a quote line plus Author / Working As / Published On /
+// Share-your-view-at lines anywhere in the post (top, bottom, or wherever the
+// editor pasted it) — sometimes each on its own paragraph, sometimes the
+// quote and "Author:" line share one element separated by <br>s. This finds
+// whichever element contains "Author:", treats any leftover text in that
+// same element as the quote, then picks up the other labels from the
+// following siblings, and strips all of it out of the returned body.
+export function parseBlogByline(html = "") {
+  if (typeof window === "undefined" || !html) return { meta: null, bodyHtml: html };
+
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  const nodes = Array.from(doc.body.children);
+  const meta = {};
+  let quote = "";
+  let anchorIndex = -1;
+
+  for (let i = 0; i < nodes.length; i++) {
+    const leftover = [];
+    let foundAuthor = false;
+
+    for (const line of elementTextLines(doc, nodes[i])) {
+      const match = matchByline(line);
+      if (match) {
+        meta[match.key] = match.value;
+        if (match.key === "author") foundAuthor = true;
+      } else {
+        leftover.push(line);
+      }
+    }
+
+    if (foundAuthor) {
+      quote = leftover.join(" ").trim();
+      anchorIndex = i;
+      break;
+    }
+  }
+
+  if (anchorIndex === -1) return { meta: null, bodyHtml: html };
+
+  const consumed = [nodes[anchorIndex]];
+  for (let i = anchorIndex + 1; i < nodes.length && i <= anchorIndex + 6; i++) {
+    const lines = elementTextLines(doc, nodes[i]);
+    if (lines.length === 0) {
+      consumed.push(nodes[i]);
+      continue;
+    }
+    const match = lines.length === 1 && matchByline(lines[0]);
+    if (!match) break;
+    meta[match.key] = match.value;
+    consumed.push(nodes[i]);
+  }
+
+  consumed.forEach((n) => n.remove());
+  return { meta: { quote, ...meta }, bodyHtml: doc.body.innerHTML };
+}
+
 // A story post is written as alternating image/text blocks. Each image
 // starts a new slide; every block of text before the next image belongs
 // to that slide (a heading becomes the slide title, the rest its body).

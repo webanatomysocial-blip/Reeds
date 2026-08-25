@@ -14,7 +14,7 @@ const slides = actionProgramsData.map((program) => ({
   link: program.link,
 }));
 
-const HomeBanner = () => {
+const HomeBanner = ({ bgPosition = "center" }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -30,10 +30,10 @@ const HomeBanner = () => {
     
       <div className="home-banner" style={{ position: "relative" }}>
         <Image
-          src="/assets/Gallery_Assets/DSC_6354.jpg.jpeg"
+          src="/assets/Banner_Assets/Home-1.jpg"
           alt="Home Banner"
           fill
-          style={{ objectFit: "cover", zIndex: -1 }}
+          style={{ objectFit: "cover", objectPosition: bgPosition, zIndex: -1 }}
           priority
         />
         <div className="banner-overlay"></div>
@@ -65,7 +65,7 @@ const HomeBanner = () => {
               innovation — one village at a time.
             </p>
             <div className="banner-buttons">
-              <PillButton
+              {/* <PillButton
                 text="Become a Partner"
                 bg="var(--primary-color)"
                 color="var(--secondary-color)"
@@ -73,7 +73,7 @@ const HomeBanner = () => {
                 arrowColor="white"
                 hoverFillColor="#0b5e3f"
                 hoverTextColor="var(--primary-color)"
-              />
+              /> */}
               <PillButton
                 text="Donate Now"
                 bg="#F59E0A"

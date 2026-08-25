@@ -7,15 +7,15 @@ import '@/app/(Css)/Projects/ProjectGallery.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const defaultImages = [
-  '/assets/Gallery_Assets/AGM-1-Sep-2025-e1760336457774.jpg.jpeg',
-  '/assets/Gallery_Assets/DSC_6354.jpg.jpeg',
-  '/assets/Gallery_Assets/Site-visits-1.jpg.jpeg',
-  '/assets/Gallery_Assets/AGM-2-Sep-2025.jpg.jpeg',
-  '/assets/Gallery_Assets/Self-Help-Groups.jpg.jpeg',
-  '/assets/Gallery_Assets/Site-visits.jpg.jpeg'
+  '/assets/Gallery_Assets/thumbs/AGM-1-Sep-2025-e1760336457774.jpg.jpeg',
+  '/assets/Gallery_Assets/thumbs/DSC_6354.jpg.jpeg',
+  '/assets/Gallery_Assets/thumbs/Site-visits-1.jpg.jpeg',
+  '/assets/Gallery_Assets/thumbs/AGM-2-Sep-2025.jpg.jpeg',
+  '/assets/Gallery_Assets/thumbs/Self-Help-Groups.jpg.jpeg',
+  '/assets/Gallery_Assets/thumbs/Site-visits.jpg.jpeg'
 ];
 
-const ProjectGallery = ({ images = defaultImages }) => {
+const ProjectGallery = ({ images = defaultImages, objectPosition = 'center' }) => {
   return (
     <>
    
@@ -38,7 +38,7 @@ const ProjectGallery = ({ images = defaultImages }) => {
           <Marquee speed={40} gradient={false} direction="left">
             {images.map((img, index) => (
               <div key={index} className="project-gallery-item" style={{ position: 'relative' }}>
-                <Image src={img} alt={`Gallery Image ${index + 1}`} fill sizes="420px" />
+                <Image src={img} alt={`Gallery Image ${index + 1}`} fill sizes="420px" style={{ objectFit: 'cover', objectPosition }} />
               </div>
             ))}
           </Marquee>

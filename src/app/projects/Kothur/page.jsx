@@ -22,9 +22,9 @@ export default function KothurProject() {
       />
  <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor="#0b6b3b"
+        eyebrowColor="#095e3f"
         headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Strengthening school hygiene and access to clean water for 78 students and 3 faculty members."
       />
       <ProjectGallery images={[
     "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132245.jpg",

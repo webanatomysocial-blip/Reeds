@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import HomeBanner from "./(Components)/(Home)/HomeBanner";
+import PillButton from "./(Components)/PillButton";
 import TickerTape from "./(Components)/(Home)/TickerTape";
 import Headings from "./(Components)/Headings";
 import CTA from "./(Components)/CTA";
@@ -20,68 +22,84 @@ const Home = () => {
       <TickerTape />
       <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Change you can measure."
-        descriptionText="Every rupee is tracked. Every outcome is audited. Here is what three and a half decades of steady, grassroots work looks like."
+        descriptionText="Empowering rural communities across India through inclusive, sustainable development. "
       />
       <ImpactCards />
       <AboutReeds />
       <Headings
         eyebrowText="Our Vision & Mission"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Founders Block."
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Building self-reliant rural communities through opportunity, innovation, and equity. "
       />
       <Founders />
       <Headings
         eyebrowText="in the news"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="REED's works."
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Creating healthier, skilled, resilient, and self-reliant rural communities."
       />
       <VIDEOFRAME
         videos={[
           {
             iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/ZXGObFcjkyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
             vidtitle:
-              "International Rural Development Innovation Challenge–2026",
+              "V6 Telugu News | CIRDAP–REEDS Rural Innovation Awards 2026 Soft Launch",
             viddesc:
-              "Held on 22 December 2025 at Hotel Plaza, Hyderabad, the event marked the regional launch of the CIRDAP-REEDS International Rural Development Innovation Challenge 2026.",
+              "V6 News covers the Telugu-language soft launch of the CIRDAP–REEDS Rural Innovation Awards 2026, held on 22 December 2025.",
           },
           {
-            iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/mqm1h4mC7LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-            vidtitle:
-              "World Rural Development Day Poster Release | Hyderabad | V6 News",
+            iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/zmfWCNDBb4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            vidtitle: "International Women's Day",
             viddesc:
-              "The official poster for World Rural Development Day was unveiled at an event held in Hyderabad, with coverage by V6 News.",
+              "REEDS marks International Women's Day, celebrating the strength and resilience of women driving change in rural communities.",
           },
-          // {
-          //   iframe: `<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-          //   vidtitle: "Republic Day Celebration with a Cause",
-          //   viddesc: "A Republic Day celebration dedicated to honoring the nation while promoting social responsibility and community development initiatives.",
-          // },
+          {
+            iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/cCfjgpf4ZqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            vidtitle: "Key Highlights of REEDS' Work",
+            viddesc:
+              "A quick look back at the key highlights of REEDS' work across education, water, sanitation and rural development.",
+          },
         ]}
-        columns={2}
+        columns={3}
       />
+      <div className="videoframe-explore-all-wrapper" style={{ display: "flex", justifyContent: "center", marginTop: "20px", marginBottom: "0px" }}>
+        <Link href="/gallery#media" style={{ textDecoration: "none" }}>
+          <PillButton
+            text="Explore All"
+            bg="#0b6b3b"
+            color="#ffffff"
+            arrowBg="#ffffff"
+            arrowColor="#0b6b3b"
+            hoverFillColor="#f5f5f5"
+            hoverTextColor="#000000"
+          />
+        </Link>
+      </div>
       <Headings
         eyebrowText="What we do"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Action Programs."
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Advancing rural development through sustainable solutions, partnerships, and lasting impact. "
       />
       <ActionProgram />
       <Donate />
       <Headings
         eyebrowText="Awards & recognition"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Recognised by the country."
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Recognised for rural innovation, impactful partnerships, and community-led progress."
       />
       <Awards />
-      <Transperancy />
+      <Transperancy
+        mobilePadding={"0px 20px 60px 20px"}
+        desktopPadding={"0px 50px 70px 50px"}
+      />
       <Headings
         eyebrowText="News & Blog"
-        eyebrowColor={"#095e3fff"}
+        eyebrowColor={"#095e3f"}
         headingText="Stories and insights."
         descriptionText="Feeding families, educating children & rebuilding lives what our impact shows."
       />

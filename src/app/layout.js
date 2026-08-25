@@ -3,6 +3,7 @@ import { ReactLenis } from "lenis/react";
 import ScrollToTop from "./(Components)/ScrollToTop";
 import Footer from "./(Components)/Footer";
 import Header from "./(Components)/Header";
+import BackToTop from "./(Components)/BackToTop";
 import "./(Css)/index.css";
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <BackToTop />
         </ReactLenis>
       </body>
     </html>

@@ -18,12 +18,13 @@ export default function EkvaipallyMPPSProject() {
         students={61}
         faculty={4}
         completed={100}
+        image="/assets/Project_Gallery/ekwaipally-gallery/IMG_20260325_110038.jpg"
       />
       <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor="#0b6b3b"
+        eyebrowColor="#095e3f"
         headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Improving access to clean water and hygiene facilities for 61+ students and 4+ faculty members."
       />
       <ProjectGallery images={[
     "/assets/Project_Gallery/ekwaipally-gallery/IMG_20260325_110038.jpg",

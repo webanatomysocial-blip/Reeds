@@ -3,9 +3,11 @@
     background-color: white;
 }
 .founders-container{
-    background: url(/assets/About_Assets/about.png) no-repeat center center;
+    background: url(/assets/About_Assets/about.jpg) no-repeat center center;
+    background-size: cover;
     height: 90vh;
     border-radius: 20px;
+    overflow: hidden;
     display: flex;
     align-items: flex-end;
     padding: 0px 100px 50px 100px;
@@ -29,11 +31,16 @@
     width: 40%;
 }
 
+.vis-mis-image-mobile {
+    display: none;
+}
+
 @media (max-width: 992px) {
     .founders-container {
+        background: none;
         padding: 0px 40px 40px 40px;
         height: auto;
-        min-height: 60vh;
+        min-height: 0;
         align-items: center;
         justify-content: flex-end;
     }
@@ -43,6 +50,14 @@
     .vis-mis {
         width: 100%;
     }
+    .vis-mis-image-mobile {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 220px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 768px) {
@@ -50,12 +65,12 @@
         padding: 0px 20px 0px 20px;
     }
     .founders-container {
-        padding: 40px 20px;
+        padding: 0px 0px;
         border-radius: 12px;
         gap: 30px;
     }
     .vis-mis {
-        padding: 20px;
+        padding: 0px;
         gap: 16px;
     }
 }

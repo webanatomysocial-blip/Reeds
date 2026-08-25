@@ -22,9 +22,9 @@ export default function MakthaMadharamProject() {
       />
       <Headings
         eyebrowText="OUR IMPACT"
-        eyebrowColor="#0b6b3b"
+        eyebrowColor="#095e3f"
         headingText="Project Gallery"
-        descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
+        descriptionText="Creating a cleaner, healthier school environment through improved sanitation, hygiene, and access to safe water."
       />
       <ProjectGallery images={[
     "/assets/Project_Gallery/maktha-madahram-gallery/IMG_20260313_140135.jpg",

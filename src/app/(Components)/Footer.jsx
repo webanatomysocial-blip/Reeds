@@ -18,12 +18,15 @@ const Footer = () => {
             <li><Link href="/what-we-do">Programs</Link></li>
           </ul>
         </div>
-        
+
         <div className="footer-col">
           <h4 className="footer-heading">Other Links</h4>
           <ul className="footer-links">
             <li><Link href="/blogs">Blogs</Link></li>
+            <li><Link href="/stories">Stories</Link></li>
+            <li><Link href="/newsletter">Newsletter</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
+            <li><Link href="/careers">Careers</Link></li>
           </ul>
         </div>
 
@@ -57,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
           <Link href="/contact" style={{textDecoration: 'none'}}>
-            <PillButton 
+            <PillButton
               text="Contact us"
               bg="#fca311"
               color="black"
@@ -74,15 +77,14 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-bottom-left">
-          <Image src="/assets/reeds.avif" alt="Rural Development Society" className="footer-logo" width={512} height={341} />
-          <p className="footer-cert">ISO Certified under 9001:2015.</p>
+          <Image src="/assets/reeds.png" alt="Rural Development Society" className="footer-logo" width={612} height={441} />
         </div>
 
         <div className="footer-bottom-center">
           <span className="designed-by-text">Designed by</span>
           <a href="https://webanatomy.in" target="_blank" rel="noopener noreferrer" className="wa-link">
             <Image src="/assets/WA.avif" alt="Web Anatomy" className="wa-logo" width={512} height={512} />
-            <span className="wa-text">Web Anatomy</span>
+            <span className="wa-text" data-text="Web Anatomy">Web Anatomy</span>
           </a>
         </div>
 

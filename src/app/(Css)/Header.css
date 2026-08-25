@@ -39,11 +39,8 @@
   padding: 0px 50px;
 }
 
-.header-section.hidden {
-  opacity: 0;
-  transform: translateY(-20px);
-  visibility: hidden;
-  pointer-events: none;
+.header-section.header-static {
+  position: absolute;
 }
 
 .header-logo {
@@ -253,6 +250,9 @@
 }
 
 @media (max-width: 600px) {
+  .nav-item-2 {
+    padding: 0px;
+}
   .header-pill {
     padding: 8px 12px 8px 20px;
     width: 95%;

@@ -7,12 +7,12 @@ import { IoLocationOutline } from 'react-icons/io5';
 import '@/app/(Css)/Projects/ProjectBanner.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
-const ProjectBanner = ({ title, description, visits = 3, students = 37, faculty = 3, completed = 100, image }) => {
+const ProjectBanner = ({ title, description, visits = 3, students = 37, faculty = 3, completed = 100, image, bgPosition = "center" }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <section className="project-banner-section" style={{ position: 'relative' }}>
-      <Image src={image || "/assets/Gallery_Assets/Site-visits.jpg.jpeg"} alt="Project Banner Background" fill style={{ objectFit: 'cover', zIndex: -1 }} priority />
+      <Image src={image || "/assets/Gallery_Assets/Site-visits.jpg.jpeg"} alt="Project Banner Background" fill style={{ objectFit: 'cover', objectPosition: bgPosition, zIndex: -1 }} priority />
       <div className="project-banner-overlay"></div>
       
       <AnimatedContent

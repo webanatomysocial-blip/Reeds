@@ -1,26 +1,32 @@
 import React from 'react';
 import '@/app/(Css)/Projects/WashProjectsTable.css';
 
-const washProjectsData = [
-  { location: 'Narsapur MPPS', visits: 3, students: 37, faculty: 3 },
-  { location: 'Bandamailaram MPPS', visits: 2, students: 75, faculty: 3 },
-  { location: 'Nagaram MPPS & ZPHS', visits: 1, students: 505, faculty: 3 },
-  { location: 'Kothur MPPS', visits: 2, students: 78, faculty: 3 },
-  { location: 'Kokhonda MPPS', visits: 2, students: 104, faculty: 3 },
-  { location: 'Nyamathapur MPPS', visits: 1, students: 27, faculty: 2 },
-  { location: 'MPUPS Maktha Madharam', visits: 1, students: 63, faculty: 6 },
-  { location: 'MPPS Ekvaipally', visits: 1, students: 61, faculty: 4 },
-  { location: 'ZPHS Rimannaguda', visits: 1, students: 67, faculty: 8 },
-  { location: 'ZPHS Ekvaipally', visits: 1, students: 99, faculty: 9 },
+const impactData = [
+  { indicator: 'Students Impacted', achievement: '1,134' },
+  { indicator: 'Community Members Impacted', achievement: '284' },
+  { indicator: 'Schools Covered', achievement: '10' },
+  { indicator: 'School Visits', achievement: '22' },
+  { indicator: 'Districts Covered', achievement: '3' },
+  { indicator: 'State Covered', achievement: 'Telangana' },
+  { indicator: 'Academic Programme Period', achievement: '2023–2026' },
 ];
 
-const totals = washProjectsData.reduce(
-  (acc, row) => ({
-    visits: acc.visits + row.visits,
-    students: acc.students + row.students,
-    faculty: acc.faculty + row.faculty,
-  }),
-  { visits: 0, students: 0, faculty: 0 }
+const schoolsData = [
+  { school: 'MPPS Narasapur', village: 'Narasapur', district: 'Siddipet', visits: 9 },
+  { school: 'MPPS Bandamailaram', village: 'Bandamailaram', district: 'Siddipet', visits: 3 },
+  { school: 'ZPHS Nagaram', village: 'Nagaram', district: 'Medak', visits: 1 },
+  { school: 'MPPS Kothur', village: 'Kothur', district: 'Siddipet', visits: 2 },
+  { school: 'MPPS Kokkonda', village: 'Kokkonda', district: 'Siddipet', visits: 2 },
+  { school: 'MPPS Nyamathapur', village: 'Nyamathapur', district: 'Rangareddy', visits: 1 },
+  { school: 'MPUPS Maktha Madharam', village: 'Maktha Madharam', district: 'Medak', visits: 1 },
+  { school: 'ZPHS Ekvaipally', village: 'Ekvaipally', district: 'Rangareddy', visits: 1 },
+  { school: 'MPPS Ekvaipally', village: 'Ekvaipally', district: 'Rangareddy', visits: 1 },
+  { school: 'ZPHS Rimmanaguda', village: 'Rimmanaguda', district: 'Siddipet', visits: 1 },
+];
+
+const schoolTotals = schoolsData.reduce(
+  (acc, row) => ({ visits: acc.visits + row.visits }),
+  { visits: 0 }
 );
 
 const WashProjectsTable = () => {
@@ -34,32 +40,76 @@ const WashProjectsTable = () => {
       </div>
 
       <div className="wash-table-wrapper">
-        <table className="wash-table">
-          <thead>
-            <tr>
-              <th>Location</th>
-              <th>No of Visits</th>
-              <th>Total Student</th>
-              <th>Total Faculty</th>
-            </tr>
-          </thead>
-          <tbody>
-            {washProjectsData.map((row) => (
-              <tr key={row.location}>
-                <td>{row.location}</td>
-                <td>{row.visits}</td>
-                <td>{row.students}</td>
-                <td>{row.faculty}</td>
+        <h3 className="sub-head-text" style={{ marginBottom: '20px', textAlign: 'center' }}>
+          REEDS WASH Programme – Impact at a Glance
+        </h3>
+        <div className="wash-table-scroll">
+          <table className="wash-table">
+            <thead>
+              <tr>
+                <th>Impact Indicator</th>
+                <th>Achievement</th>
               </tr>
-            ))}
-            <tr className="wash-table-total">
-              <td>Total</td>
-              <td>{totals.visits}</td>
-              <td>{totals.students.toLocaleString()}</td>
-              <td>{totals.faculty}</td>
-            </tr>
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {impactData.map((row) => (
+                <tr key={row.indicator}>
+                  <td>{row.indicator}</td>
+                  <td>{row.achievement}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p className="para-text" style={{ margin: '50px 0' }}>
+          <strong>Key Activities: </strong>
+          Programme Focus – WASH awareness and hygiene promotion | School WASH
+          assessments and monitoring | Baseline and midline assessments | WASH
+          competitions and student engagement | School infrastructure
+          verification | Distribution of WASH materials
+        </p>
+
+        <h3 className="sub-head-text" style={{ marginBottom: '20px', textAlign: 'center' }}>
+          Schools Covered
+        </h3>
+        <div className="wash-table-scroll">
+          <table className="wash-table wash-table-schools">
+            <thead>
+              <tr>
+                <th>Sl. No.</th>
+                <th>Government School</th>
+                <th>Village / Area</th>
+                <th>District</th>
+                <th>Visits</th>
+              </tr>
+            </thead>
+            <tbody>
+              {schoolsData.map((row, index) => (
+                <tr key={row.school}>
+                  <td>{index + 1}</td>
+                  <td>{row.school}</td>
+                  <td>{row.village}</td>
+                  <td>{row.district}</td>
+                  <td>{row.visits}</td>
+                </tr>
+              ))}
+              <tr className="wash-table-total">
+                <td colSpan={2}>Total</td>
+                <td>10 Schools</td>
+                <td>3 Districts</td>
+                <td>{schoolTotals.visits} Visits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="para-text" style={{ marginTop: '32px' }}>
+          <strong>Our Impact: </strong>
+          REEDS works with government schools and rural communities to improve
+          WASH practices, hygiene awareness, school facilities, and community
+          participation, creating healthier and safer learning environments.
+        </p>
       </div>
     </section>
   );

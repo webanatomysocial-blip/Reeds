@@ -20,22 +20,22 @@ Makes Difference"
         desc="Programs that uplift communities through education, healthcare and live support."
       />
 
-      <div id="programs" style={{ scrollMarginTop: "-100px" }}>
+      <div id="programs" className="scroll-anchor-70">
         <Headings
           eyebrowText="Founders Vision"
-          eyebrowColor={"#095e3fff"}
+          eyebrowColor={"#095e3f"}
           headingText="Action Programs."
           descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
         />
         <ActionProgram showButton={false} showAll />
       </div>
-      <div id="locations" style={{ scrollMarginTop: "-100px" }}>
+      <div id="locations" className="scroll-anchor-70">
         <Locations />
       </div>
-      <div id="awards" style={{ scrollMarginTop: "-100px" }}>
+      <div id="awards" className="scroll-anchor-70">
         <Headings
           eyebrowText="Awards & recognition"
-          eyebrowColor={"#095e3fff"}
+          eyebrowColor={"#095e3f"}
           headingText="Recognised by the country."
           descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
         />

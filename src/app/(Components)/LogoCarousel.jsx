@@ -4,15 +4,17 @@ import "@/app/(Css)/LogoCarousel.css";
 
 // Images
 const defaultImages = [
-  "/assets/LogoCarousel/CIRDPA-150x150.png",
-  "/assets/LogoCarousel/Z_Logo-3-e1663336214242-768x524.png",
-  "/assets/LogoCarousel/amrita-vishwa-1.png",
-  "/assets/LogoCarousel/anurag-1-150x150.png",
-  "/assets/LogoCarousel/good-gov-150x150.png",
-  "/assets/LogoCarousel/life-skills.png",
-  "/assets/LogoCarousel/manage-300x196.jpg.jpeg",
-  "/assets/LogoCarousel/shobhit-150x150.png",
-  "/assets/LogoCarousel/social-brirds-150x150.png"
+  { src: "/assets/LogoCarousel/CIRDPA-150x150.png", link: "https://cirdap.org/" },
+  { src: "/assets/LogoCarousel/Z_Logo-3-e1663336214242-768x524.png", link: "https://zenithenergy.com/" },
+  { src: "/assets/LogoCarousel/amrita-vishwa-1.png", link: "https://www.amrita.edu/" },
+  { src: "/assets/LogoCarousel/anurag-1-150x150.png", link: "https://www.anurag.edu.in/" },
+  { src: "/assets/LogoCarousel/good-gov-150x150.png", link: "https://www.cgg.gov.in/" },
+  { src: "/assets/LogoCarousel/life-skills.png", link: "https://www.lifeskill.org.in/" },
+  { src: "/assets/LogoCarousel/manage-300x196.jpg.jpeg", link: "https://www.manage.gov.in/" },
+  { src: "/assets/LogoCarousel/shobhit-150x150.png", link: "https://www.shobhituniversity.ac.in/" },
+  { src: "/assets/LogoCarousel/social-brirds-150x150.png", link: "https://socialbirds.org/" },
+  { src: "/assets/LogoCarousel/NIAM.png", link: "https://www.ccsniam.gov.in/" },
+  { src: "/assets/LogoCarousel/APPC.png", link: "https://www.appc.in/" },
 ];
 
 export default function LogoCarousel({
@@ -22,7 +24,9 @@ export default function LogoCarousel({
   Mpadding = "60px 20px "
 }) {
 
-  const imagesToRender = partnersImages.length ? partnersImages : defaultImages;
+  const imagesToRender = (partnersImages.length ? partnersImages : defaultImages).map((item) =>
+    typeof item === "string" ? { src: item, link: null } : item
+  );
 
   return (
     <section className="recognitions-section partners-section" style={{ "--d-padding": Dpadding, "--m-padding": Mpadding }}>
@@ -36,28 +40,12 @@ export default function LogoCarousel({
         <div className="recognitions-marquee-col">
           <div className="recognitions-marquee-track">
 
-            {imagesToRender.map((img, index) => (
-              <div key={`param-${index}`} className="recognition-item">
-                <Image
-                  src={img}
-                  alt={`Partner ${index + 1}`}
-                  className="recognition-img"
-                  fill
-                  sizes="180px"
-                />
-              </div>
+            {imagesToRender.map(({ src, link }, index) => (
+              <LogoItem key={`param-${index}`} src={src} link={link} alt={`Partner ${index + 1}`} />
             ))}
 
-            {imagesToRender.map((img, index) => (
-              <div key={`dup-${index}`} className="recognition-item">
-                <Image
-                  src={img}
-                  alt={`Partner Duplicate ${index + 1}`}
-                  className="recognition-img"
-                  fill
-                  sizes="180px"
-                />
-              </div>
+            {imagesToRender.map(({ src, link }, index) => (
+              <LogoItem key={`dup-${index}`} src={src} link={link} alt={`Partner Duplicate ${index + 1}`} />
             ))}
 
           </div>
@@ -65,5 +53,21 @@ export default function LogoCarousel({
 
       </div>
     </section>
+  );
+}
+
+function LogoItem({ src, link, alt }) {
+  const image = <Image src={src} alt={alt} className="recognition-img" fill sizes="180px" />;
+
+  return (
+    <div className="recognition-item">
+      {link ? (
+        <a href={link} target="_blank" rel="noopener noreferrer" style={{ position: "absolute", inset: 0 }}>
+          {image}
+        </a>
+      ) : (
+        image
+      )}
+    </div>
   );
 }

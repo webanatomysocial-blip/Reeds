@@ -7,7 +7,7 @@ import "@/app/(Css)/(Home)/TickerTape.css";
 const defaultItems = Array.from({ length: 10 }, () => ({
     logo: "CIRDAP-REEDS Winners Announcement",
     icon: <FiSun className="ticker-icon" />,
-    link: "https://reeds.webanatomytech.com/Reports/Announcement_of_the_Result.pdf"
+    link: "https://reeds.in/reports/Announcement_of_the_Result.pdf"
 }));
 
 const TickerTape = ({ items = defaultItems }) => {

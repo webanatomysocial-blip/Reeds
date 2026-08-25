@@ -1,0 +1,150 @@
+.fc-table-section {
+  width: 100%;
+  padding: 100px 50px;
+  background-color: #ffffff;
+}
+
+.fc-table-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+}
+
+.fc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fc-table th {
+  background-color: #fca311;
+  color: #1a1a1a;
+  text-align: left;
+  padding: 18px 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.fc-table th:last-child {
+  text-align: right;
+}
+
+.fc-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 0.95rem;
+}
+
+.fc-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fc-table-link {
+  color: #0b6b3b;
+  text-decoration: underline;
+}
+
+.fc-row-clickable .fc-table-link {
+  cursor: pointer;
+}
+
+.fc-table td:last-child {
+  text-align: right;
+}
+
+.fc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fc-modal-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.fc-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+}
+
+.fc-modal-close:hover {
+  color: #1a1a1a;
+}
+
+.fc-modal-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0b6b3b;
+  margin: 0 0 20px 0;
+}
+
+.fc-detail-table-wrapper {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fc-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fc-detail-table th {
+  background-color: #e8e8e8;
+  color: #1a1a1a;
+  text-align: left;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.fc-detail-table th:not(:first-child),
+.fc-detail-table td:not(:first-child) {
+  text-align: right;
+}
+
+.fc-detail-table td {
+  padding: 14px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.fc-detail-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .fc-table-section {
+    padding: 60px 20px;
+  }
+
+  .fc-table th,
+  .fc-table td,
+  .fc-detail-table th,
+  .fc-detail-table td {
+    padding: 14px 16px;
+  }
+}

@@ -63,6 +63,22 @@
   gap: 24px;
 }
 
+.donate-partner-logos {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  border-radius: 0px;
+}
+
+.donate-partner-logo {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .donate-bullet {
   display: flex;
   gap: 16px;
