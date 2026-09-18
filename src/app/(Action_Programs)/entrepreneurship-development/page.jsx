@@ -13,7 +13,7 @@ const EntrepreneurshipDevelopment = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/entrepreneurship-development.jpg"
+        bgImage="/assets/Banner_Assets/entrepreneurship-development.webp"
         eyebrowText="Action Programs"
         title="Entrepreneurship Development"
         desc="Equipping aspiring entrepreneurs with the skills and support to build sustainable livelihoods."
@@ -27,16 +27,16 @@ const EntrepreneurshipDevelopment = () => {
       />
       <ProjectGallery
         images={[
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240603171757 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240604183937 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240715112949 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240715122114 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240722154111 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240722161007 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240831142202 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG_20240603_180916 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG_20240831_221153 (1).jpg",
-          "/assets/Main_Project_Gallery/Entrepreneurship Development/MKKP2214 (1).jpg",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240603171757 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240604183937 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240715112949 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240715122114 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240722154111 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240722161007 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG20240831142202 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG_20240603_180916 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/IMG_20240831_221153 (1).webp",
+          "/assets/Main_Project_Gallery/Entrepreneurship Development/MKKP2214 (1).webp",
         ]}
       />
       <div className="content-div">

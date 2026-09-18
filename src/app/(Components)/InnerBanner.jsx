@@ -5,7 +5,7 @@ import '@/app/(Css)/InnerBanner.css';
 import FadeContent from '@/app/(Components)/FadeContent';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
-const InnerBanner = ({ bgImage = "/assets/About_Assets/aboutBanner.jpg", bgPosition = "center", eyebrowText, title, meta, desc, children }) => {
+const InnerBanner = ({ bgImage = "/assets/About_Assets/aboutBanner.webp", bgPosition = "center", eyebrowText, title, meta, desc, children }) => {
     return (
         <section className="inner-banner">
             <div className="inner-banner-bg" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>

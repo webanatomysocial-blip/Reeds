@@ -45,7 +45,7 @@ const DEFAULT_MEMBERS = [
 
 export default function TrustedSupporters({
   subHeading = "OUR TRUSTED SUPPORTERS",
-  mainHeading = "Board Members",
+  mainHeading = "Board of Governors",
   members = DEFAULT_MEMBERS,
   desktopPadding,
   mobilePadding

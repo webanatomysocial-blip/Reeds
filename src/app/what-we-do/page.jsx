@@ -13,7 +13,7 @@ const WhatWeDo = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Gallery_Assets/Creating-Awareness.jpg.jpeg"
+        bgImage="/assets/Gallery_Assets/Creating-Awareness.jpg.webp"
         eyebrowText="Action Programs"
         title="Programs That 
 Makes Difference"

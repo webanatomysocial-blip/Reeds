@@ -10,11 +10,10 @@ const WashProjects = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/washprojects.jpg"
+        bgImage="/assets/Banner_Assets/washprojects.webp"
         title="Clean Water.
 Healthy Communities.
 Better Future."
-        desc="We conducted 3 visits to Narasapur MPPS to improve water, sanitation facilities and promote hygiene education among students and staff."
       >
         <Link href="/projects" style={{ textDecoration: "none" }}>
           <PillButton

@@ -12,7 +12,7 @@ const projectsList = [
         visits: "3 Visits",
         students: "37 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Narasapur.jpg",
+        image: "/assets/Projects_Banner_Assets/Narasapur.webp",
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const projectsList = [
         visits: "2 Visits",
         students: "75 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Bandamailaram.jpg",
+        image: "/assets/Projects_Banner_Assets/Bandamailaram.webp",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "505 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Nagaram.jpg",
+        image: "/assets/Projects_Banner_Assets/Nagaram.webp",
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const projectsList = [
         visits: "2 Visits",
         students: "78 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Kothur.jpg",
+        image: "/assets/Projects_Banner_Assets/Kothur.webp",
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const projectsList = [
         visits: "2 Visits",
         students: "104 Students",
         faculty: "3 Faculty",
-        image: "/assets/Projects_Banner_Assets/Kokkonda.jpg",
+        image: "/assets/Projects_Banner_Assets/Kokkonda.webp",
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "27 Students",
         faculty: "2 Faculty",
-        image: "/assets/Projects_Banner_Assets/Nyamathapur.jpg",
+        image: "/assets/Projects_Banner_Assets/Nyamathapur.webp",
     },
     {
         id: 7,
@@ -66,7 +66,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "63 Students",
         faculty: "6 Faculty",
-        image: "/assets/Projects_Banner_Assets/Maktha-Madharam.jpg",
+        image: "/assets/Projects_Banner_Assets/Maktha-Madharam.webp",
     },
     {
         id: 8,
@@ -75,7 +75,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "67 Students",
         faculty: "8 Faculty",
-        image: "/assets/Projects_Banner_Assets/Rimmanaguda.jpg",
+        image: "/assets/Projects_Banner_Assets/Rimmanaguda.webp",
     },
     {
         id: 9,
@@ -84,7 +84,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "99 Students",
         faculty: "9 Faculty",
-        image: "/assets/Projects_Banner_Assets/Ekvaipally-ZPHS.jpg",
+        image: "/assets/Projects_Banner_Assets/Ekvaipally-ZPHS.webp",
     },
     {
         id: 10,
@@ -93,7 +93,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "61 Students",
         faculty: "4 Faculty",
-        image: "/assets/Project_Gallery/ekwaipally-gallery/IMG_20260325_110038.jpg",
+        image: "/assets/Project_Gallery/ekwaipally-gallery/IMG_20260325_110038.webp",
     }
 ];
 

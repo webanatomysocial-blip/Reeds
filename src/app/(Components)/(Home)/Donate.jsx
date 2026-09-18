@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(Home)/Donate.css';
 import Image from 'next/image';
+import Script from 'next/script';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
@@ -32,7 +33,7 @@ const Donate = () => {
        
         <section className="donate-section" ref={sectionRef}>
             <div className="donate-bg" ref={bgRef}>
-                <Image src="/assets/Gallery_Assets/Hand-Wash-Awareness.jpg.jpeg" alt="Donate Background" fill style={{ objectFit: 'cover' }} />
+                <Image src="/assets/Gallery_Assets/Hand-Wash-Awareness.jpg.webp" alt="Donate Background" fill style={{ objectFit: 'cover' }} />
             </div>
             <div className="donate-overlay"></div>
             <AnimatedContent
@@ -75,12 +76,12 @@ const Donate = () => {
                     </div>
 
                     <div className="donate-partner-logos">
-                        <div className="donate-partner-logo">
-                            <Image src="/assets/Home_Assets/caf-america-1024x576.png" alt="CAF America" fill style={{ objectFit: 'cover' }} />
-                        </div>
-                        <div className="donate-partner-logo">
+                        <a href="https://cafamerica.org/" target="_blank" rel="noopener noreferrer" className="donate-partner-logo">
+                            <Image src="/assets/Home_Assets/caf-america-1024x576.webp" alt="CAF America" fill style={{ objectFit: 'cover' }} />
+                        </a>
+                        <a href="https://myriadusa.org/" target="_blank" rel="noopener noreferrer" className="donate-partner-logo">
                             <Image src="/assets/Home_Assets/Myriad usa.jfif" alt="Myriad USA" fill style={{ objectFit: 'cover' }} />
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -131,7 +132,7 @@ const Donate = () => {
                         </form>
                         */}
                         <div id="wa-form-9"></div>
-                        <script src="https://loooped.in/embed.js" data-form-id="9"></script>
+                        <Script src="https://loooped.in/embed.js" data-form-id="9" strategy="afterInteractive" />
                     </div>
                 </div>
             </AnimatedContent>

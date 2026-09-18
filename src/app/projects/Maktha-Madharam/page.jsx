@@ -13,12 +13,11 @@ export default function MakthaMadharamProject() {
     <>
       <ProjectBanner
         title={title}
-        description={`We conducted 1 visit to ${title} to improve water, sanitation facilities and promote hygiene education among students and staff.`}
         visits={1}
         students={63}
         faculty={6}
         completed={100}
-        image="/assets/Projects_Banner_Assets/Maktha-Madharam.jpg"
+        image="/assets/Projects_Banner_Assets/Maktha-Madharam.webp"
       />
       <Headings
         eyebrowText="OUR IMPACT"
@@ -27,10 +26,10 @@ export default function MakthaMadharamProject() {
         descriptionText="Creating a cleaner, healthier school environment through improved sanitation, hygiene, and access to safe water."
       />
       <ProjectGallery images={[
-    "/assets/Project_Gallery/maktha-madahram-gallery/IMG_20260313_140135.jpg",
-    "/assets/Project_Gallery/maktha-madahram-gallery/IMG_20260313_143727.jpg",
-    "/assets/Project_Gallery/maktha-madahram-gallery/MPUPS Madharam - Students Demo on Hand Wash.jpg",
-    "/assets/Project_Gallery/maktha-madahram-gallery/Soap & pepper Expirement.jpg",
+    "/assets/Project_Gallery/maktha-madahram-gallery/IMG_20260313_140135.webp",
+    "/assets/Project_Gallery/maktha-madahram-gallery/IMG_20260313_143727.webp",
+    "/assets/Project_Gallery/maktha-madahram-gallery/MPUPS Madharam - Students Demo on Hand Wash.webp",
+    "/assets/Project_Gallery/maktha-madahram-gallery/Soap & pepper Expirement.webp",
   ]} />
       <ProjectImpact impactText={`Improved access to clean water and better hygiene practices among 63 students and 6 faculty members.`} />
       <TickerTape />

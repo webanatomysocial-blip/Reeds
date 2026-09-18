@@ -13,12 +13,11 @@ export default function NarasapurProject() {
     <>
       <ProjectBanner
         title={title}
-        description={`We conducted 3 visits to Narasapur MPPS to improve water, sanitation facilities and promote hygiene education among students and staff.`}
         visits={3}
         students={37}
         faculty={3}
         completed={100}
-        image="/assets/Projects_Banner_Assets/Narasapur.jpg"
+        image="/assets/Projects_Banner_Assets/Narasapur.webp"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -27,14 +26,14 @@ export default function NarasapurProject() {
         descriptionText="Improving access to clean water, hygiene, and better sanitation for students and faculty."
       />
       <ProjectGallery images={[
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_112419.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_113840.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_114015.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_120202.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121047.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121055.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121319.jpg",
-    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121516.jpg",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_112419.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_113840.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_114015.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_120202.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121047.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121055.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121319.webp",
+    "/assets/Project_Gallery/narasapur-gallery/IMG_20251114_121516.webp",
   ]} />
       <ProjectImpact 
       activities = {[

@@ -30,7 +30,7 @@ const HomeBanner = ({ bgPosition = "center" }) => {
     
       <div className="home-banner" style={{ position: "relative" }}>
         <Image
-          src="/assets/Banner_Assets/Home-1.jpg"
+          src="/assets/Banner_Assets/Home-1.webp"
           alt="Home Banner"
           fill
           style={{ objectFit: "cover", objectPosition: bgPosition, zIndex: -1 }}
@@ -74,47 +74,28 @@ const HomeBanner = ({ bgPosition = "center" }) => {
                 hoverFillColor="#0b5e3f"
                 hoverTextColor="var(--primary-color)"
               /> */}
-              <PillButton
-                text="Donate Now"
-                bg="#F59E0A"
-                color="black"
-                arrowBg="white"
-                arrowColor="black"
-                hoverFillColor="white"
-                hoverTextColor="black"
-              />
+              <Link
+                href="https://pages.razorpay.com/pl_PHFMC4XHiUK8KC/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <PillButton
+                  text="Donate Now"
+                  bg="#F59E0A"
+                  color="black"
+                  arrowBg="white"
+                  arrowColor="black"
+                  hoverFillColor="white"
+                  hoverTextColor="black"
+                />
+              </Link>
             </div>
           </AnimatedContent>
 
           <div className="banner-right">
             <div className="carousel-container">
               <div className="carousel-slide">
-                <div className="slide-content-left">
-                  <div className="carousel-indicators">
-                    {slides.map((_, idx) => (
-                      <div
-                        key={idx}
-                        className="indicator"
-                        onClick={() => setCurrentSlide(idx)}
-                      >
-                        {idx < currentSlide && <div className="indicator-fill" style={{ width: "100%" }} />}
-                        {idx === currentSlide && (
-                          <div key={currentSlide} className="indicator-fill is-animating" />
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                  <Link
-                    href={activeSlide.link}
-                    className="slide-text-wrapper"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <h3 style={{ fontWeight: "lighter" }}>
-                      {activeSlide.title}
-                    </h3>
-                    <p className="para-text-white">{activeSlide.subtitle}</p>
-                  </Link>
-                </div>
                 <Link
                   href={activeSlide.link}
                   className="slide-image-right"
@@ -130,6 +111,32 @@ const HomeBanner = ({ bgPosition = "center" }) => {
                     priority
                   />
                 </Link>
+                <div className="slide-content-left">
+                  <Link
+                    href={activeSlide.link}
+                    className="slide-text-wrapper"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h3 style={{ fontWeight: "lighter" }}>
+                      {activeSlide.title}
+                    </h3>
+                    <p className="para-text-white">{activeSlide.subtitle}</p>
+                  </Link>
+                  <div className="carousel-indicators">
+                    {slides.map((_, idx) => (
+                      <div
+                        key={idx}
+                        className="indicator"
+                        onClick={() => setCurrentSlide(idx)}
+                      >
+                        {idx < currentSlide && <div className="indicator-fill" style={{ width: "100%" }} />}
+                        {idx === currentSlide && (
+                          <div key={currentSlide} className="indicator-fill is-animating" />
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

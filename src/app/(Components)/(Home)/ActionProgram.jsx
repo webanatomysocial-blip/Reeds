@@ -9,42 +9,42 @@ import AnimatedContent from "@/app/(Components)/AnimatedContent";
 export const actionProgramsData = [
   {
     slug: "community-awareness-education",
-    image: "/assets/Banner_Assets/community-awareness-education.jpg",
+    image: "/assets/Banner_Assets/community-awareness-education.webp",
     category: "",
     heading: "Community Awareness & Education",
     link: "/community-awareness-education",
   },
   {
     slug: "monitoring-evaluation",
-    image: "/assets/Banner_Assets/monitoring-evaluation.jpg",
+    image: "/assets/Banner_Assets/monitoring-evaluation.webp",
     category: "",
     heading: "Monitoring & Evaluation",
     link: "/monitoring-evaluation",
   },
   {
     slug: "wash-projects",
-    image: "/assets/Banner_Assets/washprojects.jpg",
+    image: "/assets/Banner_Assets/washprojects.webp",
     category: "",
     heading: "WASH Projects",
     link: "/wash-projects",
   },
   {
     slug: "entrepreneurship-development",
-    image: "/assets/Banner_Assets/entrepreneurship-development.jpg",
+    image: "/assets/Banner_Assets/entrepreneurship-development.webp",
     category: "",
     heading: "Entrepreneurship Development",
     link: "/entrepreneurship-development",
   },
   {
     slug: "skills-development",
-    image: "/assets/Action_Programs/Skills-Development.jpg",
+    image: "/assets/Action_Programs/Skills-Development.webp",
     category: "",
     heading: "Skills Development",
     link: "/skills-development",
   },
   {
     slug: "rural-entrepreneurship-livelihood",
-    image: "/assets/Banner_Assets/rural-entrepreneurship-livelihood.jpg",
+    image: "/assets/Banner_Assets/rural-entrepreneurship-livelihood.webp",
     category: "",
     heading: "Rural Entrepreneurship & Livelihood Promotion",
     link: "/rural-entrepreneurship-livelihood",
@@ -89,9 +89,6 @@ const ActionProgram = ({ showButton = true, currentSlug, showAll = false }) => {
                   <div className="action-card-image-placeholder"></div>
                 )}
                 <div className="action-card-content">
-                  <span className="action-card-category">
-                    {program.category}
-                  </span>
                   <h3 className="action-card-heading">{program.heading}</h3>
                 </div>
               </div>

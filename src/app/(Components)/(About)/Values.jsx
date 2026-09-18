@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import "@/app/(Css)/(About)/Values.css";
 import PillButton from "../PillButton";
 import AnimatedContent from "@/app/(Components)/AnimatedContent";
@@ -151,15 +152,22 @@ export default function ReedsValues() {
           </div>
 
           {/* CTA Button */}
-          <PillButton
-            text="Donate Now"
-            bg="#F59E0A"
-            color="white"
-            arrowBg="white"
-            arrowColor="black"
-            hoverFillColor="white"
-            hoverTextColor="black"
-          />
+          <Link
+            href="https://pages.razorpay.com/pl_PHFMC4XHiUK8KC/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <PillButton
+              text="Donate Now"
+              bg="#F59E0A"
+              color="white"
+              arrowBg="white"
+              arrowColor="black"
+              hoverFillColor="white"
+              hoverTextColor="black"
+            />
+          </Link>
         </div>
 
         {/* Right Column — Value Cards */}

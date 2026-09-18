@@ -19,7 +19,7 @@ on hygiene.`}
         students={505}
         faculty={3}
         completed={100}
-        image="/assets/Projects_Banner_Assets/Nagaram.jpg"
+        image="/assets/Projects_Banner_Assets/Nagaram.webp"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -28,15 +28,15 @@ on hygiene.`}
         descriptionText="Promoting cleaner, healthier school environments through improved sanitation, safe water, and hygiene awareness."
       />
       <ProjectGallery images={[
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135715.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135816.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_140700.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_140807.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_141328.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_142101.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_143121.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_152608.jpg",
-    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_153038.jpg",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135715.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_135816.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_140700.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_140807.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_141328.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_142101.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_143121.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_152608.webp",
+    "/assets/Project_Gallery/nagaram-gallery/IMG_20250730_153038.webp",
   ]} />
        <ProjectImpact 
       activities = {[

@@ -13,7 +13,7 @@ const MonitoringEvaluation = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/monitoring-evaluation.jpg"
+        bgImage="/assets/Banner_Assets/monitoring-evaluation.webp"
         eyebrowText="Action Programs"
         title="Monitoring & Evaluation"
         desc="Tracking impact on the ground so every program keeps delivering real, measurable outcomes."
@@ -27,16 +27,16 @@ const MonitoringEvaluation = () => {
       />
       <ProjectGallery
         images={[
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20221013-WA0023.jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230127-WA0127 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230208-WA0024 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230209-WA0009 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20220901124839.jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20230123171408 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20230124124603 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220902_125721 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220903_105050 (1).jpg",
-          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220903_175805 (1).jpg",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20221013-WA0023.webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230127-WA0127 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230208-WA0024 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG-20230209-WA0009 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20220901124839.webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20230123171408 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG20230124124603 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220902_125721 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220903_105050 (1).webp",
+          "/assets/Main_Project_Gallery/Monitoring and evaluation/IMG_20220903_175805 (1).webp",
         ]}
       />
       <div className="content-div">

@@ -8,7 +8,7 @@ export default function NewsletterPage() {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Gallery_Assets/DSC_6354.jpg.jpeg"
+        bgImage="/assets/Gallery_Assets/DSC_6354.jpg.webp"
         eyebrowText="Gallery"
         title="Newsletter"
         desc="Field updates and impact stories from REEDS, straight from the ground."
@@ -22,10 +22,18 @@ export default function NewsletterPage() {
         descText="Our latest newsletter, covering REEDS' recent activities, milestones and community impact."
         documents={[
           {
+            title: "REEDS Newsletter - August 2026",
+            date: "August 2026",
+            size: "897KB",
+            link: "https://reeds.in/reports/August-newsletter-2026.pdf",
+            buttonText: "View Newsletter",
+          },
+          {
             title: "REEDS Newsletter - July 2026",
             date: "July 2026",
             size: "323KB",
-            link: "https://reeds.in/reports/REEDS-Newsletter-–-July-2026.pdf",
+            link: "https://reeds991907.substack.com/p/reeds-newsletter-july-2026",
+            buttonText: "View Newsletter",
           },
         ]}
       />

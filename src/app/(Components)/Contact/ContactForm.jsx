@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import '@/app/(Css)/Contact/ContactForm.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
+import Map from '@/app/(Components)/Contact/Map';
+import Script from 'next/script';
 
 export default function ReedsContact() {
   const [formData, setFormData] = useState({
@@ -44,16 +45,7 @@ export default function ReedsContact() {
         {/* Left Column: Image Placeholder & Contact Details */}
         <div className="reeds-contact-left">
           
-          {/* Image Placeholder */}
-          <div className="reeds-contact-image-placeholder" role="img" aria-label="REEDS Office Placeholder">
-            <Image 
-              src="/assets/Contact_Assets/contactimg.jpg" 
-              alt="REEDS Contact Office" 
-              width={800} 
-              height={600} 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-            />
-          </div>
+          <Map title="" />
 
           {/* Contact Details Cards */}
           <div className="reeds-contact-details">
@@ -181,7 +173,7 @@ export default function ReedsContact() {
             </form>
             */}
             <div id="wa-form-9"></div>
-            <script src="https://loooped.in/embed.js" data-form-id="9"></script>
+            <Script src="https://loooped.in/embed.js" data-form-id="9" strategy="afterInteractive" />
           </div>
         </div>
 

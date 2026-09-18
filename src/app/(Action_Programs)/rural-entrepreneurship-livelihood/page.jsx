@@ -12,7 +12,7 @@ const RuralEntrepreneurshipLivelihood = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/rural-entrepreneurship-livelihood.jpg"
+        bgImage="/assets/Banner_Assets/rural-entrepreneurship-livelihood.webp"
         eyebrowText="Action Programs"
         title="Rural Entrepreneurship & Livelihood Promotion"
         desc="Helping rural communities build lasting livelihoods through enterprise and self-reliance."
@@ -25,11 +25,11 @@ const RuralEntrepreneurshipLivelihood = () => {
         descriptionText="Every cause we support is driven by real needs, real people, and real outcomes."
       />
       <ProjectGallery images={[
-          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/IMG20221124112616.jpg",
-          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-07-15 at 2.35.34 PM (3).jpeg",
-          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-08-18 at 11.51.13 AM.jpeg",
-          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-11-24 at 7.52.14 PM (1).jpeg",
-          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-12-29 at 4.30.02 PM.jpeg",
+          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/IMG20221124112616.webp",
+          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-07-15 at 2.35.34 PM (3).webp",
+          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-08-18 at 11.51.13 AM.webp",
+          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-11-24 at 7.52.14 PM (1).webp",
+          "/assets/Main_Project_Gallery/Rural Entrepreneurship & Livelihood Promotion/WhatsApp Image 2022-12-29 at 4.30.02 PM.webp",
         ]} />
   <div className="content-div">
         <p className="para-text">

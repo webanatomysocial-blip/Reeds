@@ -3,6 +3,7 @@
 import React from 'react';
 import '@/app/(Css)/(About)/ReedsVisionMission.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
+import { FiEye, FiTarget } from 'react-icons/fi';
 
 export default function ReedsVisionMission() {
   return (
@@ -26,7 +27,7 @@ export default function ReedsVisionMission() {
           <div className="reeds-vm-col image-col">
             <div
               className="reeds-vm-card reeds-vm-image-card"
-              style={{ backgroundImage: "url(/assets/About_Assets/about2.jpg)" }}
+              style={{ backgroundImage: "url(/assets/About_Assets/about2.webp)" }}
             >
 
             </div>
@@ -39,23 +40,13 @@ export default function ReedsVisionMission() {
             <div className="reeds-vm-card reeds-vm-text-card vision-card">
               <div>
                 <div className="reeds-vm-icon-circle vision-circle">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="4" y="16" width="12" height="12" rx="3" fill="#81c784" fillOpacity="0.6" />
-                    <rect x="10" y="10" width="12" height="12" rx="3" fill="#4caf50" fillOpacity="0.8" />
-                    <rect x="16" y="4" width="12" height="12" rx="3" fill="#2e7d32" />
-                  </svg>
+                  <FiEye size={32} color="#2e7d32" />
                 </div>
                 <h3 className="sub-head-text">Our Vision</h3>
                 <p className="sub-para-text">
                   An inclusively empowered rural India thrives through sustainable growth, equal opportunities, education, healthcare, technology, and community-driven initiatives for all.
                 </p>
               </div>
-            </div>
-
-            {/* Lives Impacted Stat Card */}
-            <div className="reeds-vm-card reeds-vm-stat-card">
-              <span className="reeds-vm-stat-number">150k+</span>
-              <span className="reeds-vm-stat-label">Lives Impacted</span>
             </div>
 
           </div>
@@ -73,11 +64,7 @@ export default function ReedsVisionMission() {
             <div className="reeds-vm-card reeds-vm-text-card mission-card">
               <div>
                 <div className="reeds-vm-icon-circle mission-circle">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="10" stroke="#e05624" strokeWidth="2.5" opacity="0.3" />
-                    <circle cx="16" cy="16" r="6" stroke="#e05624" strokeWidth="2.5" />
-                    <circle cx="16" cy="16" r="2.5" fill="#e05624" />
-                  </svg>
+                  <FiTarget size={32} color="#e05624" />
                 </div>
                 <h3 className="sub-head-text">Our Mission</h3>
                 <p className="sub-para-text">

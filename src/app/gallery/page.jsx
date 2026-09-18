@@ -13,7 +13,7 @@ const Gallery = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/Gallery.jpg"
+        bgImage="/assets/Banner_Assets/Gallery.webp"
         bgPosition="top"
         eyebrowText="Gallery"
         title="New Gallery"

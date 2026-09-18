@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import '@/app/(Css)/(About)/ReedsImpact.css';
+import { FiMapPin, FiMap } from 'react-icons/fi';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
@@ -97,26 +98,10 @@ export default function ReedsImpact() {
 
           <div className="reeds-impact-list">
             
-            {/* Stat Item 1: 450K+ Lives Impacted */}
-            <div className="reeds-impact-item">
-              <div className="reeds-impact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
-              <span className="reeds-impact-item-text">450K+ Lives Impacted</span>
-            </div>
-
             {/* Stat Item 2: 11K+ Villages Covered */}
             <div className="reeds-impact-item">
               <div className="reeds-impact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5c0-3.78 3.4-6.86 8.55-11.54L12 21.35z" />
-                  <path d="M2 14c2.5 0 4 1.5 6.5 1.5h7.5c2 0 3.5-1.5 3.5-3" />
-                </svg>
+                <FiMapPin size={24} />
               </div>
               <span className="reeds-impact-item-text">11K+ Villages Covered</span>
             </div>
@@ -124,10 +109,7 @@ export default function ReedsImpact() {
             {/* Stat Item 3: 15 States Coverages */}
             <div className="reeds-impact-item">
               <div className="reeds-impact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  <path d="M8 12l2 2 4-4" />
-                </svg>
+                <FiMap size={24} />
               </div>
               <span className="reeds-impact-item-text">15 States Coverages</span>
             </div>
@@ -144,7 +126,7 @@ export default function ReedsImpact() {
               <div
                 className="reeds-impact-card card-back"
                 ref={cardBackRef}
-                style={{ backgroundImage: "url(/assets/About_Assets/whoweare.jpg)" }}
+                style={{ backgroundImage: "url(/assets/About_Assets/whoweare.webp)" }}
               ></div>
             </div>
 
@@ -153,7 +135,7 @@ export default function ReedsImpact() {
               <div
                 className="reeds-impact-card card-front"
                 ref={cardFrontRef}
-                style={{ backgroundImage: "url(/assets/About_Assets/whoweare2.jpg)" }}
+                style={{ backgroundImage: "url(/assets/About_Assets/whoweare2.webp)" }}
               ></div>
             </div>
 

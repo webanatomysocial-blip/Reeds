@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Default transparency documents
 const defaultDocuments = [
+  
   {
     title: "Capability Statement",
     date: "2025-2026",
@@ -24,6 +25,12 @@ const defaultDocuments = [
     size: "5MB",
     link: "https://reeds.in/reports/CIRDAP-International-Rural-Development-Innovation-Challenge-2026.pdf"
   },
+  {
+    title: "Annual Report",
+    date: "2024-2025",
+    size: "2.6MB",
+    link: "https://reeds.in/reports/REEDS-Annual-Report-2024-25.pdf"
+  },
 ];
 
 const Transperancy = ({
@@ -34,6 +41,7 @@ const Transperancy = ({
   documents = defaultDocuments,
   desktopPadding,
   mobilePadding,
+  descBesideTitle = true,
 }) => {
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
@@ -87,9 +95,11 @@ const Transperancy = ({
         threshold={0.1}
         delay={0}
       >
-        <div className="transparency-header">
-          <span className={`${hasBg ? "eyebrow-text-white" : "eyebrow-text"} transparency-eyebrow`}>{eyebrowText}</span>
-          <h2 className={hasBg ? "head-text-white" : "head-text"} style={{paddingBottom:"20px"}}>{headingText}</h2>
+        <div className={`transparency-header${descBesideTitle ? " transparency-header-row" : ""}`}>
+          <div>
+            <span className={`${hasBg ? "eyebrow-text-white" : "eyebrow-text"} transparency-eyebrow`}>{eyebrowText}</span>
+            <h2 className={hasBg ? "head-text-white" : "head-text"} style={{paddingBottom: descBesideTitle ? 0 : "20px"}}>{headingText}</h2>
+          </div>
           <p className={hasBg ? "para-text-white" : "para-text"}>
             {descText}
           </p>
@@ -113,12 +123,19 @@ const Transperancy = ({
               </div>
 
               <Link href={item.link} target="_blank" className="transparency-download-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="download-icon">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="7 10 12 15 17 10"></polyline>
-                  <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                Download
+                {item.buttonText ? (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="download-icon">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                ) : (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="download-icon">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                )}
+                {item.buttonText || "Download"}
               </Link>
             </div>
           ))}

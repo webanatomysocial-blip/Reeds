@@ -4,8 +4,8 @@ import React from 'react';
 import '@/app/(Css)/Contact/Map.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
-const DEFAULT_ADDRESS = "Trendset Hill Top Apartment, 11-4-646/B, Vijaya Hills Road, AC Guards, Lakdikapul, Hyderabad, Telangana 500004, India";
-const DEFAULT_MAP_URL = "https://www.google.com/maps?q=Trendset+Hill+Top+Apartment,+11-4-646%2FB,+Vijaya+Hills+Road,+AC+Guards,+Lakdikapul,+Hyderabad,+Telangana+500004,+India&output=embed";
+const DEFAULT_ADDRESS = "Vijaya Hills Apartments, 11-4-646/B, Vijaya Hills Road, AC Guards, Lakdikapul, Hyderabad, Telangana 500004, India";
+const DEFAULT_MAP_URL = "https://www.google.com/maps?q=Vijaya+Hills+Apartments,+11-4-646%2FB,+Vijaya+Hills+Road,+AC+Guards,+Lakdikapul,+Hyderabad,+Telangana+500004,+India&output=embed";
 
 export default function ReedsLocationMap({
   title = "Visit Our Location",
@@ -33,7 +33,7 @@ export default function ReedsLocationMap({
             title="REEDS Location Map"
             src={mapUrl}
             width="100%"
-            height="550"
+            height="350"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"

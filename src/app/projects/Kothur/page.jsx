@@ -13,12 +13,11 @@ export default function KothurProject() {
     <>
       <ProjectBanner
         title={title}
-        description={`We conducted 2 visits to ${title} to improve water, sanitation facilities and promote hygiene education among students and staff.`}
         visits={2}
         students={78}
         faculty={3}
         completed={100}
-        image="/assets/Projects_Banner_Assets/Kothur.jpg"
+        image="/assets/Projects_Banner_Assets/Kothur.webp"
       />
  <Headings
         eyebrowText="OUR IMPACT"
@@ -27,14 +26,14 @@ export default function KothurProject() {
         descriptionText="Strengthening school hygiene and access to clean water for 78 students and 3 faculty members."
       />
       <ProjectGallery images={[
-    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132245.jpg",
-    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132501.jpg",
-    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132555.jpg",
-    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_135546.jpg",
-    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_135604.jpg",
-    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_140640.jpg",
-    "/assets/Project_Gallery/kothur-gallery/WhatsApp Image 2026-03-10 at 6.05.54 PM.jpeg",
-    "/assets/Project_Gallery/kothur-gallery/WhatsApp Image 2026-03-10 at 6.05.54 PM.jpg",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132245.webp",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132501.webp",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_132555.webp",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_135546.webp",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_135604.webp",
+    "/assets/Project_Gallery/kothur-gallery/IMG_20260310_140640.webp",
+    "/assets/Project_Gallery/kothur-gallery/WhatsApp Image 2026-03-10 at 6.05.54 PM.webp",
+    "/assets/Project_Gallery/kothur-gallery/WhatsApp Image 2026-03-10 at 6.05.54 PM.webp",
   ]} />
       <ProjectImpact impactText="Improved access to clean water and better hygiene practices among 78 students and 3 faculty members." />
       <TickerTape />

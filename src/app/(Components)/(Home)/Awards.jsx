@@ -14,7 +14,7 @@ const awardsData = [
   },
   {
     title: "Government of Andhra Pradesh's 'LETTER OF APPRECIATION 2008",
-    image: "/assets/Home_Assets/andhrapradesh.avif"
+    image: "/assets/Home_Assets/andhrapradesh.jpeg"
   }
 ];
 

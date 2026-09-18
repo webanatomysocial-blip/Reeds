@@ -16,7 +16,7 @@ const ProjectImpact = ({
 }) => {
   return (
     <section className="project-impact-section" style={{ position: 'relative' }}>
-      <Image src="/assets/Gallery_Assets/DSC_6345-3.jpg.jpeg" alt="Project Impact Background" fill style={{ objectFit: 'cover', zIndex: -1 }} />
+      <Image src="/assets/Gallery_Assets/DSC_6345-3.jpg.webp" alt="Project Impact Background" fill style={{ objectFit: 'cover', zIndex: -1 }} />
       {/* Light overlay to match the bright striped background in the design */}
       <div className="project-impact-overlay"></div>
       

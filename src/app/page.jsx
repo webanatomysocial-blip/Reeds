@@ -5,7 +5,7 @@ import PillButton from "./(Components)/PillButton";
 import TickerTape from "./(Components)/(Home)/TickerTape";
 import Headings from "./(Components)/Headings";
 import CTA from "./(Components)/CTA";
-import ImpactCards from "./(Components)/(Home)/ImpactCards";
+// import ImpactCards from "./(Components)/(Home)/ImpactCards";
 import AboutReeds from "./(Components)/(Home)/AboutReeds";
 import Founders from "./(Components)/(Home)/Founders";
 import VIDEOFRAME from "./(Components)/VideoFrame";
@@ -20,6 +20,7 @@ const Home = () => {
     <>
       <HomeBanner />
       <TickerTape />
+      {/*
       <Headings
         eyebrowText="OUR IMPACT"
         eyebrowColor={"#095e3f"}
@@ -27,6 +28,7 @@ const Home = () => {
         descriptionText="Empowering rural communities across India through inclusive, sustainable development. "
       />
       <ImpactCards />
+      */}
       <AboutReeds />
       <Headings
         eyebrowText="Our Vision & Mission"

@@ -48,6 +48,27 @@
   color: white;
 }
 
+.transparency-header-row {
+  max-width: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.transparency-header-row .para-text,
+.transparency-header-row .para-text-white {
+  max-width: 420px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .transparency-header-row {
+    flex-wrap: wrap;
+  }
+}
+
 .is-plain .transparency-header {
   color: #1a1a1a;
 }

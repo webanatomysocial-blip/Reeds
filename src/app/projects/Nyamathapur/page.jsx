@@ -13,12 +13,11 @@ export default function NyamathapurProject() {
     <>
       <ProjectBanner
         title={title}
-        description={`We conducted 1 visit to ${title} to improve water, sanitation facilities and promote hygiene education among students and staff.`}
         visits={1}
         students={27}
         faculty={2}
         completed={100}
-        image="/assets/Projects_Banner_Assets/Nyamathapur.jpg"
+        image="/assets/Projects_Banner_Assets/Nyamathapur.webp"
       />
       <Headings
         eyebrowText="OUR IMPACT"
@@ -27,14 +26,14 @@ export default function NyamathapurProject() {
         descriptionText="Improving access to clean water and hygiene through better facilities, awareness, and school cleanliness."
       />
       <ProjectGallery images={[
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_112610.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_113535.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_113739.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_114824.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_120438.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_120947.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_123247.jpg",
-    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_123737.jpg",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_112610.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_113535.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_113739.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_114824.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_120438.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_120947.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_123247.webp",
+    "/assets/Project_Gallery/nyamathapur-gallery/IMG_20260313_123737.webp",
   ]} />
       <ProjectImpact impactText={`Improved access to clean water and better hygiene practices among 27 students and 2 faculty members.`} />
       <TickerTape />

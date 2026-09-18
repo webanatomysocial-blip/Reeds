@@ -5,7 +5,7 @@ import "@/app/(Css)/LogoCarousel.css";
 // Images
 const defaultImages = [
   { src: "/assets/LogoCarousel/CIRDPA-150x150.png", link: "https://cirdap.org/" },
-  { src: "/assets/LogoCarousel/Z_Logo-3-e1663336214242-768x524.png", link: "https://zenithenergy.com/" },
+  { src: "/assets/LogoCarousel/zenith.png", link: "https://zenithenergy.com/" },
   { src: "/assets/LogoCarousel/amrita-vishwa-1.png", link: "https://www.amrita.edu/" },
   { src: "/assets/LogoCarousel/anurag-1-150x150.png", link: "https://www.anurag.edu.in/" },
   { src: "/assets/LogoCarousel/good-gov-150x150.png", link: "https://www.cgg.gov.in/" },

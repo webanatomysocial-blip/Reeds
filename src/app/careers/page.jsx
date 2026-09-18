@@ -11,7 +11,7 @@ const roleRows = [
     slug: "internships",
     heading: "Internships",
     text: "REEDS provides enriching internship opportunities for students and recent graduates eager to explore the nonprofit sector. These internships are designed to offer hands-on experience through engaging fieldwork and meaningful projects that address real-world challenges. As an intern, you will work closely with our team to understand the unique issues faced by rural communities, gain invaluable insights, and develop innovative solutions to empower and uplift these communities. This is your chance to combine learning with impact, making a difference while building a strong foundation for your career in social development.",
-    image: "/assets/Gallery_Assets/Focused-Group-Discussions.jpeg",
+    image: "/assets/Gallery_Assets/Focused-Group-Discussions.webp",
     imageFirst: false,
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLScdqK7DEveQEk3sKMozjHyFjsfrHgqQ-Wx9sXq64akyCEWXsA/viewform",
   },
@@ -19,7 +19,7 @@ const roleRows = [
     slug: "volunteer",
     heading: "Volunteer",
     text: "REEDS provides volunteer opportunities for professionals seeking meaningful experience in the nonprofit sector. Engaging in fieldwork offers firsthand insights into the challenges faced by rural communities, inspiring innovative solutions and impactful contributions.",
-    image: "/assets/Gallery_Assets/Assesments-scaled.jpg.jpeg",
+    image: "/assets/Gallery_Assets/Assesments-scaled.jpg.webp",
     imageFirst: true,
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLSd7YpWiff-NNlaK6bLfX_VcmqqQRJsb0yaUvM6n8zkWlOCSxg/viewform",
   },
@@ -27,7 +27,7 @@ const roleRows = [
     slug: "project-based-roles",
     heading: "Project-Based Roles",
     text: "Welcome to the exciting world of project-based roles at REEDS! These roles are designed for passionate individuals eager to make a meaningful impact while gaining hands-on experience in addressing real-world challenges. As a project-based participant, you'll work closely with our team to design, implement, and manage initiatives that empower underserved communities. These roles offer the perfect opportunity to contribute your skills to transformative projects in areas such as rural development, community empowerment, sustainability, and social entrepreneurship. Whether you're a student, a recent graduate, or an experienced professional, this role will provide you with invaluable insights into the nonprofit sector, expose you to the complexities of fieldwork, and allow you to craft innovative solutions that drive lasting change. Join us and be a part of creating a brighter, more equitable future for all!",
-    image: "/assets/Gallery_Assets/Team-interaction-with-Villagers.jpg.jpeg",
+    image: "/assets/Gallery_Assets/Team-interaction-with-Villagers.jpg.webp",
     imageFirst: false,
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLSe5ncBcMUZoXh8te8X1ujogBXWJi6aiARrM6yi9_QmAwIT8GQ/viewform",
   },
@@ -35,7 +35,7 @@ const roleRows = [
     slug: "temporary-assignments",
     heading: "Temporary Assignments",
     text: "Temporary assignment roles at REEDS are ideal for individuals looking to contribute their skills and expertise to impactful initiatives on a short-term basis. These roles are designed to address specific needs within our projects, allowing you to make a meaningful difference in a focused timeframe. As part of a temporary assignment, you'll collaborate with our dedicated team to support ongoing programs, conduct fieldwork, or assist with critical tasks such as research, training, or community outreach. These assignments provide a unique opportunity to gain hands-on experience, understand the challenges faced by marginalized communities, and contribute to solutions that create lasting change. Whether you're a professional seeking impactful volunteer work or a student looking to enhance your skills, temporary assignments offer a rewarding way to be part of our mission to empower and uplift communities.",
-    image: "/assets/Gallery_Assets/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.jpeg",
+    image: "/assets/Gallery_Assets/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.webp",
     imageFirst: true,
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLSe-8L7Ue0OtWp6RRT48hWHn3sfBQ0242Yu-aEir-kqkqQypbQ/viewform",
   },
@@ -45,7 +45,7 @@ export default function CareersPage() {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/Contact.jpg"
+        bgImage="/assets/Banner_Assets/Contact.webp"
         bgPosition="top"
         eyebrowText="Careers"
         title="Careers"
@@ -82,7 +82,7 @@ export default function CareersPage() {
         </div>
         <div className="careers-intro-image">
           <Image
-            src=" /assets/Banner_Assets/Home-2.jpg"
+            src=" /assets/Banner_Assets/Home-2.webp"
             alt="REEDS team"
             fill
             style={{ objectFit: "cover" }}
@@ -136,7 +136,7 @@ export default function CareersPage() {
           </div>
           <div className="careers-row-image">
             <Image
-              src="/assets/Home_Assets/card4.jpg"
+              src="/assets/Home_Assets/card4.webp"
               alt="Expression of Interest"
               fill
               style={{ objectFit: "cover" }}

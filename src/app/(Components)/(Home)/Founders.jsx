@@ -10,7 +10,7 @@ const Founders = () => {
                             <p className="sub-para-text">An inclusively empowered rural India thrives through sustainable growth, equal opportunities, education, healthcare, technology, and community-driven initiatives for all.</p>
                         </div>
                         <div className="vis-mis-image-mobile">
-                            <Image src="/assets/About_Assets/about.jpg" alt="REEDS Founders" fill style={{objectFit: 'cover'}} />
+                            <Image src="/assets/About_Assets/about.webp" alt="REEDS Founders" fill style={{objectFit: 'cover'}} />
                         </div>
                         <div className="vis-mis">
                             <h2 className="sub-head-text" style={{fontWeight:"400"}}>Our Mission</h2>

@@ -7,12 +7,12 @@ import '@/app/(Css)/Projects/ProjectGallery.css';
 import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const defaultImages = [
-  '/assets/Gallery_Assets/thumbs/AGM-1-Sep-2025-e1760336457774.jpg.jpeg',
-  '/assets/Gallery_Assets/thumbs/DSC_6354.jpg.jpeg',
-  '/assets/Gallery_Assets/thumbs/Site-visits-1.jpg.jpeg',
-  '/assets/Gallery_Assets/thumbs/AGM-2-Sep-2025.jpg.jpeg',
-  '/assets/Gallery_Assets/thumbs/Self-Help-Groups.jpg.jpeg',
-  '/assets/Gallery_Assets/thumbs/Site-visits.jpg.jpeg'
+  '/assets/Gallery_Assets/thumbs/AGM-1-Sep-2025-e1760336457774.jpg.webp',
+  '/assets/Gallery_Assets/thumbs/DSC_6354.jpg.webp',
+  '/assets/Gallery_Assets/thumbs/Site-visits-1.jpg.webp',
+  '/assets/Gallery_Assets/thumbs/AGM-2-Sep-2025.jpg.webp',
+  '/assets/Gallery_Assets/thumbs/Self-Help-Groups.jpg.webp',
+  '/assets/Gallery_Assets/thumbs/Site-visits.jpg.webp'
 ];
 
 const ProjectGallery = ({ images = defaultImages, objectPosition = 'center' }) => {

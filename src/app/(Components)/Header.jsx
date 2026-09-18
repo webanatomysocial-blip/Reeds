@@ -152,15 +152,6 @@ const Header = () => {
                
               </div>
             </li>
-            <li>
-              <Link
-                href="/wash-projects"
-                className="nav-item"
-                onClick={(e) => handleNavLinkClick(e, "/wash-projects")}
-              >
-                WASH Projects
-              </Link>
-            </li>
             <li
               className={`nav-item-dropdown ${activeDropdown === "whatwedo" ? "mobile-dropdown-active" : ""}`}
             >
@@ -192,6 +183,13 @@ const Header = () => {
                   onClick={(e) => handleNavLinkClick(e, "/what-we-do#programs")}
                 >
                   Programs
+                </Link>
+                <Link
+                  href="/wash-projects"
+                  className="dropdown-link"
+                  onClick={(e) => handleNavLinkClick(e, "/wash-projects")}
+                >
+                  WASH Projects
                 </Link>
                 <Link
                   href="/what-we-do#locations"
@@ -261,22 +259,6 @@ const Header = () => {
                   onClick={(e) => handleNavLinkClick(e, "/gallery#media")}
                 >
                   Videos
-                </Link>
-                <Link
-                  href="/gallery#paper-cuttings"
-                  className="dropdown-link"
-                  onClick={(e) =>
-                    handleNavLinkClick(e, "/gallery#paper-cuttings")
-                  }
-                >
-                  Paper Cuttings
-                </Link>
-                <Link
-                  href="/gallery#events"
-                  className="dropdown-link"
-                  onClick={(e) => handleNavLinkClick(e, "/gallery#events")}
-                >
-                  Events
                 </Link>
                 <Link
                   href="/newsletter"

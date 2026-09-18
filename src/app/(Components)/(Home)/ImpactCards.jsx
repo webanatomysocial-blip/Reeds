@@ -12,7 +12,7 @@ const impactData = [
     title: "Lives Improved",
     desc: "Empowering rural families through education, healthcare, livelihoods, water, and sustainable development initiatives.",
     span: 1,
-    image: "/assets/Home_Assets/card1.jpg"
+    image: "/assets/Home_Assets/card1.webp"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const impactData = [
     title: "Villages Reached",
     desc: "Creating self-reliant communities through integrated rural development programs.",
     span: 1,
-    image: "/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.jpeg"
+    image: "/assets/Gallery_Assets/Monitoring-Studies-REEDS-1.webp"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const impactData = [
     title: "Children Educated",
     desc: "Providing quality education, learning opportunities, and brighter futures for children communities.",
     span: 1,
-    image: "/assets/Gallery_Assets/8a519ff4-1299-4562-ae2b-b4b3e25960c2-scaled.jpg.jpeg"
+    image: "/assets/Gallery_Assets/8a519ff4-1299-4562-ae2b-b4b3e25960c2-scaled.jpg.webp"
     
   },
   {
@@ -40,7 +40,7 @@ const impactData = [
     title: "Water Projects",
     desc: "Delivering safe drinking water, sanitation facilities, and healthier living conditions for rural households.",
     span: 1,
-    image: "/assets/Home_Assets/card6.jpg"
+    image: "/assets/Home_Assets/card6.webp"
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const impactData = [
     title: "Women Empowered",
     desc: "Empowering women through education, healthcare, livelihoods, water, and sustainable development initiatives.",
     span: 2,
-    image: "/assets/Gallery_Assets/Creating-Awareness.jpg.jpeg"
+    image: "/assets/Gallery_Assets/Creating-Awareness.jpg.webp"
   }
 ];
 

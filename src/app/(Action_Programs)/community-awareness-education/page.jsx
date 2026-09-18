@@ -13,7 +13,7 @@ const CommunityAwarenessEducation = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/community-awareness-education.jpg"
+        bgImage="/assets/Banner_Assets/community-awareness-education.webp"
         eyebrowText="Action Programs"
         title="Community Awareness & Education"
         desc="Building awareness and access to education so communities can drive their own change."
@@ -26,22 +26,22 @@ const CommunityAwarenessEducation = () => {
       />
       <ProjectGallery
         images={[
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-05-27 at 13.33.43.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-06-13 at 1.25.18 PM.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-08-11 at 19.25.51_683c6786.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-08-29 at 13.49.55_06946a17.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-08-29 at 15.25.36_6865b352.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-09-17 at 15.37.57_c7f67ac5.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-10-21 at 17.55.23_fe59b155.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-10-22 at 18.13.47_3b318a73.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-10 at 16.59.03_a3c17519.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-21 at 17.02.56_c58d9d9d.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-24 at 15.49.38_370c8af5.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-27 at 14.02.45_dbdc8c21.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-27 at 17.18.00_b61b9f74.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-28 at 14.26.17_6d4be640.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-12-30 at 10.31.50 AM.jpg",
-          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-12-30 at 10.31.51 AM.jpg",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-05-27 at 13.33.43.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-06-13 at 1.25.18 PM.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-08-11 at 19.25.51_683c6786.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-08-29 at 13.49.55_06946a17.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-08-29 at 15.25.36_6865b352.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-09-17 at 15.37.57_c7f67ac5.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-10-21 at 17.55.23_fe59b155.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-10-22 at 18.13.47_3b318a73.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-10 at 16.59.03_a3c17519.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-21 at 17.02.56_c58d9d9d.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-24 at 15.49.38_370c8af5.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-27 at 14.02.45_dbdc8c21.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-27 at 17.18.00_b61b9f74.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-11-28 at 14.26.17_6d4be640.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-12-30 at 10.31.50 AM.webp",
+          "/assets/Main_Project_Gallery/Community awareness/WhatsApp Image 2025-12-30 at 10.31.51 AM.webp",
         ]}
         objectPosition="bottom"
       />

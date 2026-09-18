@@ -67,7 +67,7 @@ const AboutReeds = () => {
                         <span>Certified under 9001:2015.</span>
                     </button>
                     <h2 className="head-text" style={{marginTop: '24px'}}>
-                        Building sustainable rural communities village by village.
+                        Building sustainable rural communities.
                     </h2>
                     <p className="sub-para-text about-reeds-desc">
                         We partner with panchayats, government departments, corporates and foundations to deliver programs that last generations, not news cycles.
@@ -87,10 +87,10 @@ const AboutReeds = () => {
                 
                 <div className="about-right">
                     <div className="about-image-card">
-                        <div className="image-bg" style={{backgroundImage: "url('/assets/About_Assets/about3.png')"}}></div>
+                        <div className="image-bg" style={{backgroundImage: "url('/assets/About_Assets/about3.webp')"}}></div>
                     </div>
                     <div className="about-image-card img-wid">
-                        <div className="image-bg " style={{backgroundImage: "url('/assets/About_Assets/about2.jpg')"}}></div>
+                        <div className="image-bg " style={{backgroundImage: "url('/assets/About_Assets/about2.webp')"}}></div>
                         <div className="about-image-overlay">
                             <p className="quote-text">
                                 "They didn't just help me, they gave me my life back."

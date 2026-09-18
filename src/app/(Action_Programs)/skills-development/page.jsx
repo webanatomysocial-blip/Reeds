@@ -12,10 +12,11 @@ const SkillsDevelopment = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Gallery_Assets/DDUGKY-visit-in-Tamil-Nadu-scaled.jpg.jpeg"
+        bgImage="/assets/Action_Programs/Skills-Development.webp"
         eyebrowText="Action Programs"
         title="Skills Development"
         desc="Vocational training and skilling programs that open doors to steady employment."
+        bgPosition="top"
       />
 
       <Headings

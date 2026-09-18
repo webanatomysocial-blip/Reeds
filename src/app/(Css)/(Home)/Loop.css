@@ -1,7 +1,7 @@
 .loop-section {
   width: 100%;
   background-color: #1a2a22; /* Dark green background */
-  padding: 100px 0; /* No horizontal padding so marquee touches edges */
+  padding: 40px 0 50px 0px; /* No horizontal padding so marquee touches edges */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +67,16 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.loop-subscribe-message {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
 
+.loop-subscribe-message-error {
+  color: #ff8a8a;
+}
 
 /* Marquee Carousel */
 .loop-marquee-container {
@@ -84,7 +93,7 @@
   content: "";
   position: absolute;
   top: 0;
-  width: 80px;
+  width: 40px;
   height: 100%;
   z-index: 2;
   pointer-events: none;
@@ -121,7 +130,7 @@
   border-radius: 16px;
   overflow: hidden;
   flex-shrink: 0;
-  cursor: pointer;
+
 }
 
 .loop-image {
@@ -166,7 +175,7 @@
     max-width: 100%;
   }
   .loop-section{
-    padding: 60px 20px 40px 20px;
+    padding: 0px 20px 40px 20px;
   }
   .loop-marquee-container{
     margin-bottom:45px;

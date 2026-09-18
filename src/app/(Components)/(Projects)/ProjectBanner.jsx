@@ -12,7 +12,7 @@ const ProjectBanner = ({ title, description, visits = 3, students = 37, faculty 
 
   return (
     <section className="project-banner-section" style={{ position: 'relative' }}>
-      <Image src={image || "/assets/Gallery_Assets/Site-visits.jpg.jpeg"} alt="Project Banner Background" fill style={{ objectFit: 'cover', objectPosition: bgPosition, zIndex: -1 }} priority />
+      <Image src={image || "/assets/Gallery_Assets/Site-visits.jpg.webp"} alt="Project Banner Background" fill style={{ objectFit: 'cover', objectPosition: bgPosition, zIndex: -1 }} priority />
       <div className="project-banner-overlay"></div>
       
       <AnimatedContent

@@ -10,10 +10,10 @@ const Projects = () => {
   return (
     <>
       <InnerBanner
-        bgImage="/assets/Banner_Assets/projects.jpg"
+        bgImage="/assets/Banner_Assets/projects.webp"
         bgPosition="top"
         eyebrowText="Projects"
-        title="Our Wash Projects"
+        title="Our WASH Projects"
         desc="Working together for clean water, sanitation & hygiene in schools and communities."
       />
       <Headings

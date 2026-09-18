@@ -13,12 +13,11 @@ export default function RimmanagudaProject() {
     <>
       <ProjectBanner
         title={title}
-        description={`We conducted 1 visit to ${title} to improve water, sanitation facilities and promote hygiene education among students and staff.`}
         visits={1}
         students={67}
         faculty={8}
         completed={100}
-        image="/assets/Projects_Banner_Assets/Rimmanaguda.jpg"
+        image="/assets/Projects_Banner_Assets/Rimmanaguda.webp"
       />
       <Headings
         eyebrowText="OUR IMPACT"
@@ -27,17 +26,17 @@ export default function RimmanagudaProject() {
         descriptionText="Improving access to clean water and hygiene facilities while creating a cleaner, healthier school environment."
       />
       <ProjectGallery images={[
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_112151.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_112353.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113235.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113448.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113828.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113958.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_114123.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_121451.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_121644.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_122327.jpg",
-    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_123307.jpg",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_112151.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_112353.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113235.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113448.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113828.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_113958.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_114123.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_121451.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_121644.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_122327.webp",
+    "/assets/Project_Gallery/rimmanaguda-gallery/IMG_20260326_123307.webp",
   ]} />
       <ProjectImpact impactText={`Improved access to clean water and better hygiene practices among 67 students and 8 faculty members.`} />
       <TickerTape />

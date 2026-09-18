@@ -47,6 +47,16 @@ DirectoryIndex index.html
   ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
 
+# The visitor counter must never be cached — it needs a fresh value on every request.
+<Files "counter.php">
+  <IfModule mod_expires.c>
+    ExpiresActive Off
+  </IfModule>
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+  </IfModule>
+</Files>
+
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
