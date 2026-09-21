@@ -185,13 +185,6 @@ const Header = () => {
                   Programs
                 </Link>
                 <Link
-                  href="/wash-projects"
-                  className="dropdown-link"
-                  onClick={(e) => handleNavLinkClick(e, "/wash-projects")}
-                >
-                  WASH Projects
-                </Link>
-                <Link
                   href="/what-we-do#locations"
                   className="dropdown-link"
                   onClick={(e) =>

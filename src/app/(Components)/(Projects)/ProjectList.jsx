@@ -93,7 +93,7 @@ const projectsList = [
         visits: "1 Visits",
         students: "61 Students",
         faculty: "4 Faculty",
-        image: "/assets/Project_Gallery/ekwaipally-gallery/IMG_20260325_110038.webp",
+        image: "/assets/Projects_Banner_Assets/Ekvaipally-MPPS.webp",
     }
 ];
 

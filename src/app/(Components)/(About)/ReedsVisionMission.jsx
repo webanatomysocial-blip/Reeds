@@ -44,21 +44,15 @@ export default function ReedsVisionMission() {
                 </div>
                 <h3 className="sub-head-text">Our Vision</h3>
                 <p className="sub-para-text">
-                  An inclusively empowered rural India thrives through sustainable growth, equal opportunities, education, healthcare, technology, and community-driven initiatives for all.
+                  An empowered and inclusive rural India thrives through sustainable growth, equal opportunities, education, healthcare, technology, and community-driven initiatives for all.
                 </p>
               </div>
             </div>
 
           </div>
 
-          {/* Column 3: Volunteers & Our Mission */}
+          {/* Column 3: Our Mission */}
           <div className="reeds-vm-col">
-            
-            {/* Volunteers Stat Card */}
-            <div className="reeds-vm-card reeds-vm-stat-card">
-              <span className="reeds-vm-stat-number">450+</span>
-              <span className="reeds-vm-stat-label">Volunteers</span>
-            </div>
 
             {/* Our Mission Card */}
             <div className="reeds-vm-card reeds-vm-text-card mission-card">
@@ -68,7 +62,7 @@ export default function ReedsVisionMission() {
                 </div>
                 <h3 className="sub-head-text">Our Mission</h3>
                 <p className="sub-para-text">
-                  Implement innovative strategies through public, private, and community partnerships for sustainable and inclusive socio-economic development—enhancing rural capabilities to become more productive at scale.
+                  We implement innovative strategies through public, private, and community partnerships to drive sustainable and inclusive socio-economic development, while strengthening rural capabilities and enabling communities to achieve improved outcomes at scale.
                 </p>
               </div>
             </div>
