@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <InnerBanner 
-        bgImage="/assets/Banner_Assets/contact-2.webp"
+        bgImage="/assets/Banner_Assets/contact-banner-img.png"
         bgPosition="center"
         eyebrowText="Contact"
         title="Reach Out. 

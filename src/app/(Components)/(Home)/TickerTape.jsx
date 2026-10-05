@@ -5,7 +5,7 @@ import Link from 'next/link';
 import "@/app/(Css)/(Home)/TickerTape.css";
 
 const defaultItems = Array.from({ length: 10 }, () => ({
-    logo: "CIRDAP-REEDS Winners Announcement",
+    logo: "CIRDAP–REEDS Rural Innovation Challenge 2026: 15 promising innovations from 13 countries recognised—connecting rural innovation across the Asia-Pacific. Awards: 6–10 October 2026 | Colombo, Sri Lanka",
     icon: <FiSun className="ticker-icon" />,
     link: "https://reeds.in/reports/Announcement_of_the_Result.pdf"
 }));
@@ -32,7 +32,6 @@ const TickerTape = ({ items = defaultItems }) => {
             // Get the width of one group (half of the track)
             const firstGroup = trackRef.current.children[0];
             const groupWidth = firstGroup.offsetWidth;
-
             // Reset position seamlessly when one full group has scrolled past
             if (Math.abs(posRef.current) >= groupWidth) {
                 posRef.current += groupWidth;

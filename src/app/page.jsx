@@ -15,11 +15,13 @@ import Transperancy from "./(Components)/(Home)/Transperancy";
 import Awards from "./(Components)/(Home)/Awards";
 import RecentBlogs from "./(Components)/(Home)/RecentBlogs";
 import Loop from "./(Components)/(Home)/Loop";
+import AwardWinners from "./(Components)/(Home)/AwardWinners";
 const Home = () => {
   return (
     <>
       <HomeBanner />
       <TickerTape />
+      <AwardWinners />
       {/*
       <Headings
         eyebrowText="OUR IMPACT"
@@ -31,7 +33,7 @@ const Home = () => {
       */}
       <AboutReeds />
       <Headings
-        eyebrowText="Our Vision & Mission"
+        eyebrowText="OUR VISION, MISSION & VALUES"
         eyebrowColor={"#095e3f"}
         headingText="Founders Block."
         descriptionText="Building self-reliant rural communities through opportunity, innovation, and equity. "
