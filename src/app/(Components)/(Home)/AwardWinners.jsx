@@ -67,7 +67,8 @@ const WINNERS = [
     rank: "1st",
     innovation: "Digital Farmer 4.0 Platform: Real-time Forecasting and Market Connectivity for Smallholder Farmers in Vietnam",
     country: "Vietnam",
-    proposer: "Khuất Duy Học"
+    proposer: "Khuất Duy Học",
+    image: "/assets/Awards_Winners/6th-Khuat-Duy-Hoc.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -75,7 +76,8 @@ const WINNERS = [
     rank: "2nd",
     innovation: "CHINMAYA-Rural Action Network (C-RAN)",
     country: "India",
-    proposer: "Dr. Bindu MP"
+    proposer: "Dr. Bindu MP",
+    image: "/assets/Awards_Winners/7th-Dr.-Bindu-MP.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -83,7 +85,8 @@ const WINNERS = [
     rank: "3rd",
     innovation: "ECOLERY: A Replicable Women-Led Rural Green Economy Model",
     country: "Bangladesh",
-    proposer: "Nafesa Anzum Helaly"
+    proposer: "Nafesa Anzum Helaly",
+    image: "/assets/Awards_Winners/8th-Nafesa-Anzum-Helaly.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -91,7 +94,8 @@ const WINNERS = [
     rank: "4th",
     innovation: "AgriConnect KOPIA: A Low-Cost ICT Advisory and Feedback Model",
     country: "Pakistan",
-    proposer: "Dr. Umair Nawaz"
+    proposer: "Dr. Umair Nawaz",
+    image: "/assets/Awards_Winners/9th-Dr.-Umair-Nawaz.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -99,7 +103,8 @@ const WINNERS = [
     rank: "5th",
     innovation: "Eco_Protek: A Rural Microbial Innovation Driving Circular Agriculture, Food Security, and Environmental Resilience",
     country: "Philippines",
-    proposer: "Jeremy M. Balisacan"
+    proposer: "Jeremy M. Balisacan",
+    image: "/assets/Awards_Winners/10th-Jeremy-M-Balisacan.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -107,7 +112,8 @@ const WINNERS = [
     rank: "6th",
     innovation: "Digital Agri-Connect Nepal (DAC-Nepal): A Low-Cost Digital Innovation for Inclusive, Climate-Smart and Market-Linked Rural Livelihoods",
     country: "Nepal",
-    proposer: "Dr. Yogendra Kumar Karki"
+    proposer: "Dr. Yogendra Kumar Karki",
+    image: "/assets/Awards_Winners/11th-Dr.-Yogendra-Kumar-Karki.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -115,7 +121,8 @@ const WINNERS = [
     rank: "7th",
     innovation: "Community-Based Fisheries Lifestyle Tourism Concept",
     country: "Thailand",
-    proposer: "Chanatip Boonchalee"
+    proposer: "Chanatip Boonchalee",
+    image: "/assets/Awards_Winners/12th-Chanatip-Boonchalee.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -123,7 +130,8 @@ const WINNERS = [
     rank: "8th",
     innovation: "The Rural Resilience Academy (TRRA): Strategic Rural Innovation for Myanmar's \"Generation on Hold\"",
     country: "Myanmar",
-    proposer: "Aung Htet Oo"
+    proposer: "Aung Htet Oo",
+    image: "/assets/Awards_Winners/13th-Aung-Htet-Oo.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -131,7 +139,8 @@ const WINNERS = [
     rank: "9th",
     innovation: "DOI Gampang: Digital Transformation for Rural Economy",
     country: "Indonesia",
-    proposer: "Ary Andreas Toelle"
+    proposer: "Ary Andreas Toelle",
+    image: "/assets/Awards_Winners/14th-Ary-Andreas-Toelle.jpg"
   },
   {
     eyebrow: CHALLENGE_LABEL,
@@ -139,7 +148,8 @@ const WINNERS = [
     rank: "10th",
     innovation: "Forest to Foreign Fork: Sustainable Expansion of Wild Red Mushroom for Rural Resilience",
     country: "Lao PDR",
-    proposer: "Dr. Ouanh Phomvisith"
+    proposer: "Dr. Ouanh Phomvisith",
+    image: "/assets/Awards_Winners/15th-Dr-Ouanh-Phomvisith.jpg"
   }
 ];
 
