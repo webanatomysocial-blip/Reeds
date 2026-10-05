@@ -11,7 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Default transparency documents
 const defaultDocuments = [
-  
+  {
+    title: "Annual Report",
+    date: "2025-2026",
+    size: "8MB",
+    link: "https://reeds.in/reports/REEDS-Annual-Report-2025-26.pdf"
+  },
   {
     title: "Capability Statement",
     date: "2025-2026",
