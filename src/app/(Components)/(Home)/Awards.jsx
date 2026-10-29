@@ -5,6 +5,10 @@ import AnimatedContent from '@/app/(Components)/AnimatedContent';
 
 const awardsData = [
   {
+    title: "CIRDAP–REEDS International Rural Development Innovations Challenge 2026",
+    image: "/assets/Home_Assets/cirdap-reeds-award-2026.png"
+  },
+  {
     title: "The GRAMODAYA BANDHU MITRA PURASKAR Award 2020",
     image: "/assets/Home_Assets/Gramodaya.avif"
   },

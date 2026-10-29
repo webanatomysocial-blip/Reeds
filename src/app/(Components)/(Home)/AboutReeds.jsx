@@ -89,14 +89,30 @@ const AboutReeds = () => {
                     <div className="about-image-card">
                         <div className="image-bg" style={{backgroundImage: "url('/assets/About_Assets/about3.webp')"}}></div>
                     </div>
-                    <div className="about-image-card img-wid">
-                        <div className="image-bg " style={{backgroundImage: "url('/assets/About_Assets/about2.webp')"}}></div>
+                    <div className="about-image-card">
+                        <div className="image-bg" style={{backgroundImage: "url('/assets/About_Assets/about2.webp')"}}></div>
                         <div className="about-image-overlay">
                             <p className="quote-text">
                                 "They didn't just help me, they gave me my life back."
                             </p>
                         </div>
                     </div>
+                    <Link
+                        href="/careers"
+                        className="about-image-card about-recruitment-card"
+                        aria-label="We Are Hiring - Join Us in Improving Rural Life! View Careers"
+                        title="Click to explore Careers at REEDS"
+                    >
+                        <div
+                            className="recruitment-image-bg"
+                            style={{backgroundImage: "url('/assets/About_Assets/recruitment.webp')"}}
+                        ></div>
+                        <div className="recruitment-top-badge">
+                            <span className="recruitment-badge-dot"></span>
+                            <span className="recruitment-badge-text">We're Hiring</span>
+                            <span className="recruitment-badge-arrow">↗</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </section>

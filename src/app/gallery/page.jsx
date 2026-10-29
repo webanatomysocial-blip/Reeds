@@ -39,6 +39,13 @@ const Gallery = () => {
         <VIDEOFRAME
           videos={[
             {
+              iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/TDFVQtkW0V0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+              vidtitle:
+                "Sri Lankan Prime Minister Dr. Harini Amarasuriya’s address at the CIRDAP–HARTI Asia-Pacific Conference on Rural Development Innovations and the CIRDAP–REEDS Innovation Challenge Awards 2026, held in Colombo on 7 October 2026.",
+              viddesc:
+                "Sri Lankan Prime Minister Dr. Harini Amarasuriya addresses the CIRDAP–HARTI Asia-Pacific Conference on Rural Development Innovations and the CIRDAP–REEDS Innovation Challenge Awards 2026 in Colombo.",
+            },
+            {
               iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/ZXGObFcjkyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
               vidtitle:
                 "V6 Telugu News | CIRDAP–REEDS Rural Innovation Awards 2026 Soft Launch",
@@ -99,6 +106,22 @@ const Gallery = () => {
 
       <div id="annual-report" className="scroll-anchor-70">
         <Transperancy />
+      </div>
+
+      <div id="publications" className="scroll-anchor-70">
+        <Transperancy
+          eyebrowText=""
+          headingText="Publications"
+          descText=""
+          documents={[
+            {
+              title: "Seeds of Change: Innovations in Rural Development Across Asia Pacific",
+              desc: "Featuring 71 rural innovations from the CIRDAP–REEDS International Rural Innovation Challenge 2026.",
+              link: "https://cirdap.org/wp-content/uploads/2026/10/Book_IRDAAP_CIRDAP.pdf",
+              buttonText: "View Publication",
+            },
+          ]}
+        />
       </div>
 
       <TickerTape />

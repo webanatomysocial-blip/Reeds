@@ -5,7 +5,7 @@ import Link from 'next/link';
 import "@/app/(Css)/(Home)/TickerTape.css";
 
 const defaultItems = Array.from({ length: 10 }, () => ({
-    logo: "CIRDAP–REEDS Rural Innovation Challenge 2026: 15 promising innovations from 13 countries recognised—connecting rural innovation across the Asia-Pacific. Awards: 6–10 October 2026 | Colombo, Sri Lanka",
+    logo: "A proud moment for the CIRDAP–REEDS partnership in advancing rural innovation! Awards presented to 15 promising innovations from 13 countries in Colombo on 7 October 2026, in the presence of Sri Lankan Prime Minister Hon. Dr. Harini Amarasuriya and Agriculture Minister Hon. K. D. Lalkantha.",
     icon: <FiSun className="ticker-icon" />,
     link: "https://reeds.in/reports/Announcement_of_the_Result.pdf"
 }));

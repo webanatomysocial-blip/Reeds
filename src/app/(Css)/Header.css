@@ -1,12 +1,10 @@
 .header-section {
-  position: fixed;
-  top: 20px;
-  left: 0;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   z-index: 1000;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   pointer-events: none; /* Let clicks pass through the container... */
 }
@@ -14,11 +12,11 @@
 .header-pill {
   pointer-events: auto;
   background-color: #ffffff;
-  border-radius: 60px;
+  /* border-radius: 60px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 30px 8px 30px;
+  padding: 8px 50px 8px 50px;
   width: 100%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -36,11 +34,11 @@
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
 }
 
 .header-section.header-static {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .header-logo {
@@ -133,6 +131,7 @@
   visibility: hidden;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 1100;
 }
 
 .nav-item-dropdown:hover .dropdown-menu {
@@ -255,7 +254,7 @@
 }
   .header-pill {
     padding: 8px 12px 8px 20px;
-    width: 95%;
+    width: 100%;
   }
   .header-cta {
     display: none;
@@ -264,6 +263,6 @@
     margin-right: 0;
   }
   .header-section.visible{
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
   }
 }

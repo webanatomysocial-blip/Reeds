@@ -15,6 +15,7 @@ const defaultImages = [
   { src: "/assets/LogoCarousel/social-brirds-150x150.png", link: "https://socialbirds.org/" },
   { src: "/assets/LogoCarousel/NIAM.png", link: "https://www.ccsniam.gov.in/" },
   { src: "/assets/LogoCarousel/APPC.png", link: "https://www.appc.in/" },
+  { src: "/assets/LogoCarousel/dvr-foundation.png", link: null },
 ];
 
 export default function LogoCarousel({

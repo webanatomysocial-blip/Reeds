@@ -41,6 +41,29 @@ const roleRows = [
   },
 ];
 
+const hiringPositions = [
+  {
+    title: "Program Manager",
+    desc: "Programme development, implementation and coordination.",
+  },
+  {
+    title: "Executive – Finance",
+    desc: "Accounting, financial management and statutory compliance.",
+  },
+  {
+    title: "Research Assistant – Program Development",
+    desc: "Research, project proposals and programme development.",
+  },
+  {
+    title: "Administrative Assistant",
+    desc: "Office administration, coordination and record management.",
+  },
+  {
+    title: "Social Media Intern",
+    desc: "Digital communications, content creation and social media engagement.",
+  },
+];
+
 export default function CareersPage() {
   return (
     <>
@@ -94,6 +117,120 @@ export default function CareersPage() {
         <div className="careers-positions-header">
           <span className="eyebrow-text">VARIOUS</span>
           <h2 className="head-text">Positions</h2>
+        </div>
+
+        {/* --- REEDS | WE ARE HIRING FEATURED SECTION --- */}
+        <div className="careers-hiring-card" id="we-are-hiring">
+          <div className="careers-hiring-content">
+            <div className="careers-hiring-left">
+              <div className="hiring-eyebrow-wrap">
+                <span className="hiring-pulse-dot"></span>
+                <span className="hiring-eyebrow-text">REEDS | WE ARE HIRING</span>
+              </div>
+              <h3 className="hiring-title">Join Us in Improving Rural Life!</h3>
+              <p className="sub-para-text hiring-intro">
+                REEDS, a not-for-profit organisation working to improve rural livelihoods and empower communities, invites applications for the following positions:
+              </p>
+
+              <div className="hiring-positions-list">
+                {hiringPositions.map((pos, idx) => (
+                  <div className="hiring-position-item" key={idx}>
+                    <div className="hiring-pos-badge">{`0${idx + 1}`}</div>
+                    <div className="hiring-pos-details">
+                      <div className="hiring-pos-head">
+                        <h4 className="hiring-pos-title">{pos.title}</h4>
+                        <a
+                          href={`mailto:info@reeds.in?subject=Application%20for%20${encodeURIComponent(pos.title)}%20-%20REEDS`}
+                          className="hiring-pos-apply-link"
+                          title={`Apply for ${pos.title}`}
+                        >
+                          Apply ↗
+                        </a>
+                      </div>
+                      <p className="hiring-pos-desc">{pos.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <p className="hiring-note-text">
+                We welcome applications from motivated and confident individuals with relevant qualifications, skills and a genuine interest in contributing to rural development.
+              </p>
+
+              <div className="hiring-meta-grid">
+                <div className="hiring-meta-item">
+                  <span className="hiring-meta-icon">📍</span>
+                  <div className="hiring-meta-body">
+                    <strong className="hiring-meta-label">Location</strong>
+                    <p className="hiring-meta-desc">The positions are based in Hyderabad, with flexibility for some functions to be performed remotely.</p>
+                  </div>
+                </div>
+                <div className="hiring-meta-item">
+                  <span className="hiring-meta-icon">💼</span>
+                  <div className="hiring-meta-body">
+                    <strong className="hiring-meta-label">Compensation &amp; Culture</strong>
+                    <p className="hiring-meta-desc">REEDS is an equal opportunity employer, offering competitive compensation in line with social sector norms, qualifications and experience.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="hiring-apply-box">
+                <div className="hiring-apply-head">
+                  <span className="hiring-apply-icon">✉️</span>
+                  <div>
+                    <h4 className="hiring-apply-title">How to Apply</h4>
+                    <p className="hiring-apply-deadline">Application Deadline: <strong>15 November 2026</strong></p>
+                  </div>
+                </div>
+                <p className="hiring-apply-instructions">
+                  Interested candidates may email their CV, a brief cover letter highlighting relevant skills and experience, expected remuneration, and, where applicable, a portfolio of relevant work to{" "}
+                  <a href="mailto:info@reeds.in?subject=Application%20for%20Position%20-%20REEDS" className="hiring-email-link">
+                    info@reeds.in
+                  </a>{" "}
+                  by <strong>15 November 2026</strong>.
+                </p>
+                <p className="hiring-shortlist-note">
+                  * Only shortlisted applicants will be contacted.
+                </p>
+                <div className="hiring-apply-actions">
+                  <a
+                    href="mailto:info@reeds.in?subject=Application%20for%20Position%20-%20REEDS"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <PillButton
+                      text="Email Application (info@reeds.in)"
+                      bg="#0b6b3b"
+                      color="#ffffff"
+                      arrowBg="#ffffff"
+                      arrowColor="#0b6b3b"
+                      hoverFillColor="#f5f5f5"
+                      hoverTextColor="#000000"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="careers-hiring-right">
+              <div className="hiring-image-wrapper" style={{ position: "relative" }}>
+                <Image
+                  src="/assets/Home_Assets/we-are-hiring.webp"
+                  alt="REEDS - We Are Hiring"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+                <div className="hiring-image-overlay">
+                  <div className="hiring-image-badge">
+                    <span>REEDS Team &amp; Community</span>
+                  </div>
+                  <p className="hiring-image-caption">
+                    Join our team dedicated to empowering rural livelihoods across India.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="careers-row">

@@ -66,7 +66,7 @@ function BlogPostContent() {
 
   return (
     <>
-      <InnerBanner bgImage={image} title={title}  />
+      <InnerBanner bgImage={image} title={title} bgPosition="top" />
 
       <div className="blog-sticky-header">
         <div className="blog-sticky-header-content">

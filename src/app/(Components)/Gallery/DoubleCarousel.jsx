@@ -9,6 +9,9 @@ import '@/app/(Css)/Gallery/DoubleCarousel.css'
 
 export default function OurJourney() {
   const topRowImages = [
+    "/assets/Gallery_Assets/cirdap-awards-ceremony-group-1.jpg",
+    "/assets/Gallery_Assets/cirdap-awards-ceremony-stage-2.jpg",
+    "/assets/Gallery_Assets/cirdap-awards-ceremony-delegates-3.jpg",
     "/assets/Gallery_Assets/8a519ff4-1299-4562-ae2b-b4b3e25960c2-scaled.jpg.webp",
     "/assets/Gallery_Assets/AGM-1-Sep-2025-e1760336457774.jpg.webp",
     "/assets/Gallery_Assets/AGM-2-Sep-2025.jpg.webp",
@@ -29,6 +32,9 @@ export default function OurJourney() {
   ];
 
   const bottomRowImages = [
+    "/assets/Gallery_Assets/cirdap-awards-presentation-4.jpg",
+    "/assets/Gallery_Assets/cirdap-awards-felicitation-5.jpg",
+    "/assets/Gallery_Assets/cirdap-awards-ceremony-delegates-6.jpg",
     "/assets/Gallery_Assets/Self-Help-Groups.jpg.webp",
     "/assets/Gallery_Assets/Site-visits-1.jpg.webp",
     "/assets/Gallery_Assets/Studies-Andhra-Pradesh.webp",

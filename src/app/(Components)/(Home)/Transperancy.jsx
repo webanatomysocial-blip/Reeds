@@ -47,6 +47,8 @@ const Transperancy = ({
   desktopPadding,
   mobilePadding,
   descBesideTitle = true,
+  cardsClassName,
+  cardsStyle,
 }) => {
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
@@ -102,30 +104,43 @@ const Transperancy = ({
       >
         <div className={`transparency-header${descBesideTitle ? " transparency-header-row" : ""}`}>
           <div>
-            <span className={`${hasBg ? "eyebrow-text-white" : "eyebrow-text"} transparency-eyebrow`}>{eyebrowText}</span>
-            <h2 className={hasBg ? "head-text-white" : "head-text"} style={{paddingBottom: descBesideTitle ? 0 : "20px"}}>{headingText}</h2>
+            {eyebrowText && (
+              <span className={`${hasBg ? "eyebrow-text-white" : "eyebrow-text"} transparency-eyebrow`}>{eyebrowText}</span>
+            )}
+            <h2 className={hasBg ? "head-text-white" : "head-text"} style={{paddingBottom: descBesideTitle && descText ? 0 : "20px"}}>{headingText}</h2>
           </div>
-          <p className={hasBg ? "para-text-white" : "para-text"}>
-            {descText}
-          </p>
+          {descText && (
+            <p className={hasBg ? "para-text-white" : "para-text"}>
+              {descText}
+            </p>
+          )}
         </div>
 
-        <div className="transparency-cards">
+        <div
+          className={`transparency-cards${cardsClassName ? ` ${cardsClassName}` : ""}`}
+          style={cardsStyle}
+        >
           {documents.map((item, index) => (
             <div className="transparency-card" key={index}>
               <h3 className="transparency-card-title">{item.title}</h3>
               <hr className="transparency-divider" />
               
-              <div className="transparency-meta">
-                <div className="meta-col">
-                  <span className="meta-label">Date</span>
-                  <span className="meta-value">{item.date}</span>
+              {item.desc ? (
+                <p className="transparency-card-desc" style={{ fontSize: "0.95rem", color: "#4a5568", lineHeight: "1.6", margin: "0 0 24px 0" }}>
+                  {item.desc}
+                </p>
+              ) : (
+                <div className="transparency-meta">
+                  <div className="meta-col">
+                    <span className="meta-label">Date</span>
+                    <span className="meta-value">{item.date}</span>
+                  </div>
+                  <div className="meta-col align-right">
+                    <span className="meta-label">PDF</span>
+                    <span className="meta-value">{item.size}</span>
+                  </div>
                 </div>
-                <div className="meta-col align-right">
-                  <span className="meta-label">PDF</span>
-                  <span className="meta-value">{item.size}</span>
-                </div>
-              </div>
+              )}
 
               <Link href={item.link} target="_blank" className="transparency-download-btn">
                 {item.buttonText ? (

@@ -270,6 +270,13 @@ const Header = () => {
                   Annual Report
                 </Link>
                 <Link
+                  href="/gallery#publications"
+                  className="dropdown-link"
+                  onClick={(e) => handleNavLinkClick(e, "/gallery#publications")}
+                >
+                  Publications
+                </Link>
+                <Link
                   href="/foreign-contributions"
                   className="dropdown-link"
                   onClick={(e) => handleNavLinkClick(e, "/foreign-contributions")}

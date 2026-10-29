@@ -1,8 +1,12 @@
 export function getHeaderOffset() {
-  if (typeof document === "undefined") return 100;
+  if (typeof document === "undefined") return 0;
   const header = document.querySelector(".header-section");
-  if (!header) return 100;
-  return header.getBoundingClientRect().bottom;
+  if (!header) return 0;
+  const style = window.getComputedStyle(header);
+  if (style.position === "fixed" || style.position === "sticky") {
+    return header.getBoundingClientRect().height;
+  }
+  return 0;
 }
 
 export function scrollToHash(lenis, hash) {

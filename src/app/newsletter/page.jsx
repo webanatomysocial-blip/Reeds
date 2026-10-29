@@ -22,6 +22,13 @@ export default function NewsletterPage() {
         descText="Our latest newsletter, covering REEDS' recent activities, milestones and community impact."
         documents={[
           {
+            title: "REEDS Newsletter - September 2026",
+            date: "September 2026",
+            size: "814.84 KB",
+            link: "https://reeds.in/reports/REEDS-Newsletter-September-2026.pdf",
+            buttonText: "View Newsletter",
+          },
+          {
             title: "REEDS Newsletter - August 2026",
             date: "August 2026",
             size: "897KB",
